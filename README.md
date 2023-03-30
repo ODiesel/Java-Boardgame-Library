@@ -7,6 +7,6 @@
 
 
 ### Team members:
-* Michael O'Dell
-* Barrett Brewer
-* Selasi Yao-Kumah 
+* Michael O'Dell [github](https://github.com/ODiesel)
+* Barrett Brewer [github](https://github.com/BPBrewer)
+* Selasi Yao-Kumah [github](https://github.com/selazi) 
