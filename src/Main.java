@@ -15,7 +15,12 @@ public class Main {
 
         GameListView gameListView = new GameListView();
         GameListController gameListController = new GameListController(primaryGameList,gameListView);
-        HomeView homeView = new HomeView(gameListView);
+
+        GameView gameView = new GameView();
+
+        UserView userView = new UserView();
+
+        HomeView homeView = new HomeView(gameListView, gameView, userView);
         homeView.setVisible(true);
 
     }

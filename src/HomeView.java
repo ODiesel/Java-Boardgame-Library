@@ -11,7 +11,7 @@ public class HomeView extends JFrame {
 
     CardLayout HomePanelRightCardLayout;
 
-    public HomeView(GameListView gameListView) {
+    public HomeView(GameListView gameListView, GameView gameView, UserView userView) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1200,800);
         final JSplitPane splitPane1 = new JSplitPane();
@@ -56,16 +56,20 @@ public class HomeView extends JFrame {
         splitPane1.setRightComponent(HomePanelRight);
 
         gameListView.setLayout(new CardLayout(0, 0));
-        gameListView.setBackground(new Color(-16056065));
+        //gameListView.setBackground(new Color(-16056065));
         HomePanelRight.add(gameListView, "GameCollectionCard");
-        JPanel gameDetailPanel = new JPanel();
-        gameDetailPanel.setLayout(new CardLayout(0, 0));
-        gameDetailPanel.setBackground(new Color(-60672));
-        HomePanelRight.add(gameDetailPanel, "GameDetailCard");
-        JPanel accountPanel = new JPanel();
-        accountPanel.setLayout(new CardLayout(0, 0));
-        accountPanel.setBackground(new Color(-16580864));
-        HomePanelRight.add(accountPanel, "AccountCard");
+
+        //JPanel gameDetailPanel = new JPanel();
+        //gameDetailPanel.setLayout(new CardLayout(0, 0));
+        //gameDetailPanel.setBackground(new Color(-60672));
+        //HomePanelRight.add(gameDetailPanel, "GameDetailCard");
+        HomePanelRight.add(gameView, "GameDetailCard");
+
+        //JPanel accountPanel = new JPanel();
+        //accountPanel.setLayout(new CardLayout(0, 0));
+        //accountPanel.setBackground(new Color(-16580864));
+        //HomePanelRight.add(accountPanel, "AccountCard");
+        HomePanelRight.add(userView, "AccountCard");
 
         HomePanelRightCardLayout = (CardLayout) HomePanelRight.getLayout();
 
