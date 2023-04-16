@@ -35,12 +35,13 @@ public class Game {
     }
 
     public boolean matchesSearch(String search) {
-        if(this.name.contains(search)){return true;}
-        if(this.id.contains(search)){return true;}
-        if(this.type.contains(search)){return true;}
+        String lower = search.toLowerCase();
+        if(this.name.toLowerCase().contains(lower)){return true;}
+        if(this.id.contains(lower)){return true;}
+        if(this.type.contains(lower)){return true;}
         // maybe add publication year? min players? max players?
         // maybe way later search inside reviews??
-        if(this.description.contains(search)){return true;}
+        if(this.description.contains(lower)){return true;}
         return false;
     }
 

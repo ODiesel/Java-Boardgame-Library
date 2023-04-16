@@ -32,7 +32,11 @@ public class GameList {
     }
     public ArrayList<Game> searchGameList(String search) {
         // make case insensitive
-        if(search == null) {return gameList;}
+        if(search == null) {
+            return gameList;}
+        if(search.equals("")) {
+            return gameList;}
+
         ArrayList<Game> currentFilteredList = new ArrayList<>();
         for(Game g : gameList) {
             if(g.matchesSearch(search)){

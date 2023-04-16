@@ -63,11 +63,7 @@ public class GameListController {
         if(sortDirection.getBool()){sortGameList(searchedGameList, sort.comp);}
         else{sortGameList(searchedGameList, sort.comp.reversed());}
 
-        StringBuilder text = new StringBuilder();
-        for (Game game : searchedGameList) {
-            text.append(game.toString()).append("\n");
-        }
-        view.setjTextArea(text.toString());
+        view.showGames(searchedGameList);
     }
 
     public ArrayList<Game> getGameList() {return model.getGameList();}
