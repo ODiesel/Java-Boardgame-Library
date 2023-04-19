@@ -1,5 +1,8 @@
+import javax.imageio.ImageIO;
 import java.awt.*;
-import java.util.Comparator;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
 
 // make all fields that shouldn't ever change final (if they can be always initialized)
 // make sure there aren't setters where there don't need to be
@@ -20,6 +23,10 @@ public class Game {
     final private String thumbURI;
     final private String imgURI;
 
+    private BufferedImage thumbnail;
+    private BufferedImage image;
+    private Image resizedImage;
+
     public Game(String name, String id, String tnuri, String imguri, int pubyear , String description, int minPlayers, int maxPlayers) {
         this.name = name;
         this.publicationYear = pubyear;
@@ -32,6 +39,45 @@ public class Game {
         this.reviewList = new ReviewList();
         this.type = "";
 
+    }
+
+    public BufferedImage GetThumbnail(){
+        if(thumbnail == null){
+            try {
+                URL url = new URL(thumbURI);
+                thumbnail = ImageIO.read(url);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return thumbnail;
+    }
+
+    public BufferedImage GetImage(){
+        if(image == null){
+            try {
+                URL url = new URL(imgURI);
+                image = ImageIO.read(url);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return image;
+    }
+
+    public Image GetResizedImage(int maxDimension){
+        if(resizedImage == null)
+        {
+            BufferedImage img = GetImage();
+            int height = img.getHeight();
+            int width = img.getWidth();
+            int highest = Math.max(height,width);
+            float scale = (float)maxDimension/(float)highest;
+            int newHeight = (int)(height * scale);
+            int newWidth = (int)(width * scale);
+            resizedImage = img.getScaledInstance(newWidth, newHeight, Image.SCALE_DEFAULT);
+        }
+        return resizedImage;
     }
 
     public boolean matchesSearch(String search) {
@@ -47,8 +93,6 @@ public class Game {
 
     public String toString()
     {
-        //return "[" + name + ", "+ publicationYear + ", BGG Rank: " + rank + ", BGG ID: " + id + ", thumbUri: " + thumbURI + "]";
-        //return "[" + name + ", "+ publicationYear + ", BGG ID: " + id + ", Min Players: " + minimumPlayers + ", Max Players: " + maximumPlayers + "\nDescription: " + description + "thumbUri: " + thumbURI + "\nimgUri: " + imgURI + "]\n";
         return "[" + name + ", "+ publicationYear + ", BGG ID: " + id + ", Min Players: " + minimumPlayers + ", Max Players: " + maximumPlayers + "]";
     }
 
@@ -65,6 +109,4 @@ public class Game {
     public void deleteReview(Review review) {reviewList.deleteReview(review);}
     public String getId() {return id;}
     public int getPublicationYear() {return publicationYear;}
-    public String getThumbURI() {return thumbURI;}
-    public String getImgURI() {return imgURI;}
 }

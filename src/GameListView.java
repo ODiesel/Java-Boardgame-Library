@@ -1,15 +1,11 @@
 import java.awt.*;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 
-public class GameListView extends JPanel{
+public class GameListView extends JPanel implements MouseListener{
     private final JPanel ListPanel = new JPanel();
-    private final JTextArea jTextArea = new JTextArea();
     private final JTextField searchBar = new JTextField(20);
     private final JComboBox<GameListController.gameListSortEnum> sortComboBox;
     private final JComboBox<GameListController.sortDirectionEnum> sortDirectionComboBox;
@@ -28,7 +24,6 @@ public class GameListView extends JPanel{
         headerPanel.setMinimumSize(new Dimension(100,50));
         headerPanel.setPreferredSize(new Dimension(100,50));
         gameListViewPanel.add(headerPanel,BorderLayout.PAGE_START);
-        //HeaderPanel.setBackground(Color.BLUE);
 
         ListPanel.setLayout(new BorderLayout());
         ListPanel.setBackground(Color.magenta);
@@ -36,10 +31,7 @@ public class GameListView extends JPanel{
 
         JPanel footerPanel = new JPanel();
         footerPanel.setLayout(new GridBagLayout());
-        //FooterPanel.setMinimumSize(new Dimension(10,50));
-        //FooterPanel.setPreferredSize(new Dimension(10,50));
         gameListViewPanel.add(footerPanel,BorderLayout.PAGE_END);
-        //FooterPanel.setBackground(Color.red);
 
         GridBagConstraints c = new GridBagConstraints();
         c.fill = GridBagConstraints.HORIZONTAL;
@@ -63,17 +55,17 @@ public class GameListView extends JPanel{
         this.add(gameListViewPanel);
     }
 
-
-    private static class GameTilePane extends JPanel{
-        BufferedImage bimg;
-        Image img;
+    private static class GameTile extends JPanel {
+        Game game;
+        BufferedImage img;
         String title;
-        int height = 180;
-        int width = 180;
-        GameTilePane(String pathToImage, String title){
-            this.setPreferredSize(new Dimension(200,200));
 
-            //panel = new JPanel();
+        GameTile(Game game) {
+            this.game = game;
+            this.title = game.getName();
+            this.img = game.GetThumbnail();
+
+            this.setPreferredSize(new Dimension(200, 200));
             this.setLayout(new GridBagLayout());
             this.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY));
             GridBagConstraints g = new GridBagConstraints();
@@ -83,22 +75,14 @@ public class GameListView extends JPanel{
             g.weightx = 1.0;
             g.weighty = 0.9;
 
-            try {
-                bimg = ImageIO.read(new File(pathToImage));
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            img = bimg.getScaledInstance(width,height, Image.SCALE_DEFAULT);
             ImageIcon icon = new ImageIcon(img);
             JLabel iconLabel = new JLabel(icon);
             this.add(iconLabel, g);
 
             JLabel gameLabel = new JLabel(title, SwingConstants.CENTER);
-            this.title = title;
             g.gridy = 1;
             g.weighty = 0.1;
             this.add(gameLabel, g);
-
             this.setVisible(true);
         }
     }
@@ -106,7 +90,7 @@ public class GameListView extends JPanel{
     public void showGames(ArrayList<Game> games) {
         ListPanel.removeAll();
 
-        GameTilePane tile;
+        GameTile tile;
         GridBagConstraints c = new GridBagConstraints();
         c.weightx = 0.0;
         c.weighty = 0.0;
@@ -117,7 +101,7 @@ public class GameListView extends JPanel{
 
         GridBagLayout layout = new GridBagLayout();
         JPanel GamesGrid = new JPanel(layout);
-            // iterate through the game list
+        // iterate through the game list
         int xCount = 0;
         int yCount = 0;
         for (Game game : games) {
@@ -129,9 +113,10 @@ public class GameListView extends JPanel{
             c.gridy = yCount;
 
             // for each game in the list, pass it to a game tile
-            tile = new GameTilePane("test.png", game.getName());
-            GamesGrid.add(tile, c);
+            tile = new GameTile(game);
 
+            tile.addMouseListener(this);
+            GamesGrid.add(tile, c);
             xCount += 1;
         }
 
@@ -139,14 +124,15 @@ public class GameListView extends JPanel{
                 GamesGrid,
                 ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
                 ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-        //InnerScrollingListPanel.setBackground(Color.cyan);
+        InnerScrollingListPanel.getVerticalScrollBar().setUnitIncrement(20);
         ListPanel.add(InnerScrollingListPanel);
         ListPanel.revalidate();
     }
 
-    void addSortComboListener(ActionListener listenForSort) {sortComboBox.addActionListener(listenForSort);}
-    void addSortDirectionComboListener(ActionListener listenForSort) {sortDirectionComboBox.addActionListener(listenForSort);}
-    void addSearchBarListener(ActionListener listenForSearch) {searchBar.addActionListener(listenForSearch);}
+    public void addSortComboListener(ActionListener listenForSort) {sortComboBox.addActionListener(listenForSort);}
+    public void addSortDirectionComboListener(ActionListener listenForSort) {sortDirectionComboBox.addActionListener(listenForSort);}
+    public void addSearchBarListener(ActionListener listenForSearch) {searchBar.addActionListener(listenForSearch);}
+
     public GameListController.gameListSortEnum getSortSelection() {
         return (GameListController.gameListSortEnum) sortComboBox.getSelectedItem();
     }
@@ -157,6 +143,49 @@ public class GameListView extends JPanel{
 
     public String getSearchBarText() {
         return searchBar.getText();
+    }
+
+    /**
+     * @param e the event to be processed
+     */
+    @Override
+    public void mouseClicked(MouseEvent e) {}
+
+    /**
+     * @param e the event to be processed
+     */
+    @Override
+    public void mousePressed(MouseEvent e) {
+        GameTile tile = (GameTile) e.getSource();
+        tile.setBackground(Color.gray);
+    }
+
+    /**
+     * @param e the event to be processed
+     */
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        GameTile tile = (GameTile) e.getSource();
+        tile.setBackground(null);
+        firePropertyChange("OPEN_GAME",null,tile.game);
+    }
+
+    /**
+     * @param e the event to be processed
+     */
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        GameTile tile = (GameTile) e.getSource();
+        tile.setBackground(Color.LIGHT_GRAY);
+    }
+
+    /**
+     * @param e the event to be processed
+     */
+    @Override
+    public void mouseExited(MouseEvent e) {
+        GameTile tile = (GameTile) e.getSource();
+        tile.setBackground(null);
     }
 
     public void UpdateView() {}

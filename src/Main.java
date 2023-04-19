@@ -1,7 +1,3 @@
-import java.awt.*;
-
-
-
 public class Main {
     public static void main(String[] args) {
         final String GAMEDATAXML_TEST = "simple1.xml";
@@ -21,7 +17,7 @@ public class Main {
         UserView userView = new UserView();
 
         HomeView homeView = new HomeView(gameListView, gameView, userView);
-        homeView.setVisible(true);
 
+        homeView.setVisible(true);
     }
 }

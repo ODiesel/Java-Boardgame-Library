@@ -2,16 +2,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 public class HomeView extends JFrame {
     private final JPanel HomePanelRight;
     private final JButton HomeButton;
     private final JButton GameDetailButton;
     private final JButton AccountButton;
-
+    private final GameView gameView;
     CardLayout HomePanelRightCardLayout;
 
     public HomeView(GameListView gameListView, GameView gameView, UserView userView) {
+        this.gameView = gameView;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1200,800);
         final JSplitPane splitPane1 = new JSplitPane();
@@ -56,19 +59,17 @@ public class HomeView extends JFrame {
         splitPane1.setRightComponent(HomePanelRight);
 
         gameListView.setLayout(new CardLayout(0, 0));
-        //gameListView.setBackground(new Color(-16056065));
+        gameListView.addPropertyChangeListener(new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent e) {
+                if (e.getPropertyName().equals("OPEN_GAME")) {
+                    var game = (Game)e.getNewValue();
+                    OpenGameDetailUI(game);
+                }
+            }
+        });
         HomePanelRight.add(gameListView, "GameCollectionCard");
-
-        //JPanel gameDetailPanel = new JPanel();
-        //gameDetailPanel.setLayout(new CardLayout(0, 0));
-        //gameDetailPanel.setBackground(new Color(-60672));
-        //HomePanelRight.add(gameDetailPanel, "GameDetailCard");
         HomePanelRight.add(gameView, "GameDetailCard");
-
-        //JPanel accountPanel = new JPanel();
-        //accountPanel.setLayout(new CardLayout(0, 0));
-        //accountPanel.setBackground(new Color(-16580864));
-        //HomePanelRight.add(accountPanel, "AccountCard");
         HomePanelRight.add(userView, "AccountCard");
 
         HomePanelRightCardLayout = (CardLayout) HomePanelRight.getLayout();
@@ -78,34 +79,39 @@ public class HomeView extends JFrame {
         addAccountButtonListener(new AccountButtonListener());
     }
 
+    private void OpenGameDetailUI(Game game){
+        this.gameView.SetGame(game);
+        this.gameView.UpdateView();
+        HomePanelRightCardLayout.show(HomePanelRight, "GameDetailCard");
+    }
 
-    void addHomeButtonListener(ActionListener listen) {
+    private void addHomeButtonListener(ActionListener listen) {
         HomeButton.addActionListener(listen);
     }
 
-    void addGameDetailsButtonListener(ActionListener listen) {
+    private void addGameDetailsButtonListener(ActionListener listen) {
         GameDetailButton.addActionListener(listen);
     }
 
-    void addAccountButtonListener(ActionListener listen) {
+    private void addAccountButtonListener(ActionListener listen) {
         AccountButton.addActionListener(listen);
     }
 
-    class HomeButtonListener implements ActionListener {
+    private class HomeButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             HomePanelRightCardLayout.show(HomePanelRight, "GameCollectionCard");
         }
     }
 
-    class GameDetailsButtonListener implements ActionListener {
+    private class GameDetailsButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             HomePanelRightCardLayout.show(HomePanelRight, "GameDetailCard");
         }
     }
 
-    class AccountButtonListener implements ActionListener {
+    private class AccountButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             HomePanelRightCardLayout.show(HomePanelRight, "AccountCard");
