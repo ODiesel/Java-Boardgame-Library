@@ -156,7 +156,17 @@ public class GameView extends JPanel {
 
         // Add panel to the frame
         this.setLayout(new BorderLayout());
-        this.add(panel, BorderLayout.CENTER);
+        //this.add(panel, BorderLayout.CENTER);
+
+        JScrollPane InnerScrollingListPanel = new JScrollPane(
+                panel,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        InnerScrollingListPanel.getVerticalScrollBar().setUnitIncrement(20);
+        this.add(InnerScrollingListPanel);
+        this.revalidate();
+        //ListPanel.add(InnerScrollingListPanel);
+        //ListPanel.revalidate();
     }
 
     public void SetGame(Game game) {

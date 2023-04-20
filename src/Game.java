@@ -4,13 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 
-// make all fields that shouldn't ever change final (if they can be always initialized)
-// make sure there aren't setters where there don't need to be
-// make getters of mutable types use clone instead of returning reference to actual data
-// strings are IMMUTABLE
-// in java, everything but strings are mutable by default
-// use assertions instead of checks?
-
 public class Game {
     final private String name;
     final private String id;
@@ -98,7 +91,6 @@ public class Game {
 
     public String getName() { return name; }
     public ReviewList getReviewList() {
-        // need to clone here and implement clone in the reviewList class
         return reviewList;
     }
     public String getType() {return type;}
