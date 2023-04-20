@@ -9,7 +9,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 public class UserView extends JPanel {
-    private final JFrame frame = new JFrame();
+    //private final JFrame frame = new JFrame();
     private final JLabel loginMessage = new JLabel("LOGIN");
     private final JLabel message = new JLabel("Please sign in with your username and password");
     private final JTextField usernameField = new JTextField("Username",15);
@@ -19,24 +19,24 @@ public class UserView extends JPanel {
     private String usernameInput;
     private String passwordInput;
     UserView(){
-        this.setBackground(new Color(-16580864));
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500,500);
-        frame.setLayout(null);
-        frame.setVisible(true);
+        //this.setBackground(new Color(-16580864));
+        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setSize(500,500);
+        //frame.setLayout(null);
+        this.setVisible(true);
 
         loginMessage.setFont(new Font(null, Font.PLAIN, 44));
         loginMessage.setHorizontalAlignment(SwingConstants.CENTER);
         loginMessage.setBounds(150, 100, 200, 50);
-        frame.add(loginMessage);
+        this.add(loginMessage);
 
         message.setFont(new Font(null, Font.PLAIN, 12));
         message.setHorizontalAlignment(SwingConstants.CENTER);
         message.setBounds(90, 140, 300, 50);
-        frame.add(message);
+        this.add(message);
 
         usernameField.setBounds(130, 195, 230, 30);
-        frame.add(usernameField);
+        this.add(usernameField);
 
         usernameField.addMouseListener(new MouseAdapter() {
             @Override
@@ -46,7 +46,7 @@ public class UserView extends JPanel {
         });
 
         passwordField.setBounds(130, 235, 230, 30);
-        frame.add(passwordField);
+        this.add(passwordField);
 
         passwordField.addMouseListener(new MouseAdapter() {
             @Override
@@ -59,14 +59,14 @@ public class UserView extends JPanel {
         signupMessage.setFont(new Font(null, Font.PLAIN, 16));
         signupMessage.setHorizontalAlignment(SwingConstants.CENTER);
         signupMessage.setBounds(125, 305, 230, 30);
-        frame.add(signupMessage);
+        this.add(signupMessage);
 
 
         signupButton.setFont(new Font(null, Font.PLAIN, 16));
         signupButton.setHorizontalAlignment(SwingConstants.CENTER);
         signupButton.setForeground(Color.BLUE);
         signupButton.setBounds(185, 335, 100, 30);
-        frame.add(signupButton);
+        this.add(signupButton);
 
         signupButton.addMouseListener(new MouseAdapter() {
             @Override
@@ -75,6 +75,8 @@ public class UserView extends JPanel {
                 OpenNewAccountUI();
             }
         });
+
+        this.revalidate();
     }
 
     public void keyPressed(KeyEvent e) {
