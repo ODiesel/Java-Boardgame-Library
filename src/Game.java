@@ -19,6 +19,8 @@ public class Game {
     private BufferedImage thumbnail;
     private BufferedImage image;
     private Image resizedImage;
+    public boolean favorite = false;
+
 
     public Game(String name, String id, String tnuri, String imguri, int pubyear , String description, int minPlayers, int maxPlayers) {
         this.name = name;

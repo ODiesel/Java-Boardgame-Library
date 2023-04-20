@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         final String GAMEDATAXML_TEST = "simple1.xml";
@@ -7,7 +10,11 @@ public class Main {
         DataManager data = new DataManager();
         data.loadGameDataXml(GAMEDATAXML_SAMPLE50);
 
+        ArrayList<GameList> collections = new ArrayList<GameList>();
         GameList primaryGameList = data.getPrimaryGameList();
+        GameList favorites = new GameList("Favorites");
+        collections.add(primaryGameList);
+        collections.add(favorites);
 
         GameListView gameListView = new GameListView();
         GameListController gameListController = new GameListController(primaryGameList,gameListView);
@@ -16,7 +23,8 @@ public class Main {
 
         UserView userView = new UserView();
 
-        HomeView homeView = new HomeView(gameListView, gameView, userView);
+        //HomeView homeView = new HomeView(gameListView, gameView, userView);
+        HomeView homeView = new HomeView(gameListController, gameView, userView, collections);
 
         homeView.setVisible(true);
     }

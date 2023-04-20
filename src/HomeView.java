@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
 
 public class HomeView extends JFrame {
     private final JPanel HomePanelRight;
@@ -11,9 +12,14 @@ public class HomeView extends JFrame {
     private final JButton GameDetailButton;
     private final JButton AccountButton;
     private final GameView gameView;
+    private final JPanel collectionPanel;
+    private ArrayList<GameList> collections;
+    private final GameListController gameListController;
     CardLayout HomePanelRightCardLayout;
 
-    public HomeView(GameListView gameListView, GameView gameView, UserView userView) {
+    public HomeView(GameListController gameListController, GameView gameView, UserView userView, ArrayList<GameList> collections) {
+        this.gameListController = gameListController;
+        this.collections = collections;
         this.gameView = gameView;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1200,800);
@@ -41,10 +47,12 @@ public class HomeView extends JFrame {
         homePanelLeft.add(HomeButton, c);
 
         GameDetailButton = new JButton();
-        GameDetailButton.setText("Game Detail");
+        //GameDetailButton.setText("Game Detail");
         c.gridy = 1;
         c.anchor = GridBagConstraints.CENTER;
-        homePanelLeft.add(GameDetailButton, c);
+        collectionPanel = new JPanel();
+        //homePanelLeft.add(GameDetailButton, c);
+        homePanelLeft.add(collectionPanel, c);
 
         AccountButton = new JButton();
         AccountButton.setText("Account");
@@ -58,6 +66,7 @@ public class HomeView extends JFrame {
         HomePanelRight.setPreferredSize(new Dimension(10, 10));
         splitPane1.setRightComponent(HomePanelRight);
 
+        GameListView gameListView = gameListController.GetGameListView();
         gameListView.setLayout(new CardLayout(0, 0));
         gameListView.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
@@ -69,6 +78,21 @@ public class HomeView extends JFrame {
             }
         });
         HomePanelRight.add(gameListView, "GameCollectionCard");
+        gameView.addPropertyChangeListener(new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent e) {
+                if (e.getPropertyName().equals("FAVORITE")) {
+                    Game game = (Game) e.getOldValue();
+                    Boolean favorite = (boolean)e.getNewValue();
+                    if(favorite){
+                        collections.get(1).addGame(game);
+                    }
+                    else{
+                        collections.get(1).removeGame(game);
+                    }
+                }
+            }
+        });
         HomePanelRight.add(gameView, "GameDetailCard");
         HomePanelRight.add(userView, "AccountCard");
 
@@ -77,6 +101,25 @@ public class HomeView extends JFrame {
         addHomeButtonListener(new HomeButtonListener());
         addGameDetailsButtonListener(new GameDetailsButtonListener());
         addAccountButtonListener(new AccountButtonListener());
+
+        JLabel collectionTitle = new JLabel("Collections");
+        collectionTitle.setHorizontalAlignment(SwingConstants.CENTER);
+        collectionPanel.setLayout(new GridBagLayout());
+        c = new GridBagConstraints();
+        c.fill = GridBagConstraints.HORIZONTAL;
+        c.weightx = 1.0;
+        c.gridx = 0;
+        c.gridy = 0;
+        Integer y = 0;
+        collectionPanel.add(collectionTitle, c);
+        for (GameList collection : collections){
+            JButton b = new JButton(collection.getName());
+            b.setName(Integer.toString(y));
+            y++;
+            c.gridy = y;
+            b.addActionListener(new CollectionButtonListener());
+            collectionPanel.add(b, c);
+        }
     }
 
     private void OpenGameDetailUI(Game game){
@@ -96,7 +139,23 @@ public class HomeView extends JFrame {
     private void addAccountButtonListener(ActionListener listen) {
         AccountButton.addActionListener(listen);
     }
+    private class CollectionButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JButton b = (JButton)e.getSource();
+            String title = b.getText();
+            //GameList found = FindGameListInCollections(collections, title);
+            int index = Integer.parseInt(b.getName());
+            GameList found = collections.get(index);
+            gameListController.setGameList(found);
+            gameListController.UpdateView();
+            HomePanelRightCardLayout.show(HomePanelRight, "GameCollectionCard");
+        }
+    }
 
+    private GameList FindGameListInCollections(ArrayList<GameList> collections, String name){
+        return collections.stream().filter(gameList -> name.equals(name)).findFirst().orElse(null);
+    }
     private class HomeButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {

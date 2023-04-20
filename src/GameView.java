@@ -32,7 +32,13 @@ public class GameView extends JPanel {
         gameDescriptionArea.setEditable(false);
 
         // Initialize the favorite button
-        isFavorite = false;
+        if(game == null){
+            isFavorite = false;
+        }
+        else{
+            isFavorite = game.favorite;
+        }
+
         favoriteButton = new JButton("Favorite");
         favoriteButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         favoriteButton.addActionListener(new ActionListener() {
@@ -171,6 +177,8 @@ public class GameView extends JPanel {
 
     public void SetGame(Game game) {
         this.game = game;
+        // Initialize the favorite button
+        favoriteButton.setText(game.favorite ? "Unfavorite" : "Favorite");
     }
 
     public void UpdateView() {
@@ -204,8 +212,10 @@ public class GameView extends JPanel {
         reviewPanel.repaint();
     }
     private void toggleFavorite() {
-        isFavorite = !isFavorite;
-        favoriteButton.setText(isFavorite ? "Unfavorite" : "Favorite");
+        //isFavorite = !isFavorite;
+        game.favorite = !game.favorite;
+                favoriteButton.setText(game.favorite ? "Unfavorite" : "Favorite");
+        firePropertyChange("FAVORITE",this.game,game.favorite);
     }
     // Remove the latest review from the review list
     private void removeReview() {

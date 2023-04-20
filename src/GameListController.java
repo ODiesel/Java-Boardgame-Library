@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class GameListController {
-    private final GameList model;
+    private GameList model;
     private final GameListView view;
     private sortDirectionEnum sortDirection;
     private gameListSortEnum sort;
@@ -23,6 +23,10 @@ public class GameListController {
         this.view.addSortComboListener(new SortListener());
         this.view.addSortDirectionComboListener(new SortDirectionListener());
         this.view.addSearchBarListener(new SearchBarListener());
+    }
+
+    public GameListView GetGameListView(){
+        return this.view;
     }
 
     class SortListener implements ActionListener {
@@ -63,7 +67,7 @@ public class GameListController {
     }
 
     public ArrayList<Game> getGameList() {return model.getGameList();}
-    public void setGameList(ArrayList<Game> gameList) {model.setGameList(gameList);}
+    public void setGameList(GameList gameList) {model = gameList;}
     public String getName() {return model.getName();}
     public void setName(String name) {model.setName(name);}
     public void addGame(Game game){model.addGame(game);}
@@ -76,7 +80,10 @@ public class GameListController {
     public void filterGameList() {model.filterGameList();}
     public void sortGameList(Comparator<Game> comp) {model.sortGameList(comp);}
     public void sortGameList(ArrayList<Game> gameList, Comparator<Game> comp) {model.sortGameList(gameList, comp);}
-    public void UpdateView(){view.UpdateView();}
+    public void UpdateView(){
+        updateGameList(model.getGameList());
+        view.UpdateView();
+    }
 
     // ViewGameDetails()
 
