@@ -41,26 +41,29 @@ public class GameDetailUI extends JFrame {
         // Create panel for adding reviews
         reviewInputPanel = new JPanel();
         reviewInputPanel.setLayout(new GridLayout(0, 2));
-        reviewTitleLabel = new JLabel("Title:");
+        reviewTitleLabel = new JLabel("Stars:");
         reviewInputPanel.add(reviewTitleLabel);
-        JTextField reviewTitleField = new JTextField();
-        reviewInputPanel.add(reviewTitleField);
-        reviewTextLabel = new JLabel("Text:");
+        JTextField starsField = new JTextField();
+        reviewInputPanel.add(starsField);
+        reviewTextLabel = new JLabel("Comment:");
         reviewInputPanel.add(reviewTextLabel);
         reviewTextArea = new JTextArea();
         reviewInputPanel.add(reviewTextArea);
         addReviewButton = new JButton("Add Review");
         reviewInputPanel.add(addReviewButton);
 
+
         // Add action listener to add review button
         addReviewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String title = reviewTitleField.getText();
+                /*String title = reviewTitleField.getText();
                 String text = reviewTextArea.getText();
-                Review review = new Review(title, text);
+                int numberOfStars = Integer.parseInt(starsField.getText());
+                Review review = new Review(numberOfStars, text);
                 addReview(review);
                 reviewTitleField.setText("");
                 reviewTextArea.setText("");
+                starsField.setText("");*/
             }
         });
 
@@ -100,9 +103,9 @@ public class GameDetailUI extends JFrame {
         reviews.add(review);
         JPanel reviewPanelItem = new JPanel();
         reviewPanelItem.setLayout(new BoxLayout(reviewPanelItem, BoxLayout.Y_AXIS));
-        JLabel titleLabel = new JLabel(review.getTitle());
-        JLabel textLabel = new JLabel(review.getText());
-        reviewPanelItem.add(titleLabel);
+        JLabel starsLabel = new JLabel("Stars: " + review.getNumberOfStars());
+        JLabel textLabel = new JLabel(review.getComment());
+        reviewPanelItem.add(starsLabel);
         reviewPanelItem.add(textLabel);
         reviewList.add(reviewPanelItem);
         reviewPanel.add(reviewPanelItem);
@@ -122,7 +125,7 @@ public class GameDetailUI extends JFrame {
         }
     }
 
-    // Class to represent a game review
+    /* Class to represent a game review
     private class Review {
         private String title;
         private String text;
@@ -139,5 +142,5 @@ public class GameDetailUI extends JFrame {
         public String getText() {
             return text;
         }
-    }
+    }*/
 }

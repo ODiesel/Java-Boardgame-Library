@@ -12,7 +12,7 @@ public class Main {
         GameListView gameListView = new GameListView();
         GameListController gameListController = new GameListController(primaryGameList,gameListView);
 
-        GameView gameView = new GameView();
+        GameView gameView = new GameView("Default Title", "Default Genre", "Default Release Date", "Default Description");
 
         UserView userView = new UserView();
 
