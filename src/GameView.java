@@ -17,6 +17,8 @@ public class GameView extends JPanel {
     private ReviewListView reviewListView;
     private ReviewListController reviewListController;
     private final int padding = 10;
+    private JButton favoriteButton;
+    private boolean isFavorite;
 
     GameView(String title, String genre, String releaseDate, String description) {
         reviewList = new ReviewList();
@@ -29,18 +31,40 @@ public class GameView extends JPanel {
         gameDescriptionArea = new JTextArea(description);
         gameDescriptionArea.setEditable(false);
 
+        // Initialize the favorite button
+        isFavorite = false;
+        favoriteButton = new JButton("Favorite");
+        favoriteButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        favoriteButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                toggleFavorite();
+            }
+        });
+
+
+
+
         // Create panel for reviews
         reviewPanel = new JPanel();
         reviewPanel.setLayout(new BoxLayout(reviewPanel, BoxLayout.Y_AXIS));
 
+
+
         // Set layout and add components to the panel
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+
+        // Add favorite button to the panel
+        panel.add(Box.createRigidArea(new Dimension(0, padding))); // Add some space between components
+        panel.add(favoriteButton);
+
         // Add padding around the panel
         panel.setBorder(BorderFactory.createEmptyBorder(padding, padding, padding, padding));
+
         // Customize game title label
         gameTitleLabel.setFont(new Font("Arial", Font.BOLD, 18));
         gameTitleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         // Center the game icon
         gameIconLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
@@ -88,6 +112,7 @@ public class GameView extends JPanel {
         panel.add(Box.createRigidArea(new Dimension(0, padding))); // Add some space between components
         panel.add(reviewInputPanel);
         panel.add(Box.createRigidArea(new Dimension(0, padding))); // Add some space between components
+
 
         this.setLayout(new BorderLayout());
         this.add(panel, BorderLayout.CENTER);
@@ -168,7 +193,10 @@ public class GameView extends JPanel {
         reviewPanel.revalidate();
         reviewPanel.repaint();
     }
-
+    private void toggleFavorite() {
+        isFavorite = !isFavorite;
+        favoriteButton.setText(isFavorite ? "Unfavorite" : "Favorite");
+    }
     // Remove the latest review from the review list
     private void removeReview() {
         if (!reviewListController.getReviewList().isEmpty()) {
