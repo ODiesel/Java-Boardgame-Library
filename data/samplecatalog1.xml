@@ -3,8 +3,8 @@
 <item type="boardgame" id="379005">
 <thumbnail>https://cf.geekdo-images.com/cFHnRZtfgB9XNWaw46bQ4Q__thumb/img/tPedQESQaqWqwZakkmsBMx0YIZI=/fit-in/200x150/filters:strip_icc()/pic7302419.png</thumbnail>
 <image>https://cf.geekdo-images.com/cFHnRZtfgB9XNWaw46bQ4Q__original/img/iwBGBRSQ3Qz6HN3rxIAp-ebxoYQ=/0x0/filters:format(png)/pic7302419.png</image>
-<name type="primary" sortindex="5" value="The Lord of the Rings Adventure Book Game"/>
-<description>In The Lord of the Rings Adventure Book Game, &#226;&#128;&#139;&#226;&#128;&#139;Sauron's shadow has fallen across Middle-earth, and the One Ring must be destroyed. In order to complete their daunting quest, players need to work together to help cherished Lord of the Rings characters journey from The Shire to the fires of Mordor, all while avoiding the Eye of Sauron.&#10;&#10;This third entry into Ravensburger's &quot;adventure book&quot; line is broken into eight &quot;chapters&quot; that are experienced over eight different board game &quot;pages&quot;. Each new chapter provides puzzles and challenges that players need to overcome to advance the story. The game allows for flexible play for solo or co-operative family gaming, so players can choose their style of adventure, and each chapter takes approximately twenty minutes to play.&#10;&#10;</description>
+<name type="primary" sortindex="5" value="The Lord of the Rings Adventure Book gamelibrary.Game"/>
+<description>In The Lord of the Rings Adventure Book gamelibrary.Game, &#226;&#128;&#139;&#226;&#128;&#139;Sauron's shadow has fallen across Middle-earth, and the One Ring must be destroyed. In order to complete their daunting quest, players need to work together to help cherished Lord of the Rings characters journey from The Shire to the fires of Mordor, all while avoiding the Eye of Sauron.&#10;&#10;This third entry into Ravensburger's &quot;adventure book&quot; line is broken into eight &quot;chapters&quot; that are experienced over eight different board game &quot;pages&quot;. Each new chapter provides puzzles and challenges that players need to overcome to advance the story. The game allows for flexible play for solo or co-operative family gaming, so players can choose their style of adventure, and each chapter takes approximately twenty minutes to play.&#10;&#10;</description>
 <yearpublished value="2023"/>
 <minplayers value="1"/>
 <maxplayers value="4"/>
@@ -65,12 +65,12 @@
 </results>
 </poll>
 <link type="boardgamecategory" id="1093" value="Novel-based"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
-<link type="boardgamefamily" id="78462" value="Adventure Book Game (Ravensburger)"/>
+<link type="boardgamefamily" id="78462" value="Adventure Book gamelibrary.Game (Ravensburger)"/>
 <link type="boardgamefamily" id="4263" value="Authors: J.R.R. Tolkien"/>
 <link type="boardgamefamily" id="62475" value="Components: Book as Board"/>
-<link type="boardgameimplementation" id="316750" value="The Princess Bride Adventure Book Game" inbound="true"/>
+<link type="boardgameimplementation" id="316750" value="The Princess Bride Adventure Book gamelibrary.Game" inbound="true"/>
 <link type="boardgamedesigner" id="4786" value="Jason Little"/>
 <link type="boardgamedesigner" id="69968" value="Marcus Ross"/>
 <link type="boardgamepublisher" id="34" value="Ravensburger"/>
@@ -224,7 +224,7 @@
 <link type="boardgamecategory" id="1001" value="Political"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamemechanic" id="2017" value="Voting"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
@@ -318,7 +318,7 @@
 <link type="boardgamedesigner" id="65581" value="Matthew O'Malley"/>
 <link type="boardgamedesigner" id="60749" value="Ben Rosset"/>
 <link type="boardgameartist" id="136732" value="Anh Le Art"/>
-<link type="boardgamepublisher" id="28072" value="Renegade Game Studios"/>
+<link type="boardgamepublisher" id="28072" value="Renegade gamelibrary.Game Studios"/>
 </item>
 <item type="boardgame" id="366013">
 <thumbnail>https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png</thumbnail>
@@ -486,18 +486,18 @@
 <link type="boardgamecategory" id="1047" value="Miniatures"/>
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
 <link type="boardgamemechanic" id="2893" value="Communication Limits"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
 <link type="boardgamemechanic" id="2676" value="Grid Movement"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
-<link type="boardgamemechanic" id="2824" value="Legacy Game"/>
+<link type="boardgamemechanic" id="2824" value="Legacy gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
-<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2846" value="Once-Per-gamelibrary.Game Abilities"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
 <link type="boardgamefamily" id="59218" value="Category: Dungeon Crawler"/>
@@ -506,7 +506,7 @@
 <link type="boardgamefamily" id="66335" value="Components: Standees"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
-<link type="boardgamefamily" id="45610" value="Game: Gloomhaven"/>
+<link type="boardgamefamily" id="45610" value="gamelibrary.Game: Gloomhaven"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="25404" value="Mechanism: Legacy"/>
 <link type="boardgamefamily" id="75241" value="Misc: Forteller Audio Narration"/>
@@ -701,20 +701,20 @@
 <link type="boardgamecategory" id="1089" value="Animals"/>
 <link type="boardgamecategory" id="1021" value="Economic"/>
 <link type="boardgamecategory" id="1084" value="Environmental"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3100" value="Tags"/>
 <link type="boardgamemechanic" id="2002" value="Tile Placement"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamefamily" id="67874" value="Components: Hexagonal Tiles"/>
-<link type="boardgamefamily" id="76649" value="Game: Ark Nova"/>
+<link type="boardgamefamily" id="76649" value="gamelibrary.Game: Ark Nova"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="68335" value="Theme: Ecology"/>
 <link type="boardgamefamily" id="66167" value="Theme: Science"/>
@@ -729,7 +729,7 @@
 <link type="boardgamepublisher" id="22380" value="Feuerland Spiele"/>
 <link type="boardgamepublisher" id="30958" value="Capstone Games"/>
 <link type="boardgamepublisher" id="10768" value="Cranio Creations"/>
-<link type="boardgamepublisher" id="12540" value="Game Harbor"/>
+<link type="boardgamepublisher" id="12540" value="gamelibrary.Game Harbor"/>
 <link type="boardgamepublisher" id="8820" value="Gém Klub Kft."/>
 <link type="boardgamepublisher" id="17179" value="IGAMES"/>
 <link type="boardgamepublisher" id="8291" value="Korea Boardgames Co., Ltd."/>
@@ -745,11 +745,11 @@
 <item type="boardgame" id="311988">
 <thumbnail>https://cf.geekdo-images.com/YYfgspTCAgBC0rqbD4U3pQ__thumb/img/y3eTVayRzfZrS5FPeh-egX_uFW8=/fit-in/200x150/filters:strip_icc()/pic7247536.jpg</thumbnail>
 <image>https://cf.geekdo-images.com/YYfgspTCAgBC0rqbD4U3pQ__original/img/vdnpP4PPsidTc7lBMnBBSujQMZc=/0x0/filters:format(jpeg)/pic7247536.jpg</image>
-<name type="primary" sortindex="1" value="Frostpunk: The Board Game"/>
+<name type="primary" sortindex="1" value="Frostpunk: The Board gamelibrary.Game"/>
 <name type="alternate" sortindex="1" value="Frostpunk: Das Brettspiel"/>
 <name type="alternate" sortindex="1" value="Frostpunk: Desková hra"/>
 <name type="alternate" sortindex="1" value="프로스트펑크: 더 보드게임"/>
-<description>In Frostpunk: The Board Game, up to four players will take on the role of leaders of a small colony of survivors in a post-apocalyptic world that was hit by a severe ice age. Their duty is to effectively manage both its infrastructure and citizens. The core gameplay will be brutal, challenging, and complex, but easy to learn. The citizens won&apos;t just be speechless pieces on the board. Society members will issue demands and react accordingly to the current mood, so every decision and action bears consequences.&#10;&#10;The players will decide the fate of their people. Will you treat them like another resource? Are you going to be an inspiring builder, a fearless explorer, or a bright scientist? Is your rule going to be a sting of tyranny or an era of law and equality?&#10;&#10;The game is based on a bestseller video game by 11bit studios, the creators of This War Of Mine. The original (digital) edition of Frostpunk is a highly successful strategy-survival-city-builder, a BAFTA-nominee that originally launched in 2018.&#10;&#10; description from the publisher&#10;&#10;</description>
+<description>In Frostpunk: The Board gamelibrary.Game, up to four players will take on the role of leaders of a small colony of survivors in a post-apocalyptic world that was hit by a severe ice age. Their duty is to effectively manage both its infrastructure and citizens. The core gameplay will be brutal, challenging, and complex, but easy to learn. The citizens won&apos;t just be speechless pieces on the board. Society members will issue demands and react accordingly to the current mood, so every decision and action bears consequences.&#10;&#10;The players will decide the fate of their people. Will you treat them like another resource? Are you going to be an inspiring builder, a fearless explorer, or a bright scientist? Is your rule going to be a sting of tyranny or an era of law and equality?&#10;&#10;The game is based on a bestseller video game by 11bit studios, the creators of This War Of Mine. The original (digital) edition of Frostpunk is a highly successful strategy-survival-city-builder, a BAFTA-nominee that originally launched in 2018.&#10;&#10; description from the publisher&#10;&#10;</description>
 <yearpublished value="2022"/>
 <minplayers value="1"/>
 <maxplayers value="4"/>
@@ -812,20 +812,20 @@
 <link type="boardgamecategory" id="1029" value="City Building"/>
 <link type="boardgamecategory" id="1021" value="Economic"/>
 <link type="boardgamecategory" id="1020" value="Exploration"/>
-<link type="boardgamecategory" id="1101" value="Video Game Theme"/>
+<link type="boardgamecategory" id="1101" value="Video gamelibrary.Game Theme"/>
 <link type="boardgamemechanic" id="2840" value="Action/Event"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2990" value="Cube Tower"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2933" value="Worker Placement, Different Worker Types"/>
 <link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!"/>
 <link type="boardgamefamily" id="25158" value="Components: Miniatures"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
 <link type="boardgamefamily" id="41799" value="Theme: Post-Apocalyptic"/>
-<link type="boardgameexpansion" id="323382" value="Frostpunk: The Board Game – Frostlander"/>
+<link type="boardgameexpansion" id="323382" value="Frostpunk: The Board gamelibrary.Game – Frostlander"/>
 <link type="boardgamedesigner" id="61569" value="Adam Kwapiński"/>
 <link type="boardgameartist" id="42856" value="Agnieszka Dabrowiecka"/>
 <link type="boardgamepublisher" id="45860" value="Glass Cannon Unplugged"/>
@@ -837,7 +837,7 @@
 <link type="boardgamepublisher" id="41030" value="Lotus Frog Games"/>
 <link type="boardgamepublisher" id="30677" value="Maldito Games"/>
 <link type="boardgamepublisher" id="39" value="Pegasus Spiele"/>
-<link type="boardgamepublisher" id="27654" value="Pendragon Game Studio"/>
+<link type="boardgamepublisher" id="27654" value="Pendragon gamelibrary.Game Studio"/>
 <link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o."/>
 </item>
 <item type="boardgame" id="316554">
@@ -921,7 +921,7 @@
 <link type="boardgamemechanic" id="2864" value="Force Commitment"/>
 <link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2686" value="Take That"/>
 <link type="boardgamemechanic" id="2828" value="Turn Order: Progressive"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
@@ -930,7 +930,7 @@
 <link type="boardgamefamily" id="59705" value="Misc: LongPack Games"/>
 <link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
-<link type="boardgameexpansion" id="368867" value="Dire Wolf Game Room"/>
+<link type="boardgameexpansion" id="368867" value="Dire Wolf gamelibrary.Game Room"/>
 <link type="boardgameexpansion" id="343598" value="Dune: Imperium – Boundless Ambition Promo Card"/>
 <link type="boardgameexpansion" id="345692" value="Dune: Imperium – Duncan, Loyal Blade"/>
 <link type="boardgameexpansion" id="367466" value="Dune: Imperium – Immortality"/>

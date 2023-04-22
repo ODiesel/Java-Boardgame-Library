@@ -1,3 +1,5 @@
+package gamelibrary;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -53,11 +55,20 @@ public class GameList {
         gameListToSort.sort(comp);
     }
     public void printGameList(){
-        if(gameList.isEmpty()) {System.out.println("Game list: " + name + " is empty!!");}
+        if(gameList.isEmpty()) {System.out.println("gamelibrary.Game list: " + name + " is empty!!");}
         else{
             System.out.println("Printing " + gameList.size() + " games from game list: " + name);
             for (Game g : gameList) {System.out.println(g.toString());}
             System.out.println();
         }
+    }
+
+    public Game findGameInList(String gameTitle){
+        for (Game game:gameList) {
+            if(gameTitle.equals(game.getName())){
+                return game;
+            }
+        }
+        return null;
     }
 }

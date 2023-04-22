@@ -1,3 +1,5 @@
+package gamelibrary;
+
 public class ReviewController {
     private final Review model;
     private final ReviewView view;

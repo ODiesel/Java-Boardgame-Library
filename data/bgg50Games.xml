@@ -2,8 +2,8 @@
 <item type="boardgame" id="374173">
 <thumbnail>https://cf.geekdo-images.com/U6scsOGrPtVym4nCLaYjyw__thumb/img/0kgu-vLB9MQStlEyaR6bgKkemAQ=/fit-in/200x150/filters:strip_icc()/pic7387735.png</thumbnail>
 <image>https://cf.geekdo-images.com/U6scsOGrPtVym4nCLaYjyw__original/img/bPFq87JbA919A2vxks_PFF2DwsY=/0x0/filters:format(png)/pic7387735.png</image>
-<name type="primary" sortindex="1" value="Star Wars: The Deckbuilding Game"/>
-<description>The Rebel Alliance fights valiantly against the tyranny of the Galactic Empire. Each new victory brings the Rebels hope, and each heroic sacrifice strengthens their resolve. Still, the Empire's resources are vast, and the firepower of its Empire Navy is unmatched. With neither side willing to accept defeat, their war rages across the galaxy...&#10;&#10;In Star Wars: The Deckbuilding Game, a head-to-head game for two players, the galaxy-spanning war between the Galactic Empire and the Rebel Alliance comes alive on your tabletop. In this easy-to-learn game, you and your opponent each choose a side, playing as either the Empire or the Rebels, and as the game progresses you both strengthen the power of your starting decks and work to destroy each other's bases. The first player to destroy three of their opponent's bases wins.&#10;&#10;In more detail, each player starts with a unique ten-card deck, with seven of those cards providing only resources to acquire new cards. Six cards from a galaxy deck are always on display, with Rebel cards facing the Rebel player, Empire cards the Empire player, and neutral cards turned sideways. You can spend resources to acquire cards in the galaxy row that don't belong to the opponent, and you can use attack power to take out cards that do belong to them, gaining a reward in the process.&#10;&#10;Each player starts with a base that lacks abilities (Dantooine for the Rebels and Lothal for the Empire), but when that base is destroyed, you get to choose a replacement from your base deck, with each base having a special ability. Choose wisely to counter your opponent's plans! In addition to having special abilities, capital ships absorb damage meant for your base.&#10;&#10;Players also fight for control of a Force track to gain additional resources or make use of &quot;If the Force is with you...&quot; abilities on their cards.&#10;&#10;</description>
+<name type="primary" sortindex="1" value="Star Wars: The Deckbuilding gamelibrary.Game"/>
+<description>The Rebel Alliance fights valiantly against the tyranny of the Galactic Empire. Each new victory brings the Rebels hope, and each heroic sacrifice strengthens their resolve. Still, the Empire's resources are vast, and the firepower of its Empire Navy is unmatched. With neither side willing to accept defeat, their war rages across the galaxy...&#10;&#10;In Star Wars: The Deckbuilding gamelibrary.Game, a head-to-head game for two players, the galaxy-spanning war between the Galactic Empire and the Rebel Alliance comes alive on your tabletop. In this easy-to-learn game, you and your opponent each choose a side, playing as either the Empire or the Rebels, and as the game progresses you both strengthen the power of your starting decks and work to destroy each other's bases. The first player to destroy three of their opponent's bases wins.&#10;&#10;In more detail, each player starts with a unique ten-card deck, with seven of those cards providing only resources to acquire new cards. Six cards from a galaxy deck are always on display, with Rebel cards facing the Rebel player, Empire cards the Empire player, and neutral cards turned sideways. You can spend resources to acquire cards in the galaxy row that don't belong to the opponent, and you can use attack power to take out cards that do belong to them, gaining a reward in the process.&#10;&#10;Each player starts with a base that lacks abilities (Dantooine for the Rebels and Lothal for the Empire), but when that base is destroyed, you get to choose a replacement from your base deck, with each base having a special ability. Choose wisely to counter your opponent's plans! In addition to having special abilities, capital ships absorb damage meant for your base.&#10;&#10;Players also fight for control of a Force track to gain additional resources or make use of &quot;If the Force is with you...&quot; abilities on their cards.&#10;&#10;</description>
 <yearpublished value="2023"/>
 <minplayers value="2"/>
 <maxplayers value="2"/>
@@ -53,7 +53,7 @@
 <result level="5" value="Unplayable in another language" numvotes="0"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
@@ -163,7 +163,7 @@
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2008" value="Trading"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
-<link type="boardgamefamily" id="3" value="Game: Catan"/>
+<link type="boardgamefamily" id="3" value="gamelibrary.Game: Catan"/>
 <link type="boardgamefamily" id="5551" value="Sports: Football / Soccer"/>
 <link type="boardgameexpansion" id="13" value="CATAN" inbound="true"/>
 <link type="boardgamedesigner" id="11" value="Klaus Teuber"/>
@@ -220,13 +220,13 @@
 </poll>
 <poll name="language_dependence" title="Language Dependence" totalvotes="0"> </poll>
 <link type="boardgamecategory" id="1022" value="Adventure"/>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1010" value="Fantasy"/>
 <link type="boardgamecategory" id="1047" value="Miniatures"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
 <link type="boardgamefamily" id="7005" value="Creatures: Dragons"/>
 <link type="boardgamedesigner" id="115236" value="Kamil 'Sanex' Cieśla"/>
@@ -431,7 +431,7 @@
 <link type="boardgameartist" id="125200" value="Madeleine Fjäll"/>
 <link type="boardgameartist" id="128040" value="Anne Isaksson"/>
 <link type="boardgameartist" id="125415" value="Josefin Strand"/>
-<link type="boardgamepublisher" id="28765" value="Ion Game Design"/>
+<link type="boardgamepublisher" id="28765" value="Ion gamelibrary.Game Design"/>
 </item>
 <item type="boardgame" id="295770">
 <thumbnail>https://cf.geekdo-images.com/iEBr5o8AbJi9V9cgQcYROQ__thumb/img/a_VDlLgE8s8bfaQKwHlHu2KoQwo=/fit-in/200x150/filters:strip_icc()/pic6177719.jpg</thumbnail>
@@ -504,18 +504,18 @@
 <link type="boardgamecategory" id="1047" value="Miniatures"/>
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
 <link type="boardgamemechanic" id="2893" value="Communication Limits"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
 <link type="boardgamemechanic" id="2676" value="Grid Movement"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
-<link type="boardgamemechanic" id="2824" value="Legacy Game"/>
+<link type="boardgamemechanic" id="2824" value="Legacy gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
-<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2846" value="Once-Per-gamelibrary.Game Abilities"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="59218" value="Category: Dungeon Crawler"/>
 <link type="boardgamefamily" id="25158" value="Components: Miniatures"/>
@@ -523,7 +523,7 @@
 <link type="boardgamefamily" id="66335" value="Components: Standees"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
-<link type="boardgamefamily" id="45610" value="Game: Gloomhaven"/>
+<link type="boardgamefamily" id="45610" value="gamelibrary.Game: Gloomhaven"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="25404" value="Mechanism: Legacy"/>
 <link type="boardgamefamily" id="75241" value="Misc: Forteller Audio Narration"/>
@@ -623,16 +623,16 @@
 </results>
 </poll>
 <link type="boardgamecategory" id="1089" value="Animals"/>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1084" value="Environmental"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamemechanic" id="2874" value="Victory Points as a Resource"/>
 <link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
 <link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia"/>
 <link type="boardgamedesigner" id="85519" value="Maxime Tardif"/>
@@ -829,10 +829,10 @@
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia"/>
 <link type="boardgamefamily" id="26397" value="Food and Drink: Beer"/>
-<link type="boardgamefamily" id="57499" value="Game: Brass"/>
+<link type="boardgamefamily" id="57499" value="gamelibrary.Game: Brass"/>
 <link type="boardgamefamily" id="50152" value="History: Industrial Revolution"/>
 <link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos"/>
-<link type="boardgamefamily" id="4705" value="Organizations: The Game Artisans of Canada"/>
+<link type="boardgamefamily" id="4705" value="Organizations: The gamelibrary.Game Artisans of Canada"/>
 <link type="boardgamefamily" id="66445" value="Theme: Canals"/>
 <link type="boardgameaccessory" id="334571" value="Brass: Birmingham / Lancashire – reDrewno Insert"/>
 <link type="boardgameaccessory" id="373838" value="Brass Birmingham: Spike Craft Insert"/>
@@ -840,7 +840,7 @@
 <link type="boardgameaccessory" id="306354" value="Brass: Birmingham / Lancashire – Folded Space Insert"/>
 <link type="boardgameaccessory" id="350761" value="Brass: Birmingham – Dicetroyers Organizer"/>
 <link type="boardgameaccessory" id="309493" value="Brass: Birmingham – e-Raptor Insert"/>
-<link type="boardgameaccessory" id="347407" value="Brass: Birmingham – Game Tamer Organizer"/>
+<link type="boardgameaccessory" id="347407" value="Brass: Birmingham – gamelibrary.Game Tamer Organizer"/>
 <link type="boardgameaccessory" id="339385" value="Brass: Birmingham – Laserox Organizer"/>
 <link type="boardgameaccessory" id="348604" value="Brass: Birmingham – The GiftForge Insert"/>
 <link type="boardgameaccessory" id="340345" value="Brass: Birmingham – TowerRex Organizer"/>
@@ -944,20 +944,20 @@
 <link type="boardgamecategory" id="1089" value="Animals"/>
 <link type="boardgamecategory" id="1021" value="Economic"/>
 <link type="boardgamecategory" id="1084" value="Environmental"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3100" value="Tags"/>
 <link type="boardgamemechanic" id="2002" value="Tile Placement"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamefamily" id="67874" value="Components: Hexagonal Tiles"/>
-<link type="boardgamefamily" id="76649" value="Game: Ark Nova"/>
+<link type="boardgamefamily" id="76649" value="gamelibrary.Game: Ark Nova"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="68335" value="Theme: Ecology"/>
 <link type="boardgamefamily" id="66167" value="Theme: Science"/>
@@ -965,7 +965,7 @@
 <link type="boardgameexpansion" id="368966" value="Ark Nova: Aquarius"/>
 <link type="boardgameexpansion" id="368158" value="Ark Nova: Zoo Map Pack 1"/>
 <link type="boardgameaccessory" id="366502" value="Ark Nova: BGExpansions Full Upgrade Kit"/>
-<link type="boardgameaccessory" id="365692" value="Ark Nova: Board Game Amplifier Acrylic Overlay"/>
+<link type="boardgameaccessory" id="365692" value="Ark Nova: Board gamelibrary.Game Amplifier Acrylic Overlay"/>
 <link type="boardgameaccessory" id="375802" value="Ark Nova: Eurohell Design Coffee Mug"/>
 <link type="boardgameaccessory" id="357875" value="Ark Nova: Eurohell Design Insert"/>
 <link type="boardgameaccessory" id="366164" value="Ark Nova: Eurohell Design Upgrade Coins"/>
@@ -985,7 +985,7 @@
 <link type="boardgamepublisher" id="30958" value="Capstone Games"/>
 <link type="boardgamepublisher" id="21608" value="CMON Global Limited"/>
 <link type="boardgamepublisher" id="10768" value="Cranio Creations"/>
-<link type="boardgamepublisher" id="12540" value="Game Harbor"/>
+<link type="boardgamepublisher" id="12540" value="gamelibrary.Game Harbor"/>
 <link type="boardgamepublisher" id="8820" value="Gém Klub Kft."/>
 <link type="boardgamepublisher" id="17179" value="IGAMES"/>
 <link type="boardgamepublisher" id="8291" value="Korea Boardgames Co., Ltd."/>
@@ -1080,17 +1080,17 @@
 <link type="boardgamemechanic" id="2864" value="Force Commitment"/>
 <link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2686" value="Take That"/>
 <link type="boardgamemechanic" id="2828" value="Turn Order: Progressive"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
 <link type="boardgamefamily" id="5838" value="Books: Dune"/>
-<link type="boardgamefamily" id="79009" value="Game: Dune: Imperium"/>
+<link type="boardgamefamily" id="79009" value="gamelibrary.Game: Dune: Imperium"/>
 <link type="boardgamefamily" id="59705" value="Misc: LongPack Games"/>
 <link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
-<link type="boardgameexpansion" id="368867" value="Dire Wolf Game Room"/>
+<link type="boardgameexpansion" id="368867" value="Dire Wolf gamelibrary.Game Room"/>
 <link type="boardgameexpansion" id="343598" value="Dune: Imperium – Boundless Ambition Promo Card"/>
 <link type="boardgameexpansion" id="345692" value="Dune: Imperium – Duncan, Loyal Blade"/>
 <link type="boardgameexpansion" id="367466" value="Dune: Imperium – Immortality"/>
@@ -1187,13 +1187,13 @@
 <result level="5" value="Unplayable in another language" numvotes="0"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1010" value="Fantasy"/>
 <link type="boardgamecategory" id="1035" value="Medieval"/>
 <link type="boardgamemechanic" id="2014" value="Betting and Bluffing"/>
 <link type="boardgamemechanic" id="2906" value="I Cut, You Choose"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede"/>
 <link type="boardgamefamily" id="61979" value="Players: Two Player Only Games"/>
@@ -1293,12 +1293,12 @@
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
 <link type="boardgamemechanic" id="2903" value="Automatic Resource Growth"/>
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamefamily" id="66553" value="Components: Control Boards"/>
@@ -1308,7 +1308,7 @@
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="78432" value="Digital Implementation: Google Play"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
-<link type="boardgamefamily" id="46174" value="Game: Spirit Island"/>
+<link type="boardgamefamily" id="46174" value="gamelibrary.Game: Spirit Island"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="21622" value="Theme: Colonial"/>
 <link type="boardgameexpansion" id="193065" value="Spirit Island: Branch and Claw"/>
@@ -1326,7 +1326,7 @@
 <link type="boardgameexpansion" id="275756" value="Spirit Island: Unter der Insel schlummernde Schlange"/>
 <link type="boardgameaccessory" id="273036" value="Spirit Island: Basically Wooden Organiser"/>
 <link type="boardgameaccessory" id="372965" value="Spirit Island: Branch and Claw – Premium Foil Spirit Panels"/>
-<link type="boardgameaccessory" id="314281" value="Spirit Island: Broken Token Game Crate"/>
+<link type="boardgameaccessory" id="314281" value="Spirit Island: Broken Token gamelibrary.Game Crate"/>
 <link type="boardgameaccessory" id="314280" value="Spirit Island: Broken Token Organizer"/>
 <link type="boardgameaccessory" id="356604" value="Spirit Island: Deluxe Invader Board"/>
 <link type="boardgameaccessory" id="309476" value="Spirit Island: e-Raptor Insert"/>
@@ -1450,7 +1450,7 @@
 <link type="boardgamecategory" id="1015" value="Civilization"/>
 <link type="boardgamecategory" id="1088" value="Industry / Manufacturing"/>
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards"/>
@@ -1542,16 +1542,16 @@
 <link type="boardgamecategory" id="1010" value="Fantasy"/>
 <link type="boardgamemechanic" id="2001" value="Action Points"/>
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2078" value="Point to Point Movement"/>
-<link type="boardgamemechanic" id="2019" value="Team-Based Game"/>
+<link type="boardgamemechanic" id="2019" value="Team-Based gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="77906" value="Category: Dized Tutorial"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia"/>
-<link type="boardgamefamily" id="56770" value="Game: Cerebria"/>
+<link type="boardgamefamily" id="56770" value="gamelibrary.Game: Cerebria"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="65832" value="Theme: Psychology"/>
 <link type="boardgameexpansion" id="259988" value="Cerebria: The Inside World – Forces of Balance"/>
@@ -1635,14 +1635,14 @@
 <link type="boardgamecategory" id="1021" value="Economic"/>
 <link type="boardgamecategory" id="1033" value="Mafia"/>
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamemechanic" id="2933" value="Worker Placement, Different Worker Types"/>
 <link type="boardgamefamily" id="18227" value="Cities: Chicago (Illinois, USA)"/>
-<link type="boardgamefamily" id="48877" value="Components: Game Trayz Inside"/>
+<link type="boardgamefamily" id="48877" value="Components: gamelibrary.Game Trayz Inside"/>
 <link type="boardgamefamily" id="25158" value="Components: Miniatures"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede"/>
@@ -1738,20 +1738,20 @@
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
 <link type="boardgamemechanic" id="2857" value="Card Play Conflict Resolution"/>
 <link type="boardgamemechanic" id="2893" value="Communication Limits"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2854" value="Critical Hits and Failures"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2676" value="Grid Movement"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
-<link type="boardgamemechanic" id="2824" value="Legacy Game"/>
+<link type="boardgamemechanic" id="2824" value="Legacy gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2975" value="Line of Sight"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
-<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities"/>
+<link type="boardgamemechanic" id="2846" value="Once-Per-gamelibrary.Game Abilities"/>
 <link type="boardgamemechanic" id="2028" value="Role Playing"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2027" value="Storytelling"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="59218" value="Category: Dungeon Crawler"/>
@@ -1764,7 +1764,7 @@
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
-<link type="boardgamefamily" id="45610" value="Game: Gloomhaven"/>
+<link type="boardgamefamily" id="45610" value="gamelibrary.Game: Gloomhaven"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="25404" value="Mechanism: Legacy"/>
 <link type="boardgamefamily" id="75241" value="Misc: Forteller Audio Narration"/>
@@ -1907,16 +1907,16 @@
 <link type="boardgamecategory" id="1024" value="Horror"/>
 <link type="boardgamecategory" id="1047" value="Miniatures"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
 <link type="boardgamemechanic" id="2891" value="Hidden Roles"/>
 <link type="boardgamemechanic" id="2685" value="Player Elimination"/>
-<link type="boardgamemechanic" id="2820" value="Semi-Cooperative Game"/>
-<link type="boardgamemechanic" id="2814" value="Traitor Game"/>
+<link type="boardgamemechanic" id="2820" value="Semi-Cooperative gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2814" value="Traitor gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
 <link type="boardgamefamily" id="66292" value="Crowdfunding: Gamefound"/>
-<link type="boardgamefamily" id="57925" value="Game: Nemesis"/>
+<link type="boardgamefamily" id="57925" value="gamelibrary.Game: Nemesis"/>
 <link type="boardgamedesigner" id="61569" value="Adam Kwapiński"/>
 <link type="boardgamepublisher" id="29412" value="Awaken Realms"/>
 </item>
@@ -2008,13 +2008,13 @@
 <link type="boardgamemechanic" id="2912" value="Contracts"/>
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
 <link type="boardgamemechanic" id="3099" value="Multi-Use Cards"/>
-<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities"/>
+<link type="boardgamemechanic" id="2846" value="Once-Per-gamelibrary.Game Abilities"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2948" value="Resource to Move"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2828" value="Turn Order: Progressive"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
 <link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="21940" value="Theme: Archaeology / Paleontology"/>
@@ -2166,12 +2166,12 @@
 <link type="boardgamemechanic" id="2984" value="Closed Drafting"/>
 <link type="boardgamemechanic" id="2912" value="Contracts"/>
 <link type="boardgamemechanic" id="2043" value="Enclosure"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3100" value="Tags"/>
 <link type="boardgamemechanic" id="2686" value="Take That"/>
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
@@ -2185,7 +2185,7 @@
 <link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards"/>
 <link type="boardgamefamily" id="78432" value="Digital Implementation: Google Play"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
-<link type="boardgamefamily" id="46915" value="Game: Terraforming Mars"/>
+<link type="boardgamefamily" id="46915" value="gamelibrary.Game: Terraforming Mars"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="49694" value="Setting: Future Timeline (Fryxgames)"/>
@@ -2250,7 +2250,7 @@
 <link type="boardgameaccessory" id="375798" value="Terraforming Mars: Eurohell Design 3D Tokens"/>
 <link type="boardgameaccessory" id="263728" value="Terraforming Mars: Folded Space Insert"/>
 <link type="boardgameaccessory" id="326364" value="Terraforming Mars: Folded Space Insert (Second edition)"/>
-<link type="boardgameaccessory" id="215570" value="Terraforming Mars: Game Trayz Player Mat"/>
+<link type="boardgameaccessory" id="215570" value="Terraforming Mars: gamelibrary.Game Trayz Player Mat"/>
 <link type="boardgameaccessory" id="278695" value="Terraforming Mars: Gathering of Friends Promo Card"/>
 <link type="boardgameaccessory" id="365387" value="Terraforming Mars: Hellas – Big Board Edition"/>
 <link type="boardgameaccessory" id="271967" value="Terraforming Mars: Insert Here Insert"/>
@@ -2271,7 +2271,7 @@
 <link type="boardgameaccessory" id="267171" value="Terraforming Mars: Tower Rex Organizer"/>
 <link type="boardgameaccessory" id="312375" value="Terraforming Mars: Trade Fleets and Chairman Seat"/>
 <link type="boardgameimplementation" id="328871" value="Terraforming Mars: Ares Expedition"/>
-<link type="boardgameimplementation" id="296108" value="Terraforming Mars: The Dice Game"/>
+<link type="boardgameimplementation" id="296108" value="Terraforming Mars: The Dice gamelibrary.Game"/>
 <link type="boardgamedesigner" id="52075" value="Jacob Fryxelius"/>
 <link type="boardgameartist" id="62819" value="Isaac Fryxelius"/>
 <link type="boardgamepublisher" id="18575" value="FryxGames"/>
@@ -2374,7 +2374,7 @@
 <link type="boardgamecategory" id="2725" value="Pike and Shot"/>
 <link type="boardgamecategory" id="1001" value="Political"/>
 <link type="boardgamecategory" id="1070" value="Renaissance"/>
-<link type="boardgamecategory" id="1101" value="Video Game Theme"/>
+<link type="boardgamecategory" id="1101" value="Video gamelibrary.Game Theme"/>
 <link type="boardgamecategory" id="1019" value="Wargame"/>
 <link type="boardgamemechanic" id="2001" value="Action Points"/>
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
@@ -2382,7 +2382,7 @@
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamefamily" id="22184" value="Admin: Upcoming Releases"/>
 <link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)"/>
 <link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards"/>
@@ -2492,16 +2492,16 @@
 </results>
 </poll>
 <link type="boardgamecategory" id="1089" value="Animals"/>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1094" value="Educational"/>
 <link type="boardgamemechanic" id="2912" value="Contracts"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
-<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities"/>
+<link type="boardgamemechanic" id="2846" value="Once-Per-gamelibrary.Game Abilities"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2828" value="Turn Order: Progressive"/>
 <link type="boardgamefamily" id="45672" value="Animals: Birds"/>
 <link type="boardgamefamily" id="7657" value="Animals: Crows / Ravens / Magpies"/>
@@ -2513,13 +2513,13 @@
 <link type="boardgamefamily" id="66553" value="Components: Control Boards"/>
 <link type="boardgamefamily" id="65328" value="Components: Dice with Icons"/>
 <link type="boardgamefamily" id="66772" value="Components: Drop Tower"/>
-<link type="boardgamefamily" id="48877" value="Components: Game Trayz Inside"/>
+<link type="boardgamefamily" id="48877" value="Components: gamelibrary.Game Trayz Inside"/>
 <link type="boardgamefamily" id="78432" value="Digital Implementation: Google Play"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
 <link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia"/>
-<link type="boardgamefamily" id="58267" value="Game: Wingspan"/>
+<link type="boardgamefamily" id="58267" value="gamelibrary.Game: Wingspan"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
 <link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos"/>
@@ -2533,7 +2533,7 @@
 <link type="boardgameexpansion" id="300580" value="Wingspan: Oceania Expansion"/>
 <link type="boardgameexpansion" id="290837" value="Wingspan: Swift-Start Promo Pack"/>
 <link type="boardgameaccessory" id="337694" value="Wingspan: reDrewno Insert"/>
-<link type="boardgameaccessory" id="347405" value="Wingspan + European and Oceania expansion: Game Tamer Organizer"/>
+<link type="boardgameaccessory" id="347405" value="Wingspan + European and Oceania expansion: gamelibrary.Game Tamer Organizer"/>
 <link type="boardgameaccessory" id="279529" value="Wingspan: Birdhouse Upgrade Kit (40 pcs)"/>
 <link type="boardgameaccessory" id="288012" value="Wingspan: Broken Token Organizer"/>
 <link type="boardgameaccessory" id="319459" value="Wingspan: Card Update Pack"/>
@@ -2561,10 +2561,10 @@
 <link type="boardgameaccessory" id="366363" value="Wingspan: Oceania Expansion – Momo Monster 70-Piece Nectar Upgrade Set"/>
 <link type="boardgameaccessory" id="365816" value="Wingspan: Oceania Expansion – Tower Rex 48-Piece Wooden Nectar Token Set"/>
 <link type="boardgameaccessory" id="331898" value="Wingspan: Pair of Single-Sided Neoprene Goal Mats"/>
-<link type="boardgameaccessory" id="308103" value="Wingspan: Shipshape Game Box Organizer"/>
+<link type="boardgameaccessory" id="308103" value="Wingspan: Shipshape gamelibrary.Game Box Organizer"/>
 <link type="boardgameaccessory" id="343462" value="Wingspan: Shipshape Gamer Owl Player Markers"/>
 <link type="boardgameaccessory" id="339260" value="Wingspan: Speckled Eggs"/>
-<link type="boardgameaccessory" id="305000" value="Wingspan: The Game Doctors Insert"/>
+<link type="boardgameaccessory" id="305000" value="Wingspan: The gamelibrary.Game Doctors Insert"/>
 <link type="boardgameaccessory" id="348603" value="Wingspan: The GiftForge Insert"/>
 <link type="boardgameaccessory" id="365817" value="Wingspan: Tower Rex 105-Piece Wooden Food Token Set"/>
 <link type="boardgameaccessory" id="365812" value="Wingspan: Tower Rex 40-Piece Player Token Set"/>
@@ -2609,7 +2609,7 @@
 <item type="boardgame" id="285774">
 <thumbnail>https://cf.geekdo-images.com/kRvUgYiaOq07kC67ZK5UoQ__thumb/img/SDNWntiB06KhAINl06CDPkoipDc=/fit-in/200x150/filters:strip_icc()/pic4900321.jpg</thumbnail>
 <image>https://cf.geekdo-images.com/kRvUgYiaOq07kC67ZK5UoQ__original/img/cqng0e4S7Cj6j6Sb49-OCggGi-8=/0x0/filters:format(jpeg)/pic4900321.jpg</image>
-<name type="primary" sortindex="1" value="Marvel Champions: The Card Game"/>
+<name type="primary" sortindex="1" value="Marvel Champions: The Card gamelibrary.Game"/>
 <name type="alternate" sortindex="1" value="Marvel Champions: Das Kartenspiel"/>
 <name type="alternate" sortindex="1" value="Marvel Champions: El Juego de Cartas"/>
 <name type="alternate" sortindex="1" value="Marvel Champions: Il Gioco di Carte"/>
@@ -2680,76 +2680,76 @@
 <result level="10" value="Unplayable in another language" numvotes="8"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1044" value="Collectible Components"/>
 <link type="boardgamecategory" id="1116" value="Comic Book / Strip"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
-<link type="boardgamefamily" id="5337" value="Collectible: Living Card Game (Fantasy Flight Games)"/>
+<link type="boardgamefamily" id="5337" value="Collectible: Living Card gamelibrary.Game (Fantasy Flight Games)"/>
 <link type="boardgamefamily" id="5338" value="Comic Books: Marvel Universe"/>
-<link type="boardgamefamily" id="58605" value="Game: Marvel Champions – The Card Game"/>
+<link type="boardgamefamily" id="58605" value="gamelibrary.Game: Marvel Champions – The Card gamelibrary.Game"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="17935" value="Theme: Superheroes"/>
-<link type="boardgameexpansion" id="315981" value="Marvel Champions: The Card Game – Ant-Man Hero Pack"/>
-<link type="boardgameexpansion" id="299049" value="Marvel Champions: The Card Game – Black Widow Hero Pack"/>
-<link type="boardgameexpansion" id="289222" value="Marvel Champions: The Card Game – Captain America Hero Pack"/>
-<link type="boardgameexpansion" id="365913" value="Marvel Champions: The Card Game – Cyclops Hero Pack"/>
-<link type="boardgameexpansion" id="300878" value="Marvel Champions: The Card Game – Doctor Strange Hero Pack"/>
-<link type="boardgameexpansion" id="333748" value="Marvel Champions: The Card Game – Drax Hero Pack"/>
-<link type="boardgameexpansion" id="372718" value="Marvel Champions: The Card Game – Gambit Hero Pack"/>
-<link type="boardgameexpansion" id="333154" value="Marvel Champions: The Card Game – Gamora Hero Pack"/>
-<link type="boardgameexpansion" id="303708" value="Marvel Champions: The Card Game – Hulk Hero Pack"/>
-<link type="boardgameexpansion" id="357957" value="Marvel Champions: The Card Game – Ironheart Hero Pack"/>
-<link type="boardgameexpansion" id="316224" value="Marvel Champions: The Card Game – Kree Fanatic Modular Set"/>
-<link type="boardgameexpansion" id="368736" value="Marvel Champions: The Card Game – MojoMania Scenario Pack"/>
-<link type="boardgameexpansion" id="291432" value="Marvel Champions: The Card Game – Ms. Marvel Hero Pack"/>
-<link type="boardgameexpansion" id="363709" value="Marvel Champions: The Card Game – Mutant Genesis"/>
-<link type="boardgameexpansion" id="340900" value="Marvel Champions: The Card Game – Nebula Hero Pack"/>
-<link type="boardgameexpansion" id="356075" value="Marvel Champions: The Card Game – Nova Hero Pack"/>
-<link type="boardgameexpansion" id="366645" value="Marvel Champions: The Card Game – Phoenix Hero Pack"/>
-<link type="boardgameexpansion" id="316694" value="Marvel Champions: The Card Game – Quicksilver Hero Pack"/>
-<link type="boardgameexpansion" id="374986" value="Marvel Champions: The Card Game – Rogue Hero Pack"/>
-<link type="boardgameexpansion" id="316695" value="Marvel Champions: The Card Game – Scarlet Witch Hero Pack"/>
-<link type="boardgameexpansion" id="347813" value="Marvel Champions: The Card Game – Sinister Motives"/>
-<link type="boardgameexpansion" id="361485" value="Marvel Champions: The Card Game – SP//dr Hero Pack"/>
-<link type="boardgameexpansion" id="360060" value="Marvel Champions: The Card Game – Spider-Ham Hero Pack"/>
-<link type="boardgameexpansion" id="330615" value="Marvel Champions: The Card Game – Star-Lord Hero Pack"/>
-<link type="boardgameexpansion" id="370237" value="Marvel Champions: The Card Game – Storm Hero Pack"/>
-<link type="boardgameexpansion" id="315896" value="Marvel Champions: The Card Game – The Galaxy's Most Wanted"/>
-<link type="boardgameexpansion" id="288794" value="Marvel Champions: The Card Game – The Green Goblin Scenario Pack"/>
-<link type="boardgameexpansion" id="343017" value="Marvel Champions: The Card Game – The Hood Scenario Pack"/>
-<link type="boardgameexpansion" id="339711" value="Marvel Champions: The Card Game – The Mad Titan's Shadow"/>
-<link type="boardgameexpansion" id="314028" value="Marvel Champions: The Card Game – The Once and Future Kang Scenario Pack"/>
-<link type="boardgameexpansion" id="306430" value="Marvel Champions: The Card Game – The Rise of Red Skull"/>
-<link type="boardgameexpansion" id="347812" value="Marvel Champions: The Card Game – The Vision Hero Pack"/>
-<link type="boardgameexpansion" id="294306" value="Marvel Champions: The Card Game – The Wrecking Crew Scenario Pack"/>
-<link type="boardgameexpansion" id="295782" value="Marvel Champions: The Card Game – Thor Hero Pack"/>
-<link type="boardgameexpansion" id="345587" value="Marvel Champions: The Card Game – Valkyrie Hero Pack"/>
-<link type="boardgameexpansion" id="335739" value="Marvel Champions: The Card Game – Venom Hero Pack"/>
-<link type="boardgameexpansion" id="342671" value="Marvel Champions: The Card Game – War Machine Hero Pack"/>
-<link type="boardgameexpansion" id="316696" value="Marvel Champions: The Card Game – Wasp Hero Pack"/>
-<link type="boardgameexpansion" id="369039" value="Marvel Champions: The Card Game – Wolverine Hero Pack"/>
-<link type="boardgameaccessory" id="334738" value="Marvel Champions: The Card Game – reDrewno Insert"/>
+<link type="boardgameexpansion" id="315981" value="Marvel Champions: The Card gamelibrary.Game – Ant-Man Hero Pack"/>
+<link type="boardgameexpansion" id="299049" value="Marvel Champions: The Card gamelibrary.Game – Black Widow Hero Pack"/>
+<link type="boardgameexpansion" id="289222" value="Marvel Champions: The Card gamelibrary.Game – Captain America Hero Pack"/>
+<link type="boardgameexpansion" id="365913" value="Marvel Champions: The Card gamelibrary.Game – Cyclops Hero Pack"/>
+<link type="boardgameexpansion" id="300878" value="Marvel Champions: The Card gamelibrary.Game – Doctor Strange Hero Pack"/>
+<link type="boardgameexpansion" id="333748" value="Marvel Champions: The Card gamelibrary.Game – Drax Hero Pack"/>
+<link type="boardgameexpansion" id="372718" value="Marvel Champions: The Card gamelibrary.Game – Gambit Hero Pack"/>
+<link type="boardgameexpansion" id="333154" value="Marvel Champions: The Card gamelibrary.Game – Gamora Hero Pack"/>
+<link type="boardgameexpansion" id="303708" value="Marvel Champions: The Card gamelibrary.Game – Hulk Hero Pack"/>
+<link type="boardgameexpansion" id="357957" value="Marvel Champions: The Card gamelibrary.Game – Ironheart Hero Pack"/>
+<link type="boardgameexpansion" id="316224" value="Marvel Champions: The Card gamelibrary.Game – Kree Fanatic Modular Set"/>
+<link type="boardgameexpansion" id="368736" value="Marvel Champions: The Card gamelibrary.Game – MojoMania Scenario Pack"/>
+<link type="boardgameexpansion" id="291432" value="Marvel Champions: The Card gamelibrary.Game – Ms. Marvel Hero Pack"/>
+<link type="boardgameexpansion" id="363709" value="Marvel Champions: The Card gamelibrary.Game – Mutant Genesis"/>
+<link type="boardgameexpansion" id="340900" value="Marvel Champions: The Card gamelibrary.Game – Nebula Hero Pack"/>
+<link type="boardgameexpansion" id="356075" value="Marvel Champions: The Card gamelibrary.Game – Nova Hero Pack"/>
+<link type="boardgameexpansion" id="366645" value="Marvel Champions: The Card gamelibrary.Game – Phoenix Hero Pack"/>
+<link type="boardgameexpansion" id="316694" value="Marvel Champions: The Card gamelibrary.Game – Quicksilver Hero Pack"/>
+<link type="boardgameexpansion" id="374986" value="Marvel Champions: The Card gamelibrary.Game – Rogue Hero Pack"/>
+<link type="boardgameexpansion" id="316695" value="Marvel Champions: The Card gamelibrary.Game – Scarlet Witch Hero Pack"/>
+<link type="boardgameexpansion" id="347813" value="Marvel Champions: The Card gamelibrary.Game – Sinister Motives"/>
+<link type="boardgameexpansion" id="361485" value="Marvel Champions: The Card gamelibrary.Game – SP//dr Hero Pack"/>
+<link type="boardgameexpansion" id="360060" value="Marvel Champions: The Card gamelibrary.Game – Spider-Ham Hero Pack"/>
+<link type="boardgameexpansion" id="330615" value="Marvel Champions: The Card gamelibrary.Game – Star-Lord Hero Pack"/>
+<link type="boardgameexpansion" id="370237" value="Marvel Champions: The Card gamelibrary.Game – Storm Hero Pack"/>
+<link type="boardgameexpansion" id="315896" value="Marvel Champions: The Card gamelibrary.Game – The Galaxy's Most Wanted"/>
+<link type="boardgameexpansion" id="288794" value="Marvel Champions: The Card gamelibrary.Game – The Green Goblin Scenario Pack"/>
+<link type="boardgameexpansion" id="343017" value="Marvel Champions: The Card gamelibrary.Game – The Hood Scenario Pack"/>
+<link type="boardgameexpansion" id="339711" value="Marvel Champions: The Card gamelibrary.Game – The Mad Titan's Shadow"/>
+<link type="boardgameexpansion" id="314028" value="Marvel Champions: The Card gamelibrary.Game – The Once and Future Kang Scenario Pack"/>
+<link type="boardgameexpansion" id="306430" value="Marvel Champions: The Card gamelibrary.Game – The Rise of Red Skull"/>
+<link type="boardgameexpansion" id="347812" value="Marvel Champions: The Card gamelibrary.Game – The Vision Hero Pack"/>
+<link type="boardgameexpansion" id="294306" value="Marvel Champions: The Card gamelibrary.Game – The Wrecking Crew Scenario Pack"/>
+<link type="boardgameexpansion" id="295782" value="Marvel Champions: The Card gamelibrary.Game – Thor Hero Pack"/>
+<link type="boardgameexpansion" id="345587" value="Marvel Champions: The Card gamelibrary.Game – Valkyrie Hero Pack"/>
+<link type="boardgameexpansion" id="335739" value="Marvel Champions: The Card gamelibrary.Game – Venom Hero Pack"/>
+<link type="boardgameexpansion" id="342671" value="Marvel Champions: The Card gamelibrary.Game – War Machine Hero Pack"/>
+<link type="boardgameexpansion" id="316696" value="Marvel Champions: The Card gamelibrary.Game – Wasp Hero Pack"/>
+<link type="boardgameexpansion" id="369039" value="Marvel Champions: The Card gamelibrary.Game – Wolverine Hero Pack"/>
+<link type="boardgameaccessory" id="334738" value="Marvel Champions: The Card gamelibrary.Game – reDrewno Insert"/>
 <link type="boardgameaccessory" id="367230" value="Arkham Edge Laserox Organizer"/>
 <link type="boardgameaccessory" id="363007" value="Marvel Champions: GeekMod Box and Insert"/>
-<link type="boardgameaccessory" id="308580" value="Marvel Champions: The Card Game – 1-4 Player Game Mat"/>
-<link type="boardgameaccessory" id="360155" value="Marvel Champions: The Card Game – 2020 First Story Kit"/>
-<link type="boardgameaccessory" id="360154" value="Marvel Champions: The Card Game – 2020 Open Play Kit – Season 1"/>
-<link type="boardgameaccessory" id="360157" value="Marvel Champions: The Card Game – 2021 Open Play Kit: Season 2"/>
-<link type="boardgameaccessory" id="306371" value="Marvel Champions: The Card Game – Broken Token Organizer"/>
-<link type="boardgameaccessory" id="360159" value="Marvel Champions: The Card Game – Fall 2021 Promos"/>
-<link type="boardgameaccessory" id="310079" value="Marvel Champions: The Card Game – Folded Space Insert"/>
-<link type="boardgameaccessory" id="299546" value="Marvel Champions: The Card Game – Gen Con Alternate Art Promos"/>
-<link type="boardgameaccessory" id="306130" value="Marvel Champions: The Card Game – Laserox Champions Chest"/>
-<link type="boardgameaccessory" id="295292" value="Marvel Champions: The Card Game – Launch Kit Alternate Art Promos"/>
-<link type="boardgameaccessory" id="314737" value="Marvel Champions: The Card Game – Single Player Mat"/>
-<link type="boardgameaccessory" id="365820" value="Marvel Champions: The Card Game – Tower Rex Organizer"/>
+<link type="boardgameaccessory" id="308580" value="Marvel Champions: The Card gamelibrary.Game – 1-4 Player gamelibrary.Game Mat"/>
+<link type="boardgameaccessory" id="360155" value="Marvel Champions: The Card gamelibrary.Game – 2020 First Story Kit"/>
+<link type="boardgameaccessory" id="360154" value="Marvel Champions: The Card gamelibrary.Game – 2020 Open Play Kit – Season 1"/>
+<link type="boardgameaccessory" id="360157" value="Marvel Champions: The Card gamelibrary.Game – 2021 Open Play Kit: Season 2"/>
+<link type="boardgameaccessory" id="306371" value="Marvel Champions: The Card gamelibrary.Game – Broken Token Organizer"/>
+<link type="boardgameaccessory" id="360159" value="Marvel Champions: The Card gamelibrary.Game – Fall 2021 Promos"/>
+<link type="boardgameaccessory" id="310079" value="Marvel Champions: The Card gamelibrary.Game – Folded Space Insert"/>
+<link type="boardgameaccessory" id="299546" value="Marvel Champions: The Card gamelibrary.Game – Gen Con Alternate Art Promos"/>
+<link type="boardgameaccessory" id="306130" value="Marvel Champions: The Card gamelibrary.Game – Laserox Champions Chest"/>
+<link type="boardgameaccessory" id="295292" value="Marvel Champions: The Card gamelibrary.Game – Launch Kit Alternate Art Promos"/>
+<link type="boardgameaccessory" id="314737" value="Marvel Champions: The Card gamelibrary.Game – Single Player Mat"/>
+<link type="boardgameaccessory" id="365820" value="Marvel Champions: The Card gamelibrary.Game – Tower Rex Organizer"/>
 <link type="boardgamedesigner" id="119800" value="Michael Boggs"/>
 <link type="boardgamedesigner" id="11655" value="Nate French"/>
 <link type="boardgamedesigner" id="69895" value="Caleb Grace"/>
@@ -2765,7 +2765,7 @@
 <item type="boardgame" id="205637">
 <thumbnail>https://cf.geekdo-images.com/B5F5ulz0UivNgrI9Ky0euA__thumb/img/L8ouPl5jv2Ye9MC4R_Os2zSGigE=/fit-in/200x150/filters:strip_icc()/pic3122349.jpg</thumbnail>
 <image>https://cf.geekdo-images.com/B5F5ulz0UivNgrI9Ky0euA__original/img/guEKCewM_2e5ugltSN3dTSwdZJI=/0x0/filters:format(jpeg)/pic3122349.jpg</image>
-<name type="primary" sortindex="1" value="Arkham Horror: The Card Game"/>
+<name type="primary" sortindex="1" value="Arkham Horror: The Card gamelibrary.Game"/>
 <name type="alternate" sortindex="1" value="Arkham Horror: Das Kartenspiel"/>
 <name type="alternate" sortindex="1" value="Arkham Horror: El Juego de Cartas"/>
 <name type="alternate" sortindex="1" value="Arkham Horror: Il Gioco di Carte"/>
@@ -2828,7 +2828,7 @@
 </results>
 </poll>
 <link type="boardgamecategory" id="1022" value="Adventure"/>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1044" value="Collectible Components"/>
 <link type="boardgamecategory" id="1020" value="Exploration"/>
 <link type="boardgamecategory" id="1024" value="Horror"/>
@@ -2836,7 +2836,7 @@
 <link type="boardgamemechanic" id="2001" value="Action Points"/>
 <link type="boardgamemechanic" id="2046" value="Area Movement"/>
 <link type="boardgamemechanic" id="2893" value="Communication Limits"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2850" value="Events"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
@@ -2844,143 +2844,143 @@
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
 <link type="boardgamemechanic" id="2661" value="Push Your Luck"/>
 <link type="boardgamemechanic" id="2028" value="Role Playing"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2853" value="Stat Check Resolution"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
-<link type="boardgamefamily" id="5337" value="Collectible: Living Card Game (Fantasy Flight Games)"/>
-<link type="boardgamefamily" id="41421" value="Game: Arkham Horror – The Card Game"/>
+<link type="boardgamefamily" id="5337" value="Collectible: Living Card gamelibrary.Game (Fantasy Flight Games)"/>
+<link type="boardgamefamily" id="41421" value="gamelibrary.Game: Arkham Horror – The Card gamelibrary.Game"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="4311" value="Series: Arkham Horror Files (Fantasy Flight Games)"/>
 <link type="boardgamefamily" id="5141" value="Theme: Cthulhu Mythos"/>
 <link type="boardgamefamily" id="62258" value="Versions and Editions: Card Versions of Non-Card Games"/>
-<link type="boardgameexpansion" id="379286" value="Alice in Wonderland (Fan expansion for Arkham Horror Card Game)"/>
-<link type="boardgameexpansion" id="327293" value="Arkham Horror: The Card Game – A Light in the Fog: Mythos Pack"/>
-<link type="boardgameexpansion" id="235542" value="Arkham Horror: The Card Game – A Phantom of Truth: Mythos Pack"/>
-<link type="boardgameexpansion" id="288607" value="Arkham Horror: The Card Game – A Thousand Shapes of Horror: Mythos Pack"/>
-<link type="boardgameexpansion" id="317014" value="Arkham Horror: The Card Game – All or Nothing: Challenge Scenario"/>
-<link type="boardgameexpansion" id="326045" value="Arkham Horror: The Card Game – Bad Blood: Challenge Scenario"/>
-<link type="boardgameexpansion" id="276291" value="Arkham Horror: The Card Game – Before the Black Throne: Mythos Pack"/>
-<link type="boardgameexpansion" id="316188" value="Arkham Horror: The Card Game – Beta Card from Gen Con Online 2020"/>
-<link type="boardgameexpansion" id="238530" value="Arkham Horror: The Card Game – Beta Cards from Arkham Night 2017"/>
-<link type="boardgameexpansion" id="275585" value="Arkham Horror: The Card Game – Beta Cards from Arkham Night 2018"/>
-<link type="boardgameexpansion" id="301760" value="Arkham Horror: The Card Game – Beta Cards from Arkham Night 2019"/>
-<link type="boardgameexpansion" id="348234" value="Arkham Horror: The Card Game – Beta Cards from Arkham Night 2020"/>
-<link type="boardgameexpansion" id="239330" value="Arkham Horror: The Card Game – Black Stars Rise: Mythos Pack"/>
-<link type="boardgameexpansion" id="216556" value="Arkham Horror: The Card Game – Blood on the Altar: Mythos Pack"/>
-<link type="boardgameexpansion" id="340953" value="Arkham Horror: The Card Game – By the Book: Challenge Scenario"/>
-<link type="boardgameexpansion" id="215510" value="Arkham Horror: The Card Game – Carnevale of Horrors: Scenario Pack"/>
-<link type="boardgameexpansion" id="247404" value="Arkham Horror: The Card Game – Carolyn Fern Promo Cards"/>
-<link type="boardgameexpansion" id="209728" value="Arkham Horror: The Card Game – Curse of the Rougarou: Scenario Pack"/>
-<link type="boardgameexpansion" id="291559" value="Arkham Horror: The Card Game – Dark Side of the Moon: Mythos Pack"/>
-<link type="boardgameexpansion" id="318023" value="Arkham Horror: The Card Game – Devil Reef: Mythos Pack"/>
-<link type="boardgameexpansion" id="298128" value="Arkham Horror: The Card Game – Dexter Drake Promo Cards"/>
-<link type="boardgameexpansion" id="242088" value="Arkham Horror: The Card Game – Dim Carcosa: Mythos Pack"/>
-<link type="boardgameexpansion" id="228778" value="Arkham Horror: The Card Game – Echoes of the Past: Mythos Pack"/>
-<link type="boardgameexpansion" id="340035" value="Arkham Horror: The Card Game – Edge of the Earth: Campaign Expansion"/>
-<link type="boardgameexpansion" id="340036" value="Arkham Horror: The Card Game – Edge of the Earth: Investigator Expansion"/>
-<link type="boardgameexpansion" id="267974" value="Arkham Horror: The Card Game – For the Greater Good: Mythos Pack"/>
-<link type="boardgameexpansion" id="372720" value="Arkham Horror: The Card Game – Fortune and Folly: Scenario Pack"/>
-<link type="boardgameexpansion" id="318833" value="Arkham Horror: The Card Game – Gloria Goldberg Promo Cards"/>
-<link type="boardgameexpansion" id="252899" value="Arkham Horror: The Card Game – Guardians of the Abyss: Scenario Pack"/>
-<link type="boardgameexpansion" id="305512" value="Arkham Horror: The Card Game – Harvey Walters: Investigator Starter Deck"/>
-<link type="boardgameexpansion" id="251733" value="Arkham Horror: The Card Game – Heart of the Elders: Mythos Pack"/>
-<link type="boardgameexpansion" id="324765" value="Arkham Horror: The Card Game – Horror in High Gear: Mythos Pack"/>
-<link type="boardgameexpansion" id="272752" value="Arkham Horror: The Card Game – In The Clutches of Chaos: Mythos Pack"/>
-<link type="boardgameexpansion" id="318022" value="Arkham Horror: The Card Game – In Too Deep: Mythos Pack"/>
-<link type="boardgameexpansion" id="328627" value="Arkham Horror: The Card Game – Into the Maelstrom: Mythos Pack"/>
-<link type="boardgameexpansion" id="305517" value="Arkham Horror: The Card Game – Jacqueline Fine: Investigator Starter Deck"/>
-<link type="boardgameexpansion" id="237424" value="Arkham Horror: The Card Game – Jenny Barnes Promo Cards"/>
-<link type="boardgameexpansion" id="224363" value="Arkham Horror: The Card Game – Lost in Time and Space: Mythos Pack"/>
-<link type="boardgameexpansion" id="347147" value="Arkham Horror: The Card Game – Machinations Through Time: Scenario Pack"/>
-<link type="boardgameexpansion" id="226690" value="Arkham Horror: The Card Game – Marie Lambeau Promo Cards"/>
-<link type="boardgameexpansion" id="284354" value="Arkham Horror: The Card Game – Murder at the Excelsior Hotel: Scenario Pack"/>
-<link type="boardgameexpansion" id="305509" value="Arkham Horror: The Card Game – Nathaniel Cho: Investigator Starter Deck"/>
-<link type="boardgameexpansion" id="241622" value="Arkham Horror: The Card Game – Norman Withers Promo Cards"/>
-<link type="boardgameexpansion" id="293271" value="Arkham Horror: The Card Game – Point of No Return: Mythos Pack"/>
-<link type="boardgameexpansion" id="309374" value="Arkham Horror: The Card Game – Read or Die: Challenge Scenario"/>
-<link type="boardgameexpansion" id="354504" value="Arkham Horror: The Card Game – Red Tide Rising: Challenge Scenario"/>
-<link type="boardgameexpansion" id="333025" value="Arkham Horror: The Card Game – Return to the Circle Undone"/>
-<link type="boardgameexpansion" id="260311" value="Arkham Horror: The Card Game – Return to the Dunwich Legacy"/>
-<link type="boardgameexpansion" id="302213" value="Arkham Horror: The Card Game – Return to the Forgotten Age"/>
-<link type="boardgameexpansion" id="244145" value="Arkham Horror: The Card Game – Return to the Night of the Zealot"/>
-<link type="boardgameexpansion" id="279196" value="Arkham Horror: The Card Game – Return to the Path to Carcosa"/>
-<link type="boardgameexpansion" id="247331" value="Arkham Horror: The Card Game – Roland Banks Promo Cards"/>
-<link type="boardgameexpansion" id="257240" value="Arkham Horror: The Card Game – Shattered Aeons: Mythos Pack"/>
-<link type="boardgameexpansion" id="248199" value="Arkham Horror: The Card Game – Silas Marsh Promo Cards"/>
-<link type="boardgameexpansion" id="305518" value="Arkham Horror: The Card Game – Stella Clark: Investigator Starter Deck"/>
-<link type="boardgameexpansion" id="280714" value="Arkham Horror: The Card Game – The Blob That Ate Everything: Scenario Pack"/>
-<link type="boardgameexpansion" id="249772" value="Arkham Horror: The Card Game – The Boundary Beyond: Mythos Pack"/>
-<link type="boardgameexpansion" id="262754" value="Arkham Horror: The Card Game – The Circle Undone: Expansion"/>
-<link type="boardgameexpansion" id="254122" value="Arkham Horror: The Card Game – The City of Archives: Mythos Pack"/>
-<link type="boardgameexpansion" id="255900" value="Arkham Horror: The Card Game – The Depths of Yoth: Mythos Pack"/>
-<link type="boardgameexpansion" id="281541" value="Arkham Horror: The Card Game – The Dream-Eaters: Expansion"/>
-<link type="boardgameexpansion" id="347149" value="Arkham Horror: The Card Game – The Dunwich Legacy: Campaign Expansion"/>
-<link type="boardgameexpansion" id="208545" value="Arkham Horror: The Card Game – The Dunwich Legacy: Expansion"/>
-<link type="boardgameexpansion" id="347148" value="Arkham Horror: The Card Game – The Dunwich Legacy: Investigator Expansion"/>
-<link type="boardgameexpansion" id="212734" value="Arkham Horror: The Card Game – The Essex County Express: Mythos Pack"/>
-<link type="boardgameexpansion" id="252896" value="Arkham Horror: The Card Game – The Eternal Slumber: Scenario Pack"/>
-<link type="boardgameexpansion" id="377055" value="Arkham Horror: The Card Game – The Forgotten Age: Campaign Expansion"/>
-<link type="boardgameexpansion" id="245815" value="Arkham Horror: The Card Game – The Forgotten Age: Expansion"/>
-<link type="boardgameexpansion" id="377056" value="Arkham Horror: The Card Game – The Forgotten Age: Investigator Expansion"/>
-<link type="boardgameexpansion" id="308592" value="Arkham Horror: The Card Game – The Innsmouth Conspiracy: Expansion"/>
-<link type="boardgameexpansion" id="233977" value="Arkham Horror: The Card Game – The Labyrinths of Lunacy: Scenario Pack"/>
-<link type="boardgameexpansion" id="327294" value="Arkham Horror: The Card Game – The Lair of Dagon: Mythos Pack"/>
-<link type="boardgameexpansion" id="210025" value="Arkham Horror: The Card Game – The Miskatonic Museum: Mythos Pack"/>
-<link type="boardgameexpansion" id="252897" value="Arkham Horror: The Card Game – The Night's Usurper: Scenario Pack"/>
-<link type="boardgameexpansion" id="237234" value="Arkham Horror: The Card Game – The Pallid Mask: Mythos Pack"/>
-<link type="boardgameexpansion" id="358212" value="Arkham Horror: The Card Game – The Path to Carcosa: Campaign Expansion"/>
-<link type="boardgameexpansion" id="225563" value="Arkham Horror: The Card Game – The Path to Carcosa: Expansion"/>
-<link type="boardgameexpansion" id="358213" value="Arkham Horror: The Card Game – The Path to Carcosa: Investigator Expansion"/>
-<link type="boardgameexpansion" id="366215" value="Arkham Horror: The Card Game – The Scarlet Keys: Campaign Expansion"/>
-<link type="boardgameexpansion" id="366213" value="Arkham Horror: The Card Game – The Scarlet Keys: Investigator Expansion"/>
-<link type="boardgameexpansion" id="286257" value="Arkham Horror: The Card Game – The Search for Kadath: Mythos Pack"/>
-<link type="boardgameexpansion" id="264459" value="Arkham Horror: The Card Game – The Secret Name: Mythos Pack"/>
-<link type="boardgameexpansion" id="230510" value="Arkham Horror: The Card Game – The Unspeakable Oath: Mythos Pack"/>
-<link type="boardgameexpansion" id="266377" value="Arkham Horror: The Card Game – The Wages of Sin: Mythos Pack"/>
-<link type="boardgameexpansion" id="247718" value="Arkham Horror: The Card Game – Threads of Fate: Mythos Pack"/>
-<link type="boardgameexpansion" id="219054" value="Arkham Horror: The Card Game – Undimensioned and Unseen: Mythos Pack"/>
-<link type="boardgameexpansion" id="271056" value="Arkham Horror: The Card Game – Union and Disillusion: Mythos Pack"/>
-<link type="boardgameexpansion" id="321101" value="Arkham Horror: The Card Game – War of the Outer Gods: Scenario Pack"/>
-<link type="boardgameexpansion" id="297471" value="Arkham Horror: The Card Game – Weaver of the Cosmos: Mythos Pack"/>
-<link type="boardgameexpansion" id="221725" value="Arkham Horror: The Card Game – Where Doom Awaits: Mythos Pack"/>
-<link type="boardgameexpansion" id="297200" value="Arkham Horror: The Card Game – Where the Gods Dwell: Mythos Pack"/>
-<link type="boardgameexpansion" id="305513" value="Arkham Horror: The Card Game – Winifred Habbamock: Investigator Starter Deck"/>
-<link type="boardgameexpansion" id="295594" value="Barkham Horror: The Card Game – The Meddling of Meowlathotep: Scenario Pack"/>
-<link type="boardgameexpansion" id="369493" value="Dark Matter (fan expansion for Arkham Horror Card Game)"/>
+<link type="boardgameexpansion" id="379286" value="Alice in Wonderland (Fan expansion for Arkham Horror Card gamelibrary.Game)"/>
+<link type="boardgameexpansion" id="327293" value="Arkham Horror: The Card gamelibrary.Game – A Light in the Fog: Mythos Pack"/>
+<link type="boardgameexpansion" id="235542" value="Arkham Horror: The Card gamelibrary.Game – A Phantom of Truth: Mythos Pack"/>
+<link type="boardgameexpansion" id="288607" value="Arkham Horror: The Card gamelibrary.Game – A Thousand Shapes of Horror: Mythos Pack"/>
+<link type="boardgameexpansion" id="317014" value="Arkham Horror: The Card gamelibrary.Game – All or Nothing: Challenge Scenario"/>
+<link type="boardgameexpansion" id="326045" value="Arkham Horror: The Card gamelibrary.Game – Bad Blood: Challenge Scenario"/>
+<link type="boardgameexpansion" id="276291" value="Arkham Horror: The Card gamelibrary.Game – Before the Black Throne: Mythos Pack"/>
+<link type="boardgameexpansion" id="316188" value="Arkham Horror: The Card gamelibrary.Game – Beta Card from Gen Con Online 2020"/>
+<link type="boardgameexpansion" id="238530" value="Arkham Horror: The Card gamelibrary.Game – Beta Cards from Arkham Night 2017"/>
+<link type="boardgameexpansion" id="275585" value="Arkham Horror: The Card gamelibrary.Game – Beta Cards from Arkham Night 2018"/>
+<link type="boardgameexpansion" id="301760" value="Arkham Horror: The Card gamelibrary.Game – Beta Cards from Arkham Night 2019"/>
+<link type="boardgameexpansion" id="348234" value="Arkham Horror: The Card gamelibrary.Game – Beta Cards from Arkham Night 2020"/>
+<link type="boardgameexpansion" id="239330" value="Arkham Horror: The Card gamelibrary.Game – Black Stars Rise: Mythos Pack"/>
+<link type="boardgameexpansion" id="216556" value="Arkham Horror: The Card gamelibrary.Game – Blood on the Altar: Mythos Pack"/>
+<link type="boardgameexpansion" id="340953" value="Arkham Horror: The Card gamelibrary.Game – By the Book: Challenge Scenario"/>
+<link type="boardgameexpansion" id="215510" value="Arkham Horror: The Card gamelibrary.Game – Carnevale of Horrors: Scenario Pack"/>
+<link type="boardgameexpansion" id="247404" value="Arkham Horror: The Card gamelibrary.Game – Carolyn Fern Promo Cards"/>
+<link type="boardgameexpansion" id="209728" value="Arkham Horror: The Card gamelibrary.Game – Curse of the Rougarou: Scenario Pack"/>
+<link type="boardgameexpansion" id="291559" value="Arkham Horror: The Card gamelibrary.Game – Dark Side of the Moon: Mythos Pack"/>
+<link type="boardgameexpansion" id="318023" value="Arkham Horror: The Card gamelibrary.Game – Devil Reef: Mythos Pack"/>
+<link type="boardgameexpansion" id="298128" value="Arkham Horror: The Card gamelibrary.Game – Dexter Drake Promo Cards"/>
+<link type="boardgameexpansion" id="242088" value="Arkham Horror: The Card gamelibrary.Game – Dim Carcosa: Mythos Pack"/>
+<link type="boardgameexpansion" id="228778" value="Arkham Horror: The Card gamelibrary.Game – Echoes of the Past: Mythos Pack"/>
+<link type="boardgameexpansion" id="340035" value="Arkham Horror: The Card gamelibrary.Game – Edge of the Earth: Campaign Expansion"/>
+<link type="boardgameexpansion" id="340036" value="Arkham Horror: The Card gamelibrary.Game – Edge of the Earth: Investigator Expansion"/>
+<link type="boardgameexpansion" id="267974" value="Arkham Horror: The Card gamelibrary.Game – For the Greater Good: Mythos Pack"/>
+<link type="boardgameexpansion" id="372720" value="Arkham Horror: The Card gamelibrary.Game – Fortune and Folly: Scenario Pack"/>
+<link type="boardgameexpansion" id="318833" value="Arkham Horror: The Card gamelibrary.Game – Gloria Goldberg Promo Cards"/>
+<link type="boardgameexpansion" id="252899" value="Arkham Horror: The Card gamelibrary.Game – Guardians of the Abyss: Scenario Pack"/>
+<link type="boardgameexpansion" id="305512" value="Arkham Horror: The Card gamelibrary.Game – Harvey Walters: Investigator Starter Deck"/>
+<link type="boardgameexpansion" id="251733" value="Arkham Horror: The Card gamelibrary.Game – Heart of the Elders: Mythos Pack"/>
+<link type="boardgameexpansion" id="324765" value="Arkham Horror: The Card gamelibrary.Game – Horror in High Gear: Mythos Pack"/>
+<link type="boardgameexpansion" id="272752" value="Arkham Horror: The Card gamelibrary.Game – In The Clutches of Chaos: Mythos Pack"/>
+<link type="boardgameexpansion" id="318022" value="Arkham Horror: The Card gamelibrary.Game – In Too Deep: Mythos Pack"/>
+<link type="boardgameexpansion" id="328627" value="Arkham Horror: The Card gamelibrary.Game – Into the Maelstrom: Mythos Pack"/>
+<link type="boardgameexpansion" id="305517" value="Arkham Horror: The Card gamelibrary.Game – Jacqueline Fine: Investigator Starter Deck"/>
+<link type="boardgameexpansion" id="237424" value="Arkham Horror: The Card gamelibrary.Game – Jenny Barnes Promo Cards"/>
+<link type="boardgameexpansion" id="224363" value="Arkham Horror: The Card gamelibrary.Game – Lost in Time and Space: Mythos Pack"/>
+<link type="boardgameexpansion" id="347147" value="Arkham Horror: The Card gamelibrary.Game – Machinations Through Time: Scenario Pack"/>
+<link type="boardgameexpansion" id="226690" value="Arkham Horror: The Card gamelibrary.Game – Marie Lambeau Promo Cards"/>
+<link type="boardgameexpansion" id="284354" value="Arkham Horror: The Card gamelibrary.Game – Murder at the Excelsior Hotel: Scenario Pack"/>
+<link type="boardgameexpansion" id="305509" value="Arkham Horror: The Card gamelibrary.Game – Nathaniel Cho: Investigator Starter Deck"/>
+<link type="boardgameexpansion" id="241622" value="Arkham Horror: The Card gamelibrary.Game – Norman Withers Promo Cards"/>
+<link type="boardgameexpansion" id="293271" value="Arkham Horror: The Card gamelibrary.Game – Point of No Return: Mythos Pack"/>
+<link type="boardgameexpansion" id="309374" value="Arkham Horror: The Card gamelibrary.Game – Read or Die: Challenge Scenario"/>
+<link type="boardgameexpansion" id="354504" value="Arkham Horror: The Card gamelibrary.Game – Red Tide Rising: Challenge Scenario"/>
+<link type="boardgameexpansion" id="333025" value="Arkham Horror: The Card gamelibrary.Game – Return to the Circle Undone"/>
+<link type="boardgameexpansion" id="260311" value="Arkham Horror: The Card gamelibrary.Game – Return to the Dunwich Legacy"/>
+<link type="boardgameexpansion" id="302213" value="Arkham Horror: The Card gamelibrary.Game – Return to the Forgotten Age"/>
+<link type="boardgameexpansion" id="244145" value="Arkham Horror: The Card gamelibrary.Game – Return to the Night of the Zealot"/>
+<link type="boardgameexpansion" id="279196" value="Arkham Horror: The Card gamelibrary.Game – Return to the Path to Carcosa"/>
+<link type="boardgameexpansion" id="247331" value="Arkham Horror: The Card gamelibrary.Game – Roland Banks Promo Cards"/>
+<link type="boardgameexpansion" id="257240" value="Arkham Horror: The Card gamelibrary.Game – Shattered Aeons: Mythos Pack"/>
+<link type="boardgameexpansion" id="248199" value="Arkham Horror: The Card gamelibrary.Game – Silas Marsh Promo Cards"/>
+<link type="boardgameexpansion" id="305518" value="Arkham Horror: The Card gamelibrary.Game – Stella Clark: Investigator Starter Deck"/>
+<link type="boardgameexpansion" id="280714" value="Arkham Horror: The Card gamelibrary.Game – The Blob That Ate Everything: Scenario Pack"/>
+<link type="boardgameexpansion" id="249772" value="Arkham Horror: The Card gamelibrary.Game – The Boundary Beyond: Mythos Pack"/>
+<link type="boardgameexpansion" id="262754" value="Arkham Horror: The Card gamelibrary.Game – The Circle Undone: Expansion"/>
+<link type="boardgameexpansion" id="254122" value="Arkham Horror: The Card gamelibrary.Game – The City of Archives: Mythos Pack"/>
+<link type="boardgameexpansion" id="255900" value="Arkham Horror: The Card gamelibrary.Game – The Depths of Yoth: Mythos Pack"/>
+<link type="boardgameexpansion" id="281541" value="Arkham Horror: The Card gamelibrary.Game – The Dream-Eaters: Expansion"/>
+<link type="boardgameexpansion" id="347149" value="Arkham Horror: The Card gamelibrary.Game – The Dunwich Legacy: Campaign Expansion"/>
+<link type="boardgameexpansion" id="208545" value="Arkham Horror: The Card gamelibrary.Game – The Dunwich Legacy: Expansion"/>
+<link type="boardgameexpansion" id="347148" value="Arkham Horror: The Card gamelibrary.Game – The Dunwich Legacy: Investigator Expansion"/>
+<link type="boardgameexpansion" id="212734" value="Arkham Horror: The Card gamelibrary.Game – The Essex County Express: Mythos Pack"/>
+<link type="boardgameexpansion" id="252896" value="Arkham Horror: The Card gamelibrary.Game – The Eternal Slumber: Scenario Pack"/>
+<link type="boardgameexpansion" id="377055" value="Arkham Horror: The Card gamelibrary.Game – The Forgotten Age: Campaign Expansion"/>
+<link type="boardgameexpansion" id="245815" value="Arkham Horror: The Card gamelibrary.Game – The Forgotten Age: Expansion"/>
+<link type="boardgameexpansion" id="377056" value="Arkham Horror: The Card gamelibrary.Game – The Forgotten Age: Investigator Expansion"/>
+<link type="boardgameexpansion" id="308592" value="Arkham Horror: The Card gamelibrary.Game – The Innsmouth Conspiracy: Expansion"/>
+<link type="boardgameexpansion" id="233977" value="Arkham Horror: The Card gamelibrary.Game – The Labyrinths of Lunacy: Scenario Pack"/>
+<link type="boardgameexpansion" id="327294" value="Arkham Horror: The Card gamelibrary.Game – The Lair of Dagon: Mythos Pack"/>
+<link type="boardgameexpansion" id="210025" value="Arkham Horror: The Card gamelibrary.Game – The Miskatonic Museum: Mythos Pack"/>
+<link type="boardgameexpansion" id="252897" value="Arkham Horror: The Card gamelibrary.Game – The Night's Usurper: Scenario Pack"/>
+<link type="boardgameexpansion" id="237234" value="Arkham Horror: The Card gamelibrary.Game – The Pallid Mask: Mythos Pack"/>
+<link type="boardgameexpansion" id="358212" value="Arkham Horror: The Card gamelibrary.Game – The Path to Carcosa: Campaign Expansion"/>
+<link type="boardgameexpansion" id="225563" value="Arkham Horror: The Card gamelibrary.Game – The Path to Carcosa: Expansion"/>
+<link type="boardgameexpansion" id="358213" value="Arkham Horror: The Card gamelibrary.Game – The Path to Carcosa: Investigator Expansion"/>
+<link type="boardgameexpansion" id="366215" value="Arkham Horror: The Card gamelibrary.Game – The Scarlet Keys: Campaign Expansion"/>
+<link type="boardgameexpansion" id="366213" value="Arkham Horror: The Card gamelibrary.Game – The Scarlet Keys: Investigator Expansion"/>
+<link type="boardgameexpansion" id="286257" value="Arkham Horror: The Card gamelibrary.Game – The Search for Kadath: Mythos Pack"/>
+<link type="boardgameexpansion" id="264459" value="Arkham Horror: The Card gamelibrary.Game – The Secret Name: Mythos Pack"/>
+<link type="boardgameexpansion" id="230510" value="Arkham Horror: The Card gamelibrary.Game – The Unspeakable Oath: Mythos Pack"/>
+<link type="boardgameexpansion" id="266377" value="Arkham Horror: The Card gamelibrary.Game – The Wages of Sin: Mythos Pack"/>
+<link type="boardgameexpansion" id="247718" value="Arkham Horror: The Card gamelibrary.Game – Threads of Fate: Mythos Pack"/>
+<link type="boardgameexpansion" id="219054" value="Arkham Horror: The Card gamelibrary.Game – Undimensioned and Unseen: Mythos Pack"/>
+<link type="boardgameexpansion" id="271056" value="Arkham Horror: The Card gamelibrary.Game – Union and Disillusion: Mythos Pack"/>
+<link type="boardgameexpansion" id="321101" value="Arkham Horror: The Card gamelibrary.Game – War of the Outer Gods: Scenario Pack"/>
+<link type="boardgameexpansion" id="297471" value="Arkham Horror: The Card gamelibrary.Game – Weaver of the Cosmos: Mythos Pack"/>
+<link type="boardgameexpansion" id="221725" value="Arkham Horror: The Card gamelibrary.Game – Where Doom Awaits: Mythos Pack"/>
+<link type="boardgameexpansion" id="297200" value="Arkham Horror: The Card gamelibrary.Game – Where the Gods Dwell: Mythos Pack"/>
+<link type="boardgameexpansion" id="305513" value="Arkham Horror: The Card gamelibrary.Game – Winifred Habbamock: Investigator Starter Deck"/>
+<link type="boardgameexpansion" id="295594" value="Barkham Horror: The Card gamelibrary.Game – The Meddling of Meowlathotep: Scenario Pack"/>
+<link type="boardgameexpansion" id="369493" value="Dark Matter (fan expansion for Arkham Horror Card gamelibrary.Game)"/>
 <link type="boardgameaccessory" id="138801" value="Arkham Horror: Monster Miniatures"/>
-<link type="boardgameaccessory" id="309855" value="Arkham Horror: The Card Game - GameGuard organizer for boxes"/>
-<link type="boardgameaccessory" id="225182" value="Arkham Horror: The Card Game – 14” x 24” Playmats"/>
-<link type="boardgameaccessory" id="344984" value="Arkham Horror: The Card Game – Basically Wooden Book Box with Token Box"/>
-<link type="boardgameaccessory" id="344983" value="Arkham Horror: The Card Game – Basically Wooden Box Organiser"/>
-<link type="boardgameaccessory" id="336464" value="Arkham Horror: The Card Game – Complete Tokens Set (149 pcs)"/>
-<link type="boardgameaccessory" id="219566" value="Arkham Horror: The Card Game – Countless Terrors 1-4 Player Playmat"/>
-<link type="boardgameaccessory" id="273753" value="Arkham Horror: The Card Game – Cthulhu Playmat"/>
-<link type="boardgameaccessory" id="242561" value="Arkham Horror: The Card Game – Invocation 2017 Alternate Art Daisy Walker Cards"/>
-<link type="boardgameaccessory" id="306195" value="Arkham Horror: The Card Game – Laserox Collector's Card Crate"/>
-<link type="boardgameaccessory" id="273486" value="Arkham Horror: The Card Game – Laserox Zealot Storage"/>
-<link type="boardgameaccessory" id="366326" value="Arkham Horror: The Card Game – Momo Monster 2 Player and Solo 2-Handed Playmat"/>
-<link type="boardgameaccessory" id="366337" value="Arkham Horror: The Card Game – Momo Monster Arkham Map Playmat"/>
-<link type="boardgameaccessory" id="366360" value="Arkham Horror: The Card Game – Momo Monster Compact Investigator Dashboard Playmat for BTST"/>
-<link type="boardgameaccessory" id="366343" value="Arkham Horror: The Card Game – Momo Monster Double-Sided Playmat"/>
-<link type="boardgameaccessory" id="366340" value="Arkham Horror: The Card Game – Momo Monster Duo Investigator Playmat"/>
-<link type="boardgameaccessory" id="366341" value="Arkham Horror: The Card Game – Momo Monster Duo Investigator Playmat for BTST"/>
-<link type="boardgameaccessory" id="366354" value="Arkham Horror: The Card Game – Momo Monster Horizontal Investigator Dashboard Playmat"/>
-<link type="boardgameaccessory" id="366355" value="Arkham Horror: The Card Game – Momo Monster Horizontal Investigator Dashboard Playmat for BTST"/>
-<link type="boardgameaccessory" id="366361" value="Arkham Horror: The Card Game – Momo Monster Investigator Dashboard Playmat"/>
-<link type="boardgameaccessory" id="366348" value="Arkham Horror: The Card Game – Momo Monster Large Double-Sided Playmat"/>
-<link type="boardgameaccessory" id="366329" value="Arkham Horror: The Card Game – Momo Monster Solo Investigator and Story Area Playmat"/>
-<link type="boardgameaccessory" id="366353" value="Arkham Horror: The Card Game – Momo Monster Vertical Investigator Dashboard Playmat"/>
-<link type="boardgameaccessory" id="378756" value="Arkham Horror: The Card Game – Spielmaterial Upgrade"/>
-<link type="boardgameaccessory" id="348542" value="Arkham Horror: The Card Game – The GiftForge Insert"/>
-<link type="boardgameaccessory" id="365805" value="Arkham Horror: The Card Game – Tower Rex Playerboard"/>
+<link type="boardgameaccessory" id="309855" value="Arkham Horror: The Card gamelibrary.Game - GameGuard organizer for boxes"/>
+<link type="boardgameaccessory" id="225182" value="Arkham Horror: The Card gamelibrary.Game – 14” x 24” Playmats"/>
+<link type="boardgameaccessory" id="344984" value="Arkham Horror: The Card gamelibrary.Game – Basically Wooden Book Box with Token Box"/>
+<link type="boardgameaccessory" id="344983" value="Arkham Horror: The Card gamelibrary.Game – Basically Wooden Box Organiser"/>
+<link type="boardgameaccessory" id="336464" value="Arkham Horror: The Card gamelibrary.Game – Complete Tokens Set (149 pcs)"/>
+<link type="boardgameaccessory" id="219566" value="Arkham Horror: The Card gamelibrary.Game – Countless Terrors 1-4 Player Playmat"/>
+<link type="boardgameaccessory" id="273753" value="Arkham Horror: The Card gamelibrary.Game – Cthulhu Playmat"/>
+<link type="boardgameaccessory" id="242561" value="Arkham Horror: The Card gamelibrary.Game – Invocation 2017 Alternate Art Daisy Walker Cards"/>
+<link type="boardgameaccessory" id="306195" value="Arkham Horror: The Card gamelibrary.Game – Laserox Collector's Card Crate"/>
+<link type="boardgameaccessory" id="273486" value="Arkham Horror: The Card gamelibrary.Game – Laserox Zealot Storage"/>
+<link type="boardgameaccessory" id="366326" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster 2 Player and Solo 2-Handed Playmat"/>
+<link type="boardgameaccessory" id="366337" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Arkham Map Playmat"/>
+<link type="boardgameaccessory" id="366360" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Compact Investigator Dashboard Playmat for BTST"/>
+<link type="boardgameaccessory" id="366343" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Double-Sided Playmat"/>
+<link type="boardgameaccessory" id="366340" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Duo Investigator Playmat"/>
+<link type="boardgameaccessory" id="366341" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Duo Investigator Playmat for BTST"/>
+<link type="boardgameaccessory" id="366354" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Horizontal Investigator Dashboard Playmat"/>
+<link type="boardgameaccessory" id="366355" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Horizontal Investigator Dashboard Playmat for BTST"/>
+<link type="boardgameaccessory" id="366361" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Investigator Dashboard Playmat"/>
+<link type="boardgameaccessory" id="366348" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Large Double-Sided Playmat"/>
+<link type="boardgameaccessory" id="366329" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Solo Investigator and Story Area Playmat"/>
+<link type="boardgameaccessory" id="366353" value="Arkham Horror: The Card gamelibrary.Game – Momo Monster Vertical Investigator Dashboard Playmat"/>
+<link type="boardgameaccessory" id="378756" value="Arkham Horror: The Card gamelibrary.Game – Spielmaterial Upgrade"/>
+<link type="boardgameaccessory" id="348542" value="Arkham Horror: The Card gamelibrary.Game – The GiftForge Insert"/>
+<link type="boardgameaccessory" id="365805" value="Arkham Horror: The Card gamelibrary.Game – Tower Rex Playerboard"/>
 <link type="boardgameaccessory" id="309611" value="Eldritch Horror: e-Raptor Clues Tokens Set (20 pcs)"/>
 <link type="boardgameaccessory" id="309613" value="Eldritch Horror: e-Raptor Sanity Tokens Set 1 pt (20 pcs)"/>
 <link type="boardgameaccessory" id="309615" value="Eldritch Horror: e-Raptor Sanity Tokens Set 3 pt (15 pcs)"/>
 <link type="boardgameaccessory" id="309616" value="Eldritch Horror: e-Raptor Stamina Tokens Set 1 pt (20 pcs)"/>
 <link type="boardgameaccessory" id="309617" value="Eldritch Horror: e-Raptor Stamina Tokens Set 3 pt (15 pcs)"/>
-<link type="boardgameimplementation" id="359609" value="Arkham Horror: The Card Game (Revised Edition)"/>
+<link type="boardgameimplementation" id="359609" value="Arkham Horror: The Card gamelibrary.Game (Revised Edition)"/>
 <link type="boardgamedesigner" id="11655" value="Nate French"/>
 <link type="boardgamedesigner" id="40573" value="Maxine Juniper Newman"/>
 <link type="boardgameartist" id="50786" value="Christopher Hosch"/>
@@ -3054,15 +3054,15 @@
 <result level="20" value="Unplayable in another language" numvotes="0"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1024" value="Horror"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2007" value="Pick-up and Deliver"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
-<link type="boardgamefamily" id="61684" value="Game: Final Girl"/>
+<link type="boardgamefamily" id="61684" value="gamelibrary.Game: Final Girl"/>
 <link type="boardgamefamily" id="62042" value="Movies: Horror Movies"/>
 <link type="boardgamefamily" id="73392" value="Players: Solitaire Only Card Games"/>
 <link type="boardgamefamily" id="61977" value="Players: Solitaire Only Games"/>
@@ -3082,7 +3082,7 @@
 <link type="boardgameexpansion" id="307683" value="Final Girl: The Happy Trails Horror"/>
 <link type="boardgameexpansion" id="307684" value="Final Girl: The Haunting of Creech Manor"/>
 <link type="boardgameaccessory" id="356738" value="Final Girl: Bird Miniatures"/>
-<link type="boardgameaccessory" id="354810" value="Final Girl: Game Mat Set Series 2"/>
+<link type="boardgameaccessory" id="354810" value="Final Girl: gamelibrary.Game Mat Set Series 2"/>
 <link type="boardgameaccessory" id="354818" value="Final Girl: Gruesome Deaths Books Series 1"/>
 <link type="boardgameaccessory" id="307688" value="Final Girl: Miniatures Series 1"/>
 <link type="boardgameaccessory" id="354809" value="Final Girl: Miniatures Series 2"/>
@@ -3107,7 +3107,7 @@
 <item type="boardgame" id="311988">
 <thumbnail>https://cf.geekdo-images.com/YYfgspTCAgBC0rqbD4U3pQ__thumb/img/y3eTVayRzfZrS5FPeh-egX_uFW8=/fit-in/200x150/filters:strip_icc()/pic7247536.jpg</thumbnail>
 <image>https://cf.geekdo-images.com/YYfgspTCAgBC0rqbD4U3pQ__original/img/vdnpP4PPsidTc7lBMnBBSujQMZc=/0x0/filters:format(jpeg)/pic7247536.jpg</image>
-<name type="primary" sortindex="1" value="Frostpunk: The Board Game"/>
+<name type="primary" sortindex="1" value="Frostpunk: The Board gamelibrary.Game"/>
 <name type="alternate" sortindex="1" value="Frostpunk: Das Brettspiel"/>
 <name type="alternate" sortindex="1" value="Frostpunk: Desková hra"/>
 <name type="alternate" sortindex="1" value="프로스트펑크: 더 보드게임"/>
@@ -3174,27 +3174,27 @@
 <link type="boardgamecategory" id="1029" value="City Building"/>
 <link type="boardgamecategory" id="1021" value="Economic"/>
 <link type="boardgamecategory" id="1020" value="Exploration"/>
-<link type="boardgamecategory" id="1101" value="Video Game Theme"/>
+<link type="boardgamecategory" id="1101" value="Video gamelibrary.Game Theme"/>
 <link type="boardgamemechanic" id="2840" value="Action/Event"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2990" value="Cube Tower"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2933" value="Worker Placement, Different Worker Types"/>
 <link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!"/>
 <link type="boardgamefamily" id="25158" value="Components: Miniatures"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
-<link type="boardgamefamily" id="78545" value="Misc: Eastar Game Manufacturing"/>
+<link type="boardgamefamily" id="78545" value="Misc: Eastar gamelibrary.Game Manufacturing"/>
 <link type="boardgamefamily" id="41799" value="Theme: Post-Apocalyptic"/>
-<link type="boardgameexpansion" id="323382" value="Frostpunk: The Board Game – Frostlander"/>
-<link type="boardgameaccessory" id="322893" value="Frostpunk: The Board Game – Dreadnought Expansion"/>
-<link type="boardgameaccessory" id="322895" value="Frostpunk: The Board Game – Miniatures Expansion"/>
-<link type="boardgameaccessory" id="322890" value="Frostpunk: The Board Game – Playing Mat"/>
-<link type="boardgameaccessory" id="322891" value="Frostpunk: The Board Game – Resources Expansion"/>
-<link type="boardgameaccessory" id="337188" value="Frostpunk: The Board Game – The Iceberg Box"/>
-<link type="boardgameaccessory" id="337190" value="Frostpunk: The Board Game – Timber City Expansion"/>
+<link type="boardgameexpansion" id="323382" value="Frostpunk: The Board gamelibrary.Game – Frostlander"/>
+<link type="boardgameaccessory" id="322893" value="Frostpunk: The Board gamelibrary.Game – Dreadnought Expansion"/>
+<link type="boardgameaccessory" id="322895" value="Frostpunk: The Board gamelibrary.Game – Miniatures Expansion"/>
+<link type="boardgameaccessory" id="322890" value="Frostpunk: The Board gamelibrary.Game – Playing Mat"/>
+<link type="boardgameaccessory" id="322891" value="Frostpunk: The Board gamelibrary.Game – Resources Expansion"/>
+<link type="boardgameaccessory" id="337188" value="Frostpunk: The Board gamelibrary.Game – The Iceberg Box"/>
+<link type="boardgameaccessory" id="337190" value="Frostpunk: The Board gamelibrary.Game – Timber City Expansion"/>
 <link type="boardgamedesigner" id="61569" value="Adam Kwapiński"/>
 <link type="boardgameartist" id="42856" value="Agnieszka Dabrowiecka"/>
 <link type="boardgamepublisher" id="45860" value="Glass Cannon Unplugged"/>
@@ -3206,7 +3206,7 @@
 <link type="boardgamepublisher" id="41030" value="Lotus Frog Games"/>
 <link type="boardgamepublisher" id="30677" value="Maldito Games"/>
 <link type="boardgamepublisher" id="39" value="Pegasus Spiele"/>
-<link type="boardgamepublisher" id="27654" value="Pendragon Game Studio"/>
+<link type="boardgamepublisher" id="27654" value="Pendragon gamelibrary.Game Studio"/>
 <link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o."/>
 </item>
 <item type="boardgame" id="199792">
@@ -3283,17 +3283,17 @@
 </results>
 </poll>
 <link type="boardgamecategory" id="1089" value="Animals"/>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1029" value="City Building"/>
 <link type="boardgamecategory" id="1010" value="Fantasy"/>
 <link type="boardgamemechanic" id="2912" value="Contracts"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2911" value="Ownership"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
 <link type="boardgamefamily" id="18983" value="Animals: Badgers"/>
@@ -3316,7 +3316,7 @@
 <link type="boardgamefamily" id="78432" value="Digital Implementation: Google Play"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia"/>
-<link type="boardgamefamily" id="57493" value="Game: Everdell"/>
+<link type="boardgamefamily" id="57493" value="gamelibrary.Game: Everdell"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="59705" value="Misc: LongPack Games"/>
 <link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos"/>
@@ -3352,7 +3352,7 @@
 <link type="boardgameaccessory" id="353226" value="Everdell: Everdell for Everyone"/>
 <link type="boardgameaccessory" id="347397" value="Everdell: Expo Hall"/>
 <link type="boardgameaccessory" id="312895" value="Everdell: Folded Space Insert"/>
-<link type="boardgameaccessory" id="348594" value="Everdell: Game Boy Geek"/>
+<link type="boardgameaccessory" id="348594" value="Everdell: gamelibrary.Game Boy Geek"/>
 <link type="boardgameaccessory" id="352844" value="Everdell: House of Peace Promo Card"/>
 <link type="boardgameaccessory" id="378870" value="Everdell: Internationale Spieltage SPIEL Promo Cards"/>
 <link type="boardgameaccessory" id="353225" value="Everdell: Lincoln and Nikki Alternate Art Cards"/>
@@ -3393,7 +3393,7 @@
 <thumbnail>https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__thumb/img/ACovMZzGGIsBRyEQXFnsT8282NM=/fit-in/200x150/filters:strip_icc()/pic4254509.jpg</thumbnail>
 <image>https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__original/img/E0s2LvtFA1L5YKk-_44D4u2VD2s=/0x0/filters:format(jpeg)/pic4254509.jpg</image>
 <name type="primary" sortindex="1" value="Root"/>
-<name type="alternate" sortindex="1" value="Root: A Game of Woodland Might and Right"/>
+<name type="alternate" sortindex="1" value="Root: A gamelibrary.Game of Woodland Might and Right"/>
 <name type="alternate" sortindex="1" value="Корни"/>
 <name type="alternate" sortindex="1" value="ルート"/>
 <name type="alternate" sortindex="1" value="茂林源记"/>
@@ -3486,7 +3486,7 @@
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="78432" value="Digital Implementation: Google Play"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
-<link type="boardgamefamily" id="55566" value="Game: Root"/>
+<link type="boardgamefamily" id="55566" value="gamelibrary.Game: Root"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
 <link type="boardgamefamily" id="65851" value="Players: Games with expansions that add solo play"/>
 <link type="boardgamefamily" id="65154" value="Theme: Animal Battles"/>
@@ -3510,7 +3510,7 @@
 <link type="boardgameaccessory" id="372736" value="Root expansions (Clockwork + Hirelings): The GiftForge Insert"/>
 <link type="boardgameaccessory" id="372735" value="Root expansions (Marauder + Underwolrd): The GiftForge Insert"/>
 <link type="boardgameaccessory" id="304572" value="Root: BGExpansions Upgrade Kit"/>
-<link type="boardgameaccessory" id="277157" value="Root: BGHQ Game Token Upgrade"/>
+<link type="boardgameaccessory" id="277157" value="Root: BGHQ gamelibrary.Game Token Upgrade"/>
 <link type="boardgameaccessory" id="276625" value="Root: BGHQ Insert"/>
 <link type="boardgameaccessory" id="359067" value="Root: Card Sleeves"/>
 <link type="boardgameaccessory" id="374816" value="Root: Dicetroyers Organizer"/>
@@ -3625,11 +3625,11 @@
 </poll>
 <link type="boardgamecategory" id="1089" value="Animals"/>
 <link type="boardgamecategory" id="1028" value="Puzzle"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2048" value="Pattern Building"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2002" value="Tile Placement"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamefamily" id="7265" value="Animals: Bears"/>
@@ -3752,13 +3752,13 @@
 <link type="boardgamecategory" id="1010" value="Fantasy"/>
 <link type="boardgamecategory" id="1008" value="Nautical"/>
 <link type="boardgamemechanic" id="2001" value="Action Points"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2850" value="Events"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2851" value="Narrative Choice / Paragraph"/>
 <link type="boardgamemechanic" id="2661" value="Push Your Luck"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2027" value="Storytelling"/>
 <link type="boardgamefamily" id="62475" value="Components: Book as Board"/>
 <link type="boardgamefamily" id="67953" value="Components: Map (City Scale)"/>
@@ -3766,7 +3766,7 @@
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="28659" value="Crowdfunding: Wspieram"/>
 <link type="boardgamefamily" id="73776" value="Decades: The 1920's"/>
-<link type="boardgamefamily" id="67622" value="Game: Sleeping Gods"/>
+<link type="boardgamefamily" id="67622" value="gamelibrary.Game: Sleeping Gods"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="72224" value="Misc: Limited Replayability"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
@@ -3884,13 +3884,13 @@
 <link type="boardgamecategory" id="1086" value="Territory Building"/>
 <link type="boardgamemechanic" id="2857" value="Card Play Conflict Resolution"/>
 <link type="boardgamemechanic" id="2912" value="Contracts"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2864" value="Force Commitment"/>
 <link type="boardgamemechanic" id="2676" value="Grid Movement"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2886" value="King of the Hill"/>
 <link type="boardgamemechanic" id="2947" value="Movement Points"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2686" value="Take That"/>
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
@@ -3910,7 +3910,7 @@
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
 <link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia"/>
-<link type="boardgamefamily" id="38432" value="Game: Scythe"/>
+<link type="boardgamefamily" id="38432" value="gamelibrary.Game: Scythe"/>
 <link type="boardgamefamily" id="12210" value="Mechanism: 4X"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
@@ -3974,7 +3974,7 @@
 <link type="boardgameaccessory" id="330823" value="Scythe: ScytheKick"/>
 <link type="boardgameaccessory" id="264324" value="Scythe: Silicon Base Snaps"/>
 <link type="boardgameaccessory" id="378775" value="Scythe: Spielmaterial.de Updgrade"/>
-<link type="boardgameaccessory" id="268417" value="Scythe: The Game Doctors Insert"/>
+<link type="boardgameaccessory" id="268417" value="Scythe: The gamelibrary.Game Doctors Insert"/>
 <link type="boardgameaccessory" id="348650" value="Scythe: The GiftForge Insert"/>
 <link type="boardgameaccessory" id="260687" value="Scythe: The Rise of Fenris – Spoiler-Free Upgrade Kit"/>
 <link type="boardgameaccessory" id="267172" value="Scythe: Tower Rex Organizer"/>
@@ -4077,15 +4077,15 @@
 <link type="boardgamecategory" id="1086" value="Territory Building"/>
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
 <link type="boardgamefamily" id="66553" value="Components: Control Boards"/>
-<link type="boardgamefamily" id="48877" value="Components: Game Trayz Inside"/>
+<link type="boardgamefamily" id="48877" value="Components: gamelibrary.Game Trayz Inside"/>
 <link type="boardgamefamily" id="62884" value="Components: Official Music Soundtrack"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
@@ -4224,10 +4224,10 @@
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="66553" value="Components: Control Boards"/>
-<link type="boardgamefamily" id="48877" value="Components: Game Trayz Inside"/>
+<link type="boardgamefamily" id="48877" value="Components: gamelibrary.Game Trayz Inside"/>
 <link type="boardgamefamily" id="25158" value="Components: Miniatures"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
-<link type="boardgamefamily" id="21459" value="Game: Eclipse (Lautapelit.fi)"/>
+<link type="boardgamefamily" id="21459" value="gamelibrary.Game: Eclipse (Lautapelit.fi)"/>
 <link type="boardgamefamily" id="12210" value="Mechanism: 4X"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
 <link type="boardgameexpansion" id="356743" value="Eclipse: Neue Gefahren"/>
@@ -4427,16 +4427,16 @@
 <link type="boardgamecategory" id="1047" value="Miniatures"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2891" value="Hidden Roles"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
 <link type="boardgamemechanic" id="2685" value="Player Elimination"/>
-<link type="boardgamemechanic" id="2820" value="Semi-Cooperative Game"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
-<link type="boardgamemechanic" id="2019" value="Team-Based Game"/>
-<link type="boardgamemechanic" id="2814" value="Traitor Game"/>
+<link type="boardgamemechanic" id="2820" value="Semi-Cooperative gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2019" value="Team-Based gamelibrary.Game"/>
+<link type="boardgamemechanic" id="2814" value="Traitor gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="59218" value="Category: Dungeon Crawler"/>
 <link type="boardgamefamily" id="65328" value="Components: Dice with Icons"/>
@@ -4445,8 +4445,8 @@
 <link type="boardgamefamily" id="5679" value="Creatures: Aliens / Extraterrestrials"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="77267" value="Crowdfunding: Modian"/>
-<link type="boardgamefamily" id="57925" value="Game: Nemesis"/>
-<link type="boardgamefamily" id="78545" value="Misc: Eastar Game Manufacturing"/>
+<link type="boardgamefamily" id="57925" value="gamelibrary.Game: Nemesis"/>
+<link type="boardgamefamily" id="78545" value="Misc: Eastar gamelibrary.Game Manufacturing"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgameexpansion" id="295927" value="Nemesis: Achievement Cards"/>
 <link type="boardgameexpansion" id="318351" value="Nemesis: Aftermath"/>
@@ -4611,7 +4611,7 @@
 <link type="boardgamefamily" id="67874" value="Components: Hexagonal Tiles"/>
 <link type="boardgamefamily" id="64949" value="Components: Map (Interplanetary or Interstellar scale)"/>
 <link type="boardgamefamily" id="25158" value="Components: Miniatures"/>
-<link type="boardgamefamily" id="29" value="Game: Twilight Imperium"/>
+<link type="boardgamefamily" id="29" value="gamelibrary.Game: Twilight Imperium"/>
 <link type="boardgamefamily" id="12210" value="Mechanism: 4X"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
 <link type="boardgameexpansion" id="315895" value="Twilight Imperium: Fourth Edition – Prophecy of Kings"/>
@@ -4632,7 +4632,7 @@
 <link type="boardgameaccessory" id="306359" value="Twilight Imperium (Fourth Edition): Laserox Infantry and Fighter Tokens"/>
 <link type="boardgameaccessory" id="365794" value="Twilight Imperium (Fourth Edition): Tower Rex Organizer"/>
 <link type="boardgameaccessory" id="376437" value="Twilight Imperium: CMON Comics – Vol. 2 Promos"/>
-<link type="boardgameaccessory" id="347404" value="Twilight Imperium: Fourth Edition – Game Tamer Organizer"/>
+<link type="boardgameaccessory" id="347404" value="Twilight Imperium: Fourth Edition – gamelibrary.Game Tamer Organizer"/>
 <link type="boardgameaccessory" id="326743" value="Twilight Imperium: Laserox Twilight Treasury insert"/>
 <link type="boardgameimplementation" id="12493" value="Twilight Imperium: Third Edition" inbound="true"/>
 <link type="boardgamedesigner" id="96049" value="Dane Beltrami"/>
@@ -4731,21 +4731,21 @@
 <result level="30" value="Unplayable in another language" numvotes="0"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1015" value="Civilization"/>
 <link type="boardgamecategory" id="1021" value="Economic"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamemechanic" id="2984" value="Closed Drafting"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2004" value="Set Collection"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgameexpansion" id="298851" value="It's a Wonderful World: Corruption and Ascension"/>
@@ -4868,15 +4868,15 @@
 <link type="boardgamemechanic" id="2978" value="Grid Coverage"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2661" value="Push Your Luck"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2002" value="Tile Placement"/>
 <link type="boardgamemechanic" id="2830" value="Turn Order: Pass Order"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
 <link type="boardgamefamily" id="24571" value="Components: Polyominoes"/>
 <link type="boardgamefamily" id="68769" value="Components: Wooden pieces and boards"/>
 <link type="boardgamefamily" id="10314" value="Country: Iceland"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
-<link type="boardgamefamily" id="54213" value="Game: A Feast for Odin"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
+<link type="boardgamefamily" id="54213" value="gamelibrary.Game: A Feast for Odin"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgamefamily" id="3866" value="Series: Harvest (Uwe Rosenberg)"/>
@@ -4904,7 +4904,7 @@
 <link type="boardgamepublisher" id="10768" value="Cranio Creations"/>
 <link type="boardgamepublisher" id="2366" value="Devir"/>
 <link type="boardgamepublisher" id="5657" value="Filosofia Éditions"/>
-<link type="boardgamepublisher" id="12540" value="Game Harbor"/>
+<link type="boardgamepublisher" id="12540" value="gamelibrary.Game Harbor"/>
 <link type="boardgamepublisher" id="18852" value="Hobby World"/>
 <link type="boardgamepublisher" id="8291" value="Korea Boardgames Co., Ltd."/>
 <link type="boardgamepublisher" id="5812" value="Lacerta"/>
@@ -4985,10 +4985,10 @@
 <link type="boardgamecategory" id="1047" value="Miniatures"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamecategory" id="1113" value="Space Exploration"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2027" value="Storytelling"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!"/>
@@ -5003,7 +5003,7 @@
 <link type="boardgamefamily" id="66292" value="Crowdfunding: Gamefound"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="65163" value="Mechanism: Dice Drafting"/>
-<link type="boardgamefamily" id="78545" value="Misc: Eastar Game Manufacturing"/>
+<link type="boardgamefamily" id="78545" value="Misc: Eastar gamelibrary.Game Manufacturing"/>
 <link type="boardgameexpansion" id="340235" value="ISS Vanguard: Deadly Frontier"/>
 <link type="boardgameexpansion" id="376879" value="ISS Vanguard: Equipment Promo Cards"/>
 <link type="boardgameexpansion" id="340234" value="ISS Vanguard: Personnel Files"/>
@@ -5101,7 +5101,7 @@
 <link type="boardgamemechanic" id="2080" value="Area Majority / Influence"/>
 <link type="boardgamemechanic" id="2924" value="Auction: Dutch"/>
 <link type="boardgamemechanic" id="2957" value="Bias"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2081" value="Network and Route Building"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
 <link type="boardgamemechanic" id="2078" value="Point to Point Movement"/>
@@ -5190,13 +5190,13 @@
 <link type="boardgamecategory" id="1082" value="Mythology"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamemechanic" id="2841" value="Command Cards"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2959" value="Map Addition"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
-<link type="boardgamefamily" id="57496" value="Game: Aeon Trespass Odyssey"/>
+<link type="boardgamefamily" id="57496" value="gamelibrary.Game: Aeon Trespass Odyssey"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="73724" value="Theme: Boss Battle"/>
 <link type="boardgameexpansion" id="289396" value="Aeon Trespass: Odyssey – Black Flame of Atlantis"/>
@@ -5204,7 +5204,7 @@
 <link type="boardgameexpansion" id="288841" value="Aeon Trespass: Odyssey – Gardens of Infinite Growth"/>
 <link type="boardgameexpansion" id="360363" value="Aeon Trespass: Odyssey – Onwards Odyssey"/>
 <link type="boardgameexpansion" id="290657" value="Aeon Trespass: Odyssey – Skyseeker Titan"/>
-<link type="boardgameaccessory" id="288843" value="Aeon Trespass: Odyssey – Core Game Map Tiles Set"/>
+<link type="boardgameaccessory" id="288843" value="Aeon Trespass: Odyssey – Core gamelibrary.Game Map Tiles Set"/>
 <link type="boardgameaccessory" id="377306" value="Aeon Trespass: Odyssey – Dice Set"/>
 <link type="boardgameaccessory" id="293990" value="Aeon Trespass: Odyssey – Neoprene Battle Board Playmat"/>
 <link type="boardgamedesigner" id="26482" value="Marcin Wełnicki"/>
@@ -5282,13 +5282,13 @@
 <link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2041" value="Open Drafting"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2082" value="Worker Placement"/>
 <link type="boardgamemechanic" id="2933" value="Worker Placement, Different Worker Types"/>
 <link type="boardgamefamily" id="14759" value="Country: England"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
-<link type="boardgamefamily" id="57478" value="Game: Obsession"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
+<link type="boardgamefamily" id="57478" value="gamelibrary.Game: Obsession"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
 <link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
 <link type="boardgameexpansion" id="284466" value="Obsession: Promotional Cards"/>
@@ -5387,12 +5387,12 @@
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamecategory" id="1113" value="Space Exploration"/>
 <link type="boardgamecategory" id="1086" value="Territory Building"/>
-<link type="boardgamemechanic" id="2875" value="End Game Bonuses"/>
+<link type="boardgamemechanic" id="2875" value="End gamelibrary.Game Bonuses"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2011" value="Modular Board"/>
 <link type="boardgamemechanic" id="2081" value="Network and Route Building"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks"/>
 <link type="boardgamemechanic" id="2830" value="Turn Order: Pass Order"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
@@ -5401,7 +5401,7 @@
 <link type="boardgamefamily" id="26432" value="Category: Combinatorial"/>
 <link type="boardgamefamily" id="66553" value="Components: Control Boards"/>
 <link type="boardgamefamily" id="64949" value="Components: Map (Interplanetary or Interstellar scale)"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="78680" value="Misc: Made by Panda"/>
@@ -5425,7 +5425,7 @@
 <link type="boardgamepublisher" id="10768" value="Cranio Creations"/>
 <link type="boardgamepublisher" id="23205" value="DiceTree Games"/>
 <link type="boardgamepublisher" id="2973" value="Edge Entertainment"/>
-<link type="boardgamepublisher" id="12540" value="Game Harbor"/>
+<link type="boardgamepublisher" id="12540" value="gamelibrary.Game Harbor"/>
 <link type="boardgamepublisher" id="35960" value="Games Factory"/>
 <link type="boardgamepublisher" id="18852" value="Hobby World"/>
 <link type="boardgamepublisher" id="30677" value="Maldito Games"/>
@@ -5510,9 +5510,9 @@
 </poll>
 <link type="boardgamecategory" id="1022" value="Adventure"/>
 <link type="boardgamecategory" id="1020" value="Exploration"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2072" value="Dice Rolling"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2027" value="Storytelling"/>
 <link type="boardgamefamily" id="59705" value="Misc: LongPack Games"/>
 <link type="boardgamefamily" id="65494" value="Theme: Survival"/>
@@ -5699,18 +5699,18 @@
 <link type="boardgamemechanic" id="2839" value="Action Retrieval"/>
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
 <link type="boardgamemechanic" id="2893" value="Communication Limits"/>
-<link type="boardgamemechanic" id="2023" value="Cooperative Game"/>
+<link type="boardgamemechanic" id="2023" value="Cooperative gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2854" value="Critical Hits and Failures"/>
 <link type="boardgamemechanic" id="3004" value="Deck Construction"/>
 <link type="boardgamemechanic" id="2676" value="Grid Movement"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2026" value="Hexagon Grid"/>
-<link type="boardgamemechanic" id="2824" value="Legacy Game"/>
+<link type="boardgamemechanic" id="2824" value="Legacy gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2975" value="Line of Sight"/>
-<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities"/>
-<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game"/>
+<link type="boardgamemechanic" id="2846" value="Once-Per-gamelibrary.Game Abilities"/>
+<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="59218" value="Category: Dungeon Crawler"/>
 <link type="boardgamefamily" id="62475" value="Components: Book as Board"/>
@@ -5719,7 +5719,7 @@
 <link type="boardgamefamily" id="66335" value="Components: Standees"/>
 <link type="boardgamefamily" id="77349" value="Digital Implementations: Steam"/>
 <link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)"/>
-<link type="boardgamefamily" id="45610" value="Game: Gloomhaven"/>
+<link type="boardgamefamily" id="45610" value="gamelibrary.Game: Gloomhaven"/>
 <link type="boardgamefamily" id="24281" value="Mechanism: Campaign Games"/>
 <link type="boardgamefamily" id="25404" value="Mechanism: Legacy"/>
 <link type="boardgamefamily" id="75241" value="Misc: Forteller Audio Narration"/>
@@ -5855,7 +5855,7 @@
 <link type="boardgamemechanic" id="2967" value="Hidden Movement"/>
 <link type="boardgamemechanic" id="2947" value="Movement Points"/>
 <link type="boardgamemechanic" id="2070" value="Simulation"/>
-<link type="boardgamemechanic" id="2019" value="Team-Based Game"/>
+<link type="boardgamemechanic" id="2019" value="Team-Based gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2897" value="Variable Set-up"/>
 <link type="boardgamefamily" id="4263" value="Authors: J.R.R. Tolkien"/>
 <link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)"/>
@@ -5869,7 +5869,7 @@
 <link type="boardgameexpansion" id="339076" value="War of the Ring: The Fate of Erebor"/>
 <link type="boardgameexpansion" id="179404" value="War of the Ring: Warriors of Middle-earth"/>
 <link type="boardgameexpansion" id="210039" value="War of the Ring: Warriors of Middle-earth – Tidings Not Burdens Mini-Expansion"/>
-<link type="boardgameaccessory" id="353403" value="War of the Ring: Deluxe Game Mat"/>
+<link type="boardgameaccessory" id="353403" value="War of the Ring: Deluxe gamelibrary.Game Mat"/>
 <link type="boardgameaccessory" id="351555" value="War of the Ring: Second Edition – Card Box and Sleeves"/>
 <link type="boardgameaccessory" id="351556" value="War of the Ring: Second Edition – Card Box and Sleeves (Gandalf Version)"/>
 <link type="boardgameaccessory" id="375354" value="War of the Ring: Second Edition – Card Box and Sleeves (Witch-king Version)"/>
@@ -5974,19 +5974,19 @@
 <result level="35" value="Unplayable in another language" numvotes="0"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1016" value="Science Fiction"/>
 <link type="boardgamecategory" id="1113" value="Space Exploration"/>
 <link type="boardgamemechanic" id="2843" value="Follow"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
 <link type="boardgamemechanic" id="2902" value="Income"/>
 <link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection"/>
-<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game"/>
+<link type="boardgamemechanic" id="2819" value="Solo / Solitaire gamelibrary.Game"/>
 <link type="boardgamemechanic" id="2079" value="Variable Phase Order"/>
 <link type="boardgamemechanic" id="2015" value="Variable Player Powers"/>
 <link type="boardgamefamily" id="77906" value="Category: Dized Tutorial"/>
 <link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter"/>
-<link type="boardgamefamily" id="46915" value="Game: Terraforming Mars"/>
+<link type="boardgamefamily" id="46915" value="gamelibrary.Game: Terraforming Mars"/>
 <link type="boardgamefamily" id="49694" value="Setting: Future Timeline (Fryxgames)"/>
 <link type="boardgamefamily" id="10169" value="Space: Mars"/>
 <link type="boardgamefamily" id="62258" value="Versions and Editions: Card Versions of Non-Card Games"/>
@@ -6030,7 +6030,7 @@
 <link type="boardgamepublisher" id="18575" value="FryxGames"/>
 <link type="boardgamepublisher" id="11652" value="Stronghold Games"/>
 <link type="boardgamepublisher" id="3475" value="Arclight Games"/>
-<link type="boardgamepublisher" id="44580" value="Board Game Rookie"/>
+<link type="boardgamepublisher" id="44580" value="Board gamelibrary.Game Rookie"/>
 <link type="boardgamepublisher" id="4785" value="Ghenos Games"/>
 <link type="boardgamepublisher" id="5380" value="Intrafin Games"/>
 <link type="boardgamepublisher" id="32866" value="Kilogames"/>
@@ -6049,7 +6049,7 @@
 <item type="boardgame" id="362944">
 <thumbnail>https://cf.geekdo-images.com/ScrF673pQhrx27WoVdG81g__thumb/img/mmBKUwRhbgVV4CJOFdWSaJiYcTY=/fit-in/200x150/filters:strip_icc()/pic6982333.png</thumbnail>
 <image>https://cf.geekdo-images.com/ScrF673pQhrx27WoVdG81g__original/img/z_hysF8luYEnwfloVsSlUK5r0V4=/0x0/filters:format(png)/pic6982333.png</image>
-<name type="primary" sortindex="1" value="War of the Ring: The Card Game"/>
+<name type="primary" sortindex="1" value="War of the Ring: The Card gamelibrary.Game"/>
 <name type="alternate" sortindex="4" value="La Guerre de l'Anneau: Le jeu de cartes"/>
 <name type="alternate" sortindex="1" value="Wojna o Pierścień: Gra karciana"/>
 <name type="alternate" sortindex="1" value="Війна Персня. Карткова гра"/>
@@ -6114,17 +6114,17 @@
 <result level="40" value="Unplayable in another language" numvotes="0"/>
 </results>
 </poll>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1093" value="Novel-based"/>
 <link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven"/>
 <link type="boardgamemechanic" id="2857" value="Card Play Conflict Resolution"/>
 <link type="boardgamemechanic" id="2040" value="Hand Management"/>
-<link type="boardgamemechanic" id="2019" value="Team-Based Game"/>
+<link type="boardgamemechanic" id="2019" value="Team-Based gamelibrary.Game"/>
 <link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!"/>
 <link type="boardgamefamily" id="4263" value="Authors: J.R.R. Tolkien"/>
 <link type="boardgamefamily" id="77906" value="Category: Dized Tutorial"/>
 <link type="boardgamefamily" id="5723" value="Series: War of the Ring (Nexus/Ares Games)"/>
-<link type="boardgameexpansion" id="379901" value="War of the Ring: The Card Game – Pre-Order Promo Cards"/>
+<link type="boardgameexpansion" id="379901" value="War of the Ring: The Card gamelibrary.Game – Pre-Order Promo Cards"/>
 <link type="boardgamedesigner" id="71676" value="Ian Brody"/>
 <link type="boardgameartist" id="83351" value="Antonio De Luca"/>
 <link type="boardgameartist" id="13962" value="Jon Hodgson"/>
@@ -6209,7 +6209,7 @@
 </results>
 </poll>
 <link type="boardgamecategory" id="1050" value="Ancient"/>
-<link type="boardgamecategory" id="1002" value="Card Game"/>
+<link type="boardgamecategory" id="1002" value="Card gamelibrary.Game"/>
 <link type="boardgamecategory" id="1029" value="City Building"/>
 <link type="boardgamecategory" id="1015" value="Civilization"/>
 <link type="boardgamecategory" id="1021" value="Economic"/>
@@ -6223,9 +6223,9 @@
 <link type="boardgamefamily" id="72535" value="Ancient: Egypt"/>
 <link type="boardgamefamily" id="52373" value="Ancient: Greece"/>
 <link type="boardgamefamily" id="77012" value="Constructions: Pyramids"/>
-<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena"/>
-<link type="boardgamefamily" id="17552" value="Game: 7 Wonders"/>
-<link type="boardgamefamily" id="39540" value="Game: 7 Wonders Duel"/>
+<link type="boardgamefamily" id="70360" value="Digital Implementations: Board gamelibrary.Game Arena"/>
+<link type="boardgamefamily" id="17552" value="gamelibrary.Game: 7 Wonders"/>
+<link type="boardgamefamily" id="39540" value="gamelibrary.Game: 7 Wonders Duel"/>
 <link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building"/>
 <link type="boardgamefamily" id="65851" value="Players: Games with expansions that add solo play"/>
 <link type="boardgamefamily" id="61979" value="Players: Two Player Only Games"/>
@@ -6239,7 +6239,7 @@
 <link type="boardgameaccessory" id="333853" value="7 Wonders Duel + Pantheon + Agora: Eurohell Design Insert"/>
 <link type="boardgameaccessory" id="334636" value="7 Wonders Duel: reDrewno Insert"/>
 <link type="boardgameaccessory" id="354399" value="7 Wonders Duel + Pantheon + Agora: Folded Space Insert"/>
-<link type="boardgameaccessory" id="347408" value="7 Wonders Duel + Pantheon + Agora: Game Tamer organizer"/>
+<link type="boardgameaccessory" id="347408" value="7 Wonders Duel + Pantheon + Agora: gamelibrary.Game Tamer organizer"/>
 <link type="boardgameaccessory" id="333852" value="7 Wonders Duel + Pantheon: Eurohell Design Insert"/>
 <link type="boardgameaccessory" id="291721" value="7 Wonders Duel + Pantheon: Folded Space Insert"/>
 <link type="boardgameaccessory" id="207907" value="7 Wonders Duel: Broken Token Organizer"/>

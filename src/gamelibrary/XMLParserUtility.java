@@ -1,3 +1,5 @@
+package gamelibrary;
+
 import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -19,7 +21,7 @@ import java.util.ArrayList;
  * <items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
  * <item id="379005" rank="1">
  * <thumbnail value="https://cf.geekdo-images.com/cFHnRZtfgB9XNWaw46bQ4Q__thumb/img/tPedQESQaqWqwZakkmsBMx0YIZI=/fit-in/200x150/filters:strip_icc()/pic7302419.png"/>
- * <name value="The Lord of the Rings Adventure Book Game"/>
+ * <name value="The Lord of the Rings Adventure Book gamelibrary.Game"/>
  * <yearpublished value="2023"/>
  * </item>
  * <item id="358661" rank="2">
@@ -30,9 +32,9 @@ import java.util.ArrayList;
  * </items>
  *
  * There are two items in the document.
- * Each item is a Game.  The <item tag has 2 attributes, id and rank
+ * Each item is a gamelibrary.Game.  The <item tag has 2 attributes, id and rank
  * and it has three child nodes. Each child node has a tag such as thumbnail, name, yearpublished
- * Each of these child nodes has an attribute named "value".  These values become fields in our Game object
+ * Each of these child nodes has an attribute named "value".  These values become fields in our gamelibrary.Game object
  *
  */
 
@@ -92,7 +94,7 @@ public class XMLParserUtility {
      * Each child node of the main root node is an "item" node in the file. (Tagged with <item )
      * Parse all of the game attributes and fields out of the item.
      * @param xmlGameNode The game node from the DOM tree
-     * @return a Game object containing the parsed attributes
+     * @return a gamelibrary.Game object containing the parsed attributes
      */
     private Game parseNextGame(Node xmlGameNode) {
         String bgg_id;
@@ -208,8 +210,8 @@ public class XMLParserUtility {
         return fieldValue;
     }
 
-    //----------- private internal attributes of a XMLParserUtility Object ---------------------
+    //----------- private internal attributes of a gamelibrary.XMLParserUtility Object ---------------------
     private Document  xmlDocumentTree;  // this is the object tree parsed from the given XML File
     private ArrayList<Game> currentGameList;  // current game list, may be null
-    //private GameList currentGameList;
+    //private gamelibrary.GameList currentGameList;
 }

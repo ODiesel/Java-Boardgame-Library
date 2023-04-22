@@ -1,20 +1,17 @@
+package gamelibrary;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        final String GAMEDATAXML_TEST = "simple1.xml";
-        final String GAMEDATAXML_SAMPLE = "samplecatalog1.xml";
-        final String GAMEDATAXML_SAMPLE50 = "bgg50Games.xml";
+        final String GAMEDATAXML_TEST = "data/simple1.xml";
+        final String GAMEDATAXML_SAMPLE = "data/samplecatalog1.xml";
+        final String GAMEDATAXML_SAMPLE50 = "data/bgg50Games.xml";
 
         DataManager data = new DataManager();
         data.loadGameDataXml(GAMEDATAXML_SAMPLE50);
 
-        ArrayList<GameList> collections = new ArrayList<GameList>();
         GameList primaryGameList = data.getPrimaryGameList();
-        GameList favorites = new GameList("Favorites");
-        collections.add(primaryGameList);
-        collections.add(favorites);
 
         GameListView gameListView = new GameListView();
         GameListController gameListController = new GameListController(primaryGameList,gameListView);
@@ -22,9 +19,10 @@ public class Main {
         GameView gameView = new GameView("Default Title", "Default Genre", "Default Release Date", "Default Description");
 
         UserView userView = new UserView();
+        User userModel = new User(primaryGameList);
+        UserController userController = new UserController(userModel, userView);
 
-        //HomeView homeView = new HomeView(gameListView, gameView, userView);
-        HomeView homeView = new HomeView(gameListController, gameView, userView, collections);
+        HomeView homeView = new HomeView(gameListController, gameView, userController);
 
         homeView.setVisible(true);
     }

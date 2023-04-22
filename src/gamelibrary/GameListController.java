@@ -1,3 +1,5 @@
+package gamelibrary;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -66,8 +68,11 @@ public class GameListController {
         view.showGames(searchedGameList);
     }
 
-    public ArrayList<Game> getGameList() {return model.getGameList();}
-    public void setGameList(GameList gameList) {model = gameList;}
+    public GameList getGameList() {return model;}
+    public void setGameList(GameList gameList) {
+        model = gameList;
+        UpdateView();
+    }
     public String getName() {return model.getName();}
     public void setName(String name) {model.setName(name);}
     public void addGame(Game game){model.addGame(game);}

@@ -1,3 +1,5 @@
+package gamelibrary;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,11 +17,14 @@ public class HomeView extends JFrame {
     private final JPanel collectionPanel;
     private ArrayList<GameList> collections;
     private final GameListController gameListController;
+    private final UserController userController;
     CardLayout HomePanelRightCardLayout;
+    private final GameList mainGameList;
 
-    public HomeView(GameListController gameListController, GameView gameView, UserView userView, ArrayList<GameList> collections) {
+    public HomeView(GameListController gameListController, GameView gameView, UserController userController) {
         this.gameListController = gameListController;
-        this.collections = collections;
+        this.userController = userController;
+        mainGameList = gameListController.getGameList();
         this.gameView = gameView;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1200,800);
@@ -38,6 +43,7 @@ public class HomeView extends JFrame {
 
         HomeButton = new JButton();
         HomeButton.setText("Home");
+        HomeButton.setEnabled(false);
         c.gridx = 0;
         c.gridy = 0;
         c.weightx = 1.0;
@@ -47,7 +53,7 @@ public class HomeView extends JFrame {
         homePanelLeft.add(HomeButton, c);
 
         GameDetailButton = new JButton();
-        //GameDetailButton.setText("Game Detail");
+        //GameDetailButton.setText("gamelibrary.Game Detail");
         c.gridy = 1;
         c.anchor = GridBagConstraints.CENTER;
         collectionPanel = new JPanel();
@@ -55,7 +61,7 @@ public class HomeView extends JFrame {
         homePanelLeft.add(collectionPanel, c);
 
         AccountButton = new JButton();
-        AccountButton.setText("Account");
+        AccountButton.setText("Login");
         c.anchor = GridBagConstraints.SOUTH;
         c.gridy = 2;
         homePanelLeft.add(AccountButton, c);
@@ -83,18 +89,59 @@ public class HomeView extends JFrame {
             public void propertyChange(PropertyChangeEvent e) {
                 if (e.getPropertyName().equals("FAVORITE")) {
                     Game game = (Game) e.getOldValue();
-                    Boolean favorite = (boolean)e.getNewValue();
+                    boolean favorite = (boolean)e.getNewValue();
                     if(favorite){
-                        collections.get(1).addGame(game);
+                        collections.get(0).addGame(game);
                     }
                     else{
-                        collections.get(1).removeGame(game);
+                        collections.get(0).removeGame(game);
                     }
+                    userController.saveUserData();
+                }
+                if (e.getPropertyName().equals("ADD_TO_COLLECTION")) {
+                    Game game = (Game) e.getOldValue();
+                    String collectionString = (String)e.getNewValue();
+                    for (GameList collection:collections) {
+                        if(collection.getName().equals(collectionString)){
+                            collection.addGame(game);
+                        }
+                    }
+                    userController.saveUserData();
+                }
+                if (e.getPropertyName().equals("REMOVE_FROM_COLLECTION")) {
+                    Game game = (Game) e.getOldValue();
+                    String collectionString = (String)e.getNewValue();
+                    for (GameList collection:collections) {
+                        if(collection.getName().equals(collectionString)){
+                            collection.removeGame(game);
+                        }
+                    }
+                    userController.saveUserData();
                 }
             }
         });
         HomePanelRight.add(gameView, "GameDetailCard");
-        HomePanelRight.add(userView, "AccountCard");
+        userController.getView().addPropertyChangeListener(new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent e) {
+                if (e.getPropertyName().equals("OPEN_HOME")) {
+                    HomePanelRightCardLayout.show(HomePanelRight, "GameCollectionCard");
+                    HomeButton.setEnabled(true);
+                    AccountButton.setText("Logout");
+                    // load collections from user
+                    loadUserCollections();
+                    //gamelibrary.Game game = (gamelibrary.Game) e.getOldValue();
+                    //Boolean favorite = (boolean)e.getNewValue();
+                    //if(favorite){
+                    //    collections.get(1).addGame(game);
+                    //}
+                    //else{
+                    //    collections.get(1).removeGame(game);
+                    //}
+                }
+            }
+        });
+        HomePanelRight.add(userController.getView(), "AccountCard");
 
         HomePanelRightCardLayout = (CardLayout) HomePanelRight.getLayout();
 
@@ -102,24 +149,79 @@ public class HomeView extends JFrame {
         addGameDetailsButtonListener(new GameDetailsButtonListener());
         addAccountButtonListener(new AccountButtonListener());
 
-        JLabel collectionTitle = new JLabel("Collections");
-        collectionTitle.setHorizontalAlignment(SwingConstants.CENTER);
+        //JLabel collectionTitle = new JLabel("Collections");
+        collectionPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLACK), "Collections"));
+        //collectionTitle.setHorizontalAlignment(SwingConstants.CENTER);
         collectionPanel.setLayout(new GridBagLayout());
-        c = new GridBagConstraints();
+        HomePanelRightCardLayout.show(HomePanelRight, "AccountCard");
+    }
+
+    private void loadUserCollections(){
+        collectionPanel.removeAll();
+        this.collections = userController.getCollections();
+        GridBagConstraints c = new GridBagConstraints();
         c.fill = GridBagConstraints.HORIZONTAL;
-        c.weightx = 1.0;
-        c.gridx = 0;
         c.gridy = 0;
-        Integer y = 0;
-        collectionPanel.add(collectionTitle, c);
+        int y = 0;
+        //collectionPanel.add(collectionTitle, c);
+        ArrayList<String> collectionStringList = new ArrayList<String>();
         for (GameList collection : collections){
+            c.gridx = 0;
+            if(collection.getName().equals("Favorites")){
+                c.weightx = 1.0;
+                c.gridwidth = 2;
+            }
+            else{
+                c.weightx = 0.9;
+                c.gridwidth = 1;
+                collectionStringList.add(collection.getName());
+            }
+
             JButton b = new JButton(collection.getName());
             b.setName(Integer.toString(y));
             y++;
             c.gridy = y;
             b.addActionListener(new CollectionButtonListener());
             collectionPanel.add(b, c);
+
+            if(!collection.getName().equals("Favorites")){
+                c.gridx = 1;
+                c.weightx = 0.1;
+                JButton delButton = new JButton("-");
+                delButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        userController.removeCollection(collection);
+                        loadUserCollections();
+                    }
+                });
+                collectionPanel.add(delButton, c);
+            }
+
         }
+
+        c.weightx = 1.0;
+        c.gridwidth = 2;
+        JTextField newCollectionField = new JTextField();
+        y++;
+        c.gridx = 0;
+        c.gridy = y;
+        collectionPanel.add(newCollectionField, c);
+
+        JButton b = new JButton("Add new");
+        y++;
+        c.gridy = y;
+        b.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GameList newCollection = new GameList(newCollectionField.getText());
+                userController.addCollection(newCollection);
+                loadUserCollections();
+            }
+        });
+        collectionPanel.add(b, c);
+        collectionPanel.revalidate();
+        gameView.setComboBox(collectionStringList);
     }
 
     private void OpenGameDetailUI(Game game){
@@ -144,7 +246,7 @@ public class HomeView extends JFrame {
         public void actionPerformed(ActionEvent e) {
             JButton b = (JButton)e.getSource();
             String title = b.getText();
-            //GameList found = FindGameListInCollections(collections, title);
+            //gamelibrary.GameList found = FindGameListInCollections(collections, title);
             int index = Integer.parseInt(b.getName());
             GameList found = collections.get(index);
             gameListController.setGameList(found);
@@ -153,12 +255,10 @@ public class HomeView extends JFrame {
         }
     }
 
-    private GameList FindGameListInCollections(ArrayList<GameList> collections, String name){
-        return collections.stream().filter(gameList -> name.equals(name)).findFirst().orElse(null);
-    }
     private class HomeButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            gameListController.setGameList(mainGameList);
             HomePanelRightCardLayout.show(HomePanelRight, "GameCollectionCard");
         }
     }
@@ -173,6 +273,12 @@ public class HomeView extends JFrame {
     private class AccountButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            if(AccountButton.getText().equals("Logout")){
+                userController.logout();
+                AccountButton.setText("Login");
+                collectionPanel.removeAll();
+                HomeButton.setEnabled(false);
+            }
             HomePanelRightCardLayout.show(HomePanelRight, "AccountCard");
         }
     }

@@ -1,3 +1,5 @@
+package gamelibrary;
+
 public class Review {
     private String title;
     private Integer numberOfStars;

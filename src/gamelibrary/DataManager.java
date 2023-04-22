@@ -1,15 +1,36 @@
+package gamelibrary;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+/**
+ * The class Data manager
+ */
 public class DataManager {
     private final GameList primaryGameList;
 
+
+    /**
+     *
+     * It is a constructor.
+     *
+     */
     public DataManager() {
+
         this.primaryGameList = new GameList("Primary");
     }
 
+
+    /**
+     *
+     * Load game data xml
+     *
+     * @param GAMEDATAXML  the  GAMED ATAXM L.
+     */
     public void loadGameDataXml(String GAMEDATAXML) {
+
         try {
             /* This code segment sets up a new DOM parser, and makes sure the current
                 version of Java supports a DOM parser.
@@ -18,10 +39,6 @@ public class DataManager {
             ArrayList<Game> myGameList = myParser.retrieveGameList();
             if (myGameList != null) {
                 primaryGameList.setGameList(myGameList);
-            //    System.out.println("\nThere were " + myGameList.size() + " game objects found in the file.");
-            //    for (Game g : myGameList) {
-            //        System.out.println(g.toString());
-            //    }
             }
             else {
                 System.out.println("Nothing was retrieved from the file.");
@@ -37,8 +54,16 @@ public class DataManager {
             System.exit(2);
         }
     }
-    public void loadConfigurationFile() {}
-    public void saveConfigurationFile() {}
-    public GameList getPrimaryGameList() {return this.primaryGameList;}
-    public void printPrimaryGameList() {primaryGameList.printGameList();}
+
+
+    /**
+     *
+     * Gets the primary game list
+     *
+     * @return the primary game list
+     */
+    public GameList getPrimaryGameList() {
+
+        return this.primaryGameList;
+    }
 }

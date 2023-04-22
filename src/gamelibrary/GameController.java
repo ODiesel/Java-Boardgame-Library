@@ -1,4 +1,4 @@
-import java.awt.*;
+package gamelibrary;
 
 public class GameController {
     private final Game model;

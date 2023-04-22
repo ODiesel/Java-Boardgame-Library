@@ -1,3 +1,5 @@
+package gamelibrary;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -80,8 +82,6 @@ public class Game {
         if(this.name.toLowerCase().contains(lower)){return true;}
         if(this.id.contains(lower)){return true;}
         if(this.type.contains(lower)){return true;}
-        // maybe add publication year? min players? max players?
-        // maybe way later search inside reviews??
         if(this.description.contains(lower)){return true;}
         return false;
     }
