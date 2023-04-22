@@ -7,6 +7,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
+
+/**
+ * The class User view extends J panel
+ */
 public class UserView extends JPanel {
     private final JPanel loginPanel = new JPanel();
     private final JLabel loginTitle = new JLabel("LOGIN");
@@ -20,14 +24,11 @@ public class UserView extends JPanel {
     private final JLabel signupMessage = new JLabel("Don't have an account?");
     private final JButton signupButton = new JButton("Create Account");
     private final JButton loginButton = new JButton("Login");
-    private String usernameInput;
-    private String passwordInput;
 
+    /**
+     * Constructor for UserView
+     */
     UserView(){
-        //this.setBackground(new Color(-16580864));
-        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //frame.setSize(500,500);
-        //frame.setLayout(null);
         loginPanel.setVisible(true);
         loginPanel.setLayout(new GridBagLayout());
         loginPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
@@ -35,7 +36,6 @@ public class UserView extends JPanel {
 
         loginTitle.setFont(new Font(null, Font.PLAIN, 44));
         loginTitle.setHorizontalAlignment(SwingConstants.CENTER);
-        //loginMessage.setBounds(150, 100, 200, 50);
         c.gridx = 0;
         c.gridy = 0;
         c.weightx = 0.0;
@@ -51,17 +51,16 @@ public class UserView extends JPanel {
 
         loginMessage.setFont(new Font(null, Font.PLAIN, 16));
         loginMessage.setHorizontalAlignment(SwingConstants.CENTER);
-        //message.setBounds(90, 140, 300, 50);
         c.gridy = 1;
         loginPanel.add(loginMessage, c);
 
-        //usernameField.setBounds(130, 195, 230, 30);
         c.gridy = 2;
         c.gridwidth = 1;
         c.insets.bottom = 0;
         loginPanel.add(usernameField, c);
         usernameField.addMouseListener(new MouseAdapter() {
             @Override
+
             public void mousePressed(MouseEvent e) {
                 usernameField.setText("");
             }
@@ -71,11 +70,11 @@ public class UserView extends JPanel {
 
         c.insets.bottom = 10;
         c.gridx = 0;
-        //passwordField.setBounds(130, 235, 230, 30);
         c.gridy = 3;
         loginPanel.add(passwordField, c);
         passwordField.addMouseListener(new MouseAdapter() {
             @Override
+
             public void mousePressed(MouseEvent e) {
                 passwordField.setText("");
             }
@@ -100,7 +99,6 @@ public class UserView extends JPanel {
 
         signupMessage.setFont(new Font(null, Font.PLAIN, 16));
         signupMessage.setHorizontalAlignment(SwingConstants.CENTER);
-        //signupMessage.setBounds(125, 305, 230, 30);
         c.gridy = 7;
         c.insets.bottom = 0;
         loginPanel.add(signupMessage,c);
@@ -113,59 +111,75 @@ public class UserView extends JPanel {
         c.insets.top = 0;
         loginPanel.add(signupButton, c);
 
-        signupButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                OpenNewAccountUI();
-            }
-        });
-
         this.setLayout(new BorderLayout());
         loginPanel.revalidate();
         this.add(loginPanel, BorderLayout.CENTER);
     }
 
+
+    /**
+     *
+     * Error logging in
+     *
+     */
     public void errorLoggingIn(){
         loginStatus.setForeground(Color.red);
         loginStatus.setText("Your username or password is incorrect");
         signupMessage.setText("Create an account with these credentials?");
     }
 
+
+    /**
+     *
+     * Switch to home view
+     *
+     */
     public void switchToHomeView(){
         //loginPanel.setVisible(false);
         firePropertyChange("OPEN_HOME",null,null);
     }
 
+
+    /**
+     *
+     * Add login button listener
+     *
+     * @param listen  the listen.
+     */
     public void addLoginButtonListener(ActionListener listen) {
         loginButton.addActionListener(listen);
     }
 
+
+    /**
+     *
+     * Add create account button listener
+     *
+     * @param listen  the listen.
+     */
     public void addCreateAccountButtonListener(ActionListener listen) {
         signupButton.addActionListener(listen);
     }
 
+
+    /**
+     *
+     * Gets the username field
+     *
+     * @return the username field
+     */
     public String getUsernameField(){
         return usernameField.getText();
     }
 
+
+    /**
+     *
+     * Gets the password field
+     *
+     * @return the password field
+     */
     public String getPasswordField(){
         return passwordField.getText();
     }
-
-    public void keyPressed(KeyEvent e) {
-        /*
-        if (e.getKeyCode() == KeyEvent.VK_ENTER){
-            usernameInput = usernameField.getText();
-            passwordInput = passwordField.getText();
-            isValidUser();
-        }
-        */
-    }
-
-    private void OpenNewAccountUI() {
-
-    }
-
-    public void UpdateView() {}
 }

@@ -6,6 +6,10 @@ import java.util.prefs.BackingStoreException;
 import java.util.prefs.InvalidPreferencesFormatException;
 import java.util.prefs.Preferences;
 
+
+/**
+ * The class User
+ */
 public class User {
     private String username;
     private String password;
@@ -16,31 +20,86 @@ public class User {
     Preferences collectionsPreferences;
     private final GameList primaryGameList;
 
+
+    /**
+     *
+     * It is a constructor for User
+     *
+     * @param primaryGameList  the primary game list.
+     */
     public User(GameList primaryGameList){
         this.primaryGameList = primaryGameList;
     }
 
+
+    /**
+     *
+     * Init collections
+     *
+     */
     public void initCollections(){
         GameList favorites = new GameList("Favorites");
         collectionList.add(favorites);
     }
 
-    public String getUsername() {return username;}
-    public void setUsername(String username) {this.username = username;}
-    public void setPassword(String password) {this.password = password;}
+    /**
+     *
+     * Sets the username
+     *
+     * @param username  the username.
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**
+     *
+     * Sets the password
+     *
+     * @param password  the password.
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     *
+     * Gets the collections
+     *
+     * @return the collections
+     */
     public ArrayList<GameList> getCollections() {
         if(collectionList.size() == 0){
             initCollections();
         }
         return collectionList;
     }
-    public void setCollections(ArrayList<GameList> collections) {this.collectionList = collections;}
-    public boolean isLoggedIn() {return loggedIn;}
+
+    /**
+     *
+     * Is logged in
+     *
+     * @return boolean
+     */
+    public boolean isLoggedIn() {
+        return loggedIn;
+    }
+
+    /**
+     *
+     * Logging in
+     *
+     */
     public void loggingIn() {
         this.loggedIn = true;
         loadUserData();
     }
-    public void login() {}
+
+    /**
+     *
+     * Logout
+     *
+     */
     public void logout() {
         saveUserData();
         loggedIn = false;
@@ -48,13 +107,33 @@ public class User {
         password = "";
         collectionList.clear();
     }
-    public void addCollection(GameList collection) {collectionList.add(collection);}
+
+    /**
+     *
+     * Add collection
+     *
+     * @param collection  the collection.
+     */
+    public void addCollection(GameList collection) {
+        collectionList.add(collection);
+    }
+
+    /**
+     *
+     * Remove collection
+     *
+     * @param collection  the collection.
+     */
     public void removeCollection(GameList collection) {
         collectionList.remove(collection);
     }
-    public void editCollection() {}
-    public void loadUserData() {
 
+    /**
+     *
+     * Load user data
+     *
+     */
+    public void loadUserData() {
         collectionList = new ArrayList<GameList>();
 
         if(allUserPreferences == null){
@@ -97,6 +176,13 @@ public class User {
             throw new RuntimeException(e);
         }
     }
+
+
+    /**
+     *
+     * Clear all preferences
+     *
+     */
     public void clearAllPreferences(){
         Preferences prefs = Preferences.userNodeForPackage(getClass());
         try {
@@ -106,6 +192,12 @@ public class User {
         }
     }
 
+
+    /**
+     *
+     * Save user data
+     *
+     */
     public void saveUserData() {
         try {
             collectionsPreferences.removeNode();
@@ -121,7 +213,6 @@ public class User {
                 collectionNode.clear();
                 for (Game game: gameList.getGameList()) {
                     collectionNode.putBoolean(game.getName(), true);
-                    var testing = 1;
                 }
             } catch (BackingStoreException e) {
                 throw new RuntimeException(e);
@@ -130,6 +221,12 @@ public class User {
         exportAllUserData();
     }
 
+
+    /**
+     *
+     * Export all user data
+     *
+     */
     public void exportAllUserData(){
         FileOutputStream fos;
         try {
@@ -140,6 +237,12 @@ public class User {
         }
     }
 
+
+    /**
+     *
+     * Import user data from XML
+     *
+     */
     public void importUserDataFromXML(){
         FileInputStream is;
         try{
@@ -153,6 +256,4 @@ public class User {
             throw new RuntimeException(e);
         }
     }
-
-    public void getCollection() {}
 }

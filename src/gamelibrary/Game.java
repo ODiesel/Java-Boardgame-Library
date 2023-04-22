@@ -6,6 +6,10 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 
+
+/**
+ * The class Game
+ */
 public class Game {
     final private String name;
     final private String id;
@@ -17,13 +21,26 @@ public class Game {
     final private int publicationYear;
     final private String thumbURI;
     final private String imgURI;
-
     private BufferedImage thumbnail;
     private BufferedImage image;
     private Image resizedImage;
     public boolean favorite = false;
 
 
+
+    /**
+     *
+     * It is a constructor for Game
+     *
+     * @param name  the name.
+     * @param id  the id.
+     * @param tnuri  the tnuri.
+     * @param imguri  the imguri.
+     * @param pubyear  the pubyear.
+     * @param description  the description.
+     * @param minPlayers  the min players.
+     * @param maxPlayers  the max players.
+     */
     public Game(String name, String id, String tnuri, String imguri, int pubyear , String description, int minPlayers, int maxPlayers) {
         this.name = name;
         this.publicationYear = pubyear;
@@ -38,6 +55,13 @@ public class Game {
 
     }
 
+
+    /**
+     *
+     * Get thumbnail
+     *
+     * @return BufferedImage
+     */
     public BufferedImage GetThumbnail(){
         if(thumbnail == null){
             try {
@@ -50,6 +74,13 @@ public class Game {
         return thumbnail;
     }
 
+
+    /**
+     *
+     * Get image
+     *
+     * @return BufferedImage
+     */
     public BufferedImage GetImage(){
         if(image == null){
             try {
@@ -62,6 +93,14 @@ public class Game {
         return image;
     }
 
+
+    /**
+     *
+     * Get resized image
+     *
+     * @param maxDimension  the max dimension.
+     * @return Image
+     */
     public Image GetResizedImage(int maxDimension){
         if(resizedImage == null)
         {
@@ -77,6 +116,14 @@ public class Game {
         return resizedImage;
     }
 
+
+    /**
+     *
+     * Matches search
+     *
+     * @param search  the search.
+     * @return boolean
+     */
     public boolean matchesSearch(String search) {
         String lower = search.toLowerCase();
         if(this.name.toLowerCase().contains(lower)){return true;}
@@ -86,21 +133,59 @@ public class Game {
         return false;
     }
 
+
+
+    /**
+     *
+     * To string
+     *
+     * @return String
+     */
     public String toString()
     {
         return "[" + name + ", "+ publicationYear + ", BGG ID: " + id + ", Min Players: " + minimumPlayers + ", Max Players: " + maximumPlayers + "]";
     }
 
-    public String getName() { return name; }
-    public ReviewList getReviewList() {
-        return reviewList;
+
+    /**
+     *
+     * Gets the name
+     *
+     * @return the name
+     */
+    public String getName() {
+        return name;
     }
-    public String getType() {return type;}
-    public String getDescription() {return description;}
-    public int getMinimumPlayers() {return minimumPlayers;}
-    public int getMaximumPlayers() {return maximumPlayers;}
-    public void addReview(Review review) {reviewList.addReview(review);}
-    public void deleteReview(Review review) {reviewList.deleteReview(review);}
-    public String getId() {return id;}
-    public int getPublicationYear() {return publicationYear;}
+
+
+    /**
+     *
+     * Gets the description
+     *
+     * @return the description
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     *
+     * Gets the identifier
+     *
+     * @return the identifier
+     */
+    public String getId() {
+        return id;
+    }
+
+
+    /**
+     *
+     * Gets the publication year
+     *
+     * @return the publication year
+     */
+    public int getPublicationYear() {
+        return publicationYear;
+    }
 }

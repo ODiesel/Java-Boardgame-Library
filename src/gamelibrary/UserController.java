@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/**
+ * The class User controller
+ */
 public class UserController {
     private final User model;
     private final UserView view;
@@ -16,6 +20,14 @@ public class UserController {
     private String username = "";
     private String password = "";
 
+
+    /**
+     *
+     * It is a constructor for UserController
+     *
+     * @param model  the model.
+     * @param view  the view.
+     */
     public UserController(User model, UserView view) {
         this.model = model;
         this.view = view;
@@ -24,17 +36,31 @@ public class UserController {
         this.view.addCreateAccountButtonListener(new CreateAccountButtonListener());
     }
 
+
+    /**
+     *
+     * Gets the view
+     *
+     * @return the view
+     */
     public UserView getView(){
         return this.view;
     }
 
     class LoginButtonListener implements ActionListener {
         @Override
+
         public void actionPerformed(ActionEvent e) {
             login();
         }
     }
 
+
+    /**
+     *
+     * Validate user
+     *
+     */
     public void validateUser() {
         FileReader inFile;
         Scanner inFileScanner;
@@ -62,17 +88,27 @@ public class UserController {
 
     class CreateAccountButtonListener implements ActionListener {
         @Override
+
         public void actionPerformed(ActionEvent e) {
             createUser();
         }
     }
 
-    public String getUsername() {return model.getUsername();}
-    public void setUsername(String username) {model.setUsername(username);}
-    public void setPassword(String password) {model.setPassword(password);}
-    public ArrayList<GameList> getCollections() {return model.getCollections();}
-    public void setCollections(ArrayList<GameList> collections) {model.setCollections(collections);}
-    public boolean isLoggedIn() {return model.isLoggedIn();}
+    /**
+     *
+     * Gets the collections
+     *
+     * @return the collections
+     */
+    public ArrayList<GameList> getCollections() {
+        return model.getCollections();
+    }
+
+    /**
+     *
+     * Login
+     *
+     */
     public void login() {
         username = view.getUsernameField();
         password = view.getPasswordField();
@@ -86,6 +122,12 @@ public class UserController {
         }
     }
 
+
+    /**
+     *
+     * Create user
+     *
+     */
     public void createUser(){
         username = view.getUsernameField();
         password = view.getPasswordField();
@@ -103,25 +145,46 @@ public class UserController {
             throw new RuntimeException(e);
         }
     }
+
+    /**
+     *
+     * Logout
+     *
+     */
     public void logout() {
         username = "";
         password = "";
         model.logout();
     }
+
+    /**
+     *
+     * Add collection
+     *
+     * @param collection  the collection.
+     */
     public void addCollection(GameList collection) {
         model.addCollection(collection);
         model.saveUserData();
     }
+
+    /**
+     *
+     * Remove collection
+     *
+     * @param collection  the collection.
+     */
     public void removeCollection(GameList collection) {
         model.removeCollection(collection);
         model.saveUserData();
     }
-    public void editCollection() {model.editCollection();}
-    public void loadUserData() {
-        model.loadUserData();
 
+    /**
+     *
+     * Save user data
+     *
+     */
+    public void saveUserData() {
+        model.saveUserData();
     }
-    public void saveUserData() {model.saveUserData();}
-    public void getCollection() {model.getCollection();}
-    public void UpdateView(){view.UpdateView();}
 }

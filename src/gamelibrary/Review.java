@@ -1,22 +1,46 @@
 package gamelibrary;
 
+/**
+ * The class Review
+ */
 public class Review {
-    private String title;
-    private Integer numberOfStars;
-    private String comment;
+    private final String title;
+    private final Integer numberOfStars;
+    private final String comment;
 
+
+    /**
+     *
+     * It is a constructor for Review
+     *
+     * @param title  the title.
+     * @param numberOfStars  the number of stars.
+     * @param comment  the comment.
+     */
     public Review(String title, Integer numberOfStars, String comment) {
         this.title = title;
         this.numberOfStars = numberOfStars;
         this.comment = comment;
     }
 
+
+    /**
+     *
+     * Gets the title
+     *
+     * @return the title
+     */
     public String getTitle() {
         return title;
     }
-    public void setTitle(String title) {this.title = title;}
-    public Integer getNumberOfStars() {return numberOfStars;}
-    public void setNumberOfStars(Integer numberOfStars) {this.numberOfStars = numberOfStars;}
-    public String getComment() {return comment;}
-    public void setComment(String comment) {this.comment = comment;}
+
+    /**
+     *
+     * Gets the comment
+     *
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
 }

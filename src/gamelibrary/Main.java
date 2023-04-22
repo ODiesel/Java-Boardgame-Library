@@ -1,9 +1,19 @@
 package gamelibrary;
 
-import java.util.ArrayList;
 
+/**
+ * The class Main
+ */
 public class Main {
+
+    /**
+     *
+     * Main entry point for program
+     *
+     * @param args  the args.
+     */
     public static void main(String[] args) {
+
         final String GAMEDATAXML_TEST = "data/simple1.xml";
         final String GAMEDATAXML_SAMPLE = "data/samplecatalog1.xml";
         final String GAMEDATAXML_SAMPLE50 = "data/bgg50Games.xml";

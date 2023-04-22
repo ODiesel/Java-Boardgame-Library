@@ -3,14 +3,13 @@ package gamelibrary;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.ArrayList;
-import javax.swing.border.*;
-import javax.swing.border.*;
-import java.awt.*;
-import java.awt.event.*;
 import java.util.List;
 
 
+
+/**
+ * The class Game view extends J panel
+ */
 public class GameView extends JPanel {
     private Game game;
     private final JLabel gameIconLabel;
@@ -21,19 +20,23 @@ public class GameView extends JPanel {
     private final JPanel reviewInputPanel;
 
     private final ReviewList reviewList;
-    private final ReviewListView reviewListView;
     private final ReviewListController reviewListController;
     private final JButton favoriteButton;
     private final JButton collectionAddButton;
     private final JButton collectionRemoveButton;
     private final JComboBox<String> collectionCombo;
-    private boolean isFavorite;
     private List<String> collectionListForComboBox;
 
+    /**
+     * Constructor for GameView
+     * @param title
+     * @param genre
+     * @param releaseDate
+     * @param description
+     */
     GameView(String title, String genre, String releaseDate, String description) {
         reviewList = new ReviewList();
-        reviewListView = new ReviewListView();
-        reviewListController = new ReviewListController(reviewList, reviewListView);
+        reviewListController = new ReviewListController(reviewList);
 
         // Create labels for game title, genre, and release date
         gameTitleLabel = new JLabel("Title: " + title);
@@ -45,7 +48,15 @@ public class GameView extends JPanel {
         favoriteButton = new JButton("Favorite");
         favoriteButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         favoriteButton.addActionListener(new ActionListener() {
+
+            /**
+             *
+             * Action performed
+             *
+             * @param e  the e.
+             */
             public void actionPerformed(ActionEvent e) {
+
                 toggleFavorite();
             }
         });
@@ -58,7 +69,14 @@ public class GameView extends JPanel {
         collectionAddButton = new JButton("Add to collection");
         collectionAddButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         collectionAddButton.addActionListener(new ActionListener() {
+            /**
+             *
+             * Action performed
+             *
+             * @param e  the e.
+             */
             public void actionPerformed(ActionEvent e) {
+
                 String collection = (String)collectionCombo.getSelectedItem();
                 firePropertyChange("ADD_TO_COLLECTION",game,collection);
             }
@@ -68,20 +86,23 @@ public class GameView extends JPanel {
         collectionRemoveButton = new JButton("Remove from collection");
         collectionRemoveButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         collectionRemoveButton.addActionListener(new ActionListener() {
+
+            /**
+             *
+             * Action performed
+             *
+             * @param e  the e.
+             */
             public void actionPerformed(ActionEvent e) {
+
                 String collection = (String)collectionCombo.getSelectedItem();
                 firePropertyChange("REMOVE_FROM_COLLECTION",game,collection);
             }
         });
 
-
-
-
         // Create panel for reviews
         reviewPanel = new JPanel();
         reviewPanel.setLayout(new BoxLayout(reviewPanel, BoxLayout.Y_AXIS));
-
-
 
         // Set layout and add components to the panel
         JPanel panel = new JPanel();
@@ -149,6 +170,12 @@ public class GameView extends JPanel {
 
         // Add action listener to add review button
         addReviewButton.addActionListener(new ActionListener() {
+            /**
+             *
+             * Action performed
+             *
+             * @param e  the e.
+             */
             public void actionPerformed(ActionEvent e) {
                 String title = reviewTitleField.getText();
                 int numberOfStars = Integer.parseInt(numberOfStarsField.getText());
@@ -158,28 +185,14 @@ public class GameView extends JPanel {
                 reviewTitleField.setText("");
                 numberOfStarsField.setText("");
                 reviewTextArea.setText("");
-                reviewListController.UpdateView();
                 updateReviewPanel(); // Call this method to update the review panel
             }
         });
-
-        // Create panel for removing reviews
-        //JPanel removeReviewPanel = new JPanel();
-        //JButton removeReviewButton = new JButton("Remove Review");
-        //removeReviewPanel.add(removeReviewButton);
-
-        // Add action listener to remove review button
-        //removeReviewButton.addActionListener(new ActionListener() {
-        //    public void actionPerformed(ActionEvent e) {
-        //        removeReview();
-        //    }
-        //});
 
         // Set layout and add components to the panel
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.add(gameIconLabel);
         panel.add(gameTitleLabel);
-        // Add favorite button to the panel
         panel.add(Box.createRigidArea(new Dimension(0, padding))); // Add some space between components
         panel.add(favoriteButton);
         panel.add(collectionCombo);
@@ -188,12 +201,8 @@ public class GameView extends JPanel {
         panel.add(gameDescriptionArea);
         panel.add(reviewPanel);
         panel.add(reviewInputPanel);
-        //panel.add(removeReviewPanel);
 
-        // Add panel to the frame
         this.setLayout(new BorderLayout());
-        //this.add(panel, BorderLayout.CENTER);
-
         JScrollPane InnerScrollingListPanel = new JScrollPane(
                 panel,
                 ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
@@ -201,15 +210,26 @@ public class GameView extends JPanel {
         InnerScrollingListPanel.getVerticalScrollBar().setUnitIncrement(20);
         this.add(InnerScrollingListPanel);
         this.revalidate();
-        //ListPanel.add(InnerScrollingListPanel);
-        //ListPanel.revalidate();
     }
 
+
+    /**
+     *
+     * Sets the combo box
+     *
+     * @param collectionList  the collection list.
+     */
     public void setComboBox(List<String> collectionList){
         collectionListForComboBox = collectionList;
         updateComboBox();
     }
 
+
+    /**
+     *
+     * Update combo box
+     *
+     */
     public void updateComboBox(){
         collectionCombo.removeAllItems();
         for (String s:collectionListForComboBox) {
@@ -217,12 +237,25 @@ public class GameView extends JPanel {
         }
     }
 
+
+    /**
+     *
+     * Set game
+     *
+     * @param game  the game.
+     */
     public void SetGame(Game game) {
         this.game = game;
         // Initialize the favorite button
         favoriteButton.setText(game.favorite ? "Unfavorite" : "Favorite");
     }
 
+
+    /**
+     *
+     * Update view
+     *
+     */
     public void UpdateView() {
         if (game == null) {
             return;
@@ -241,6 +274,12 @@ public class GameView extends JPanel {
     }
 
     // Update the review panel with the latest reviews
+
+    /**
+     *
+     * Update review panel
+     *
+     */
     private void updateReviewPanel() {
         reviewPanel.removeAll();
         for (Review review : reviewListController.getReviewList()) {
@@ -258,41 +297,45 @@ public class GameView extends JPanel {
             JButton removeReviewButton = new JButton("Remove Review");
             reviewItemPanel.add(removeReviewButton);
             removeReviewButton.addActionListener(new ActionListener() {
+
+                /**
+                 *
+                 * Action performed
+                 *
+                 * @param e  the e.
+                 */
                 public void actionPerformed(ActionEvent e) {
+
                     removeReview(review);
                 }
             });
-
             reviewPanel.add(reviewItemPanel);
         }
         reviewPanel.revalidate();
         reviewPanel.repaint();
     }
+
+
+    /**
+     *
+     * Toggle favorite
+     *
+     */
     private void toggleFavorite() {
-        //isFavorite = !isFavorite;
         game.favorite = !game.favorite;
-                favoriteButton.setText(game.favorite ? "Unfavorite" : "Favorite");
+        favoriteButton.setText(game.favorite ? "Unfavorite" : "Favorite");
         firePropertyChange("FAVORITE",this.game,game.favorite);
     }
-    // Remove the latest review from the review list
-    private void removeReview() {
-        if (!reviewListController.getReviewList().isEmpty()) {
-            Review lastReview = reviewListController.getReviewList().get(reviewListController.getReviewList().size() - 1);
-            reviewListController.deleteReview(lastReview);
-            reviewListController.UpdateView();
-            updateReviewPanel(); // Call this method to update the review panel
-        }
-    }
 
-    private void removeReview(String reviewTitle) {
-        reviewListController.deleteReview(reviewTitle);
-        reviewListController.UpdateView();
-        updateReviewPanel(); // Call this method to update the review panel
-    }
 
+    /**
+     *
+     * Remove review
+     *
+     * @param review  the review.
+     */
     private void removeReview(Review review) {
         reviewListController.deleteReview(review);
-        reviewListController.UpdateView();
         updateReviewPanel(); // Call this method to update the review panel
     }
 }

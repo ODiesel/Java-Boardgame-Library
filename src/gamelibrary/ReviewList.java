@@ -2,18 +2,51 @@ package gamelibrary;
 
 import java.util.ArrayList;
 
-public class ReviewList {
-    private ArrayList<Review> reviewList;
 
+/**
+ * The class Review list
+ */
+public class ReviewList {
+    private final ArrayList<Review> reviewList;
+
+    /**
+     *
+     * It is a constructor for ReviewList
+     *
+     */
     public ReviewList() {
         this.reviewList = new ArrayList<>();
     }
-    public ArrayList<Review> getReviewList() {return reviewList;}
-    public void setReviewList(ArrayList<Review> reviewList) {this.reviewList = reviewList;}
-    public void addReview(Review review) {reviewList.add(review);}
+
+    /**
+     *
+     * Gets the review list
+     *
+     * @return the review list
+     */
+    public ArrayList<Review> getReviewList() {
+        return reviewList;
+    }
+
+    /**
+     *
+     * Add review
+     *
+     * @param review  the review.
+     */
+    public void addReview(Review review) {
+        reviewList.add(review);
+    }
+
+
+    /**
+     *
+     * Delete review
+     *
+     * @param review  the review.
+     */
     public void deleteReview(Review review)
     {
         reviewList.remove(review);
     }
-    public void editReview(){}
 }

@@ -3,37 +3,84 @@ package gamelibrary;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+
+/**
+ * The class Game list
+ */
 public class GameList {
     private ArrayList<Game> gameList;
-    private String name;
+    private final String name;
 
+
+    /**
+     *
+     * It is a constructor for GameList
+     *
+     * @param name  the name.
+     */
     public GameList(String name) {
         this.gameList = new ArrayList<>();
         this.name = name;
     }
 
-    public GameList(String name, ArrayList<Game> gameList) {
-        this.gameList = gameList;
-        this.name = name;
+    /**
+     *
+     * Gets the game list
+     *
+     * @return the game list
+     */
+    public ArrayList<Game> getGameList() {
+        return gameList;
     }
 
-    public ArrayList<Game> getGameList() {return gameList;}
-    public void setGameList(ArrayList<Game> gameList) {this.gameList = gameList;}
-    public String getName() {return name;}
-    public void setName(String name) {this.name = name;}
+    /**
+     *
+     * Sets the game list
+     *
+     * @param gameList  the game list.
+     */
+    public void setGameList(ArrayList<Game> gameList) {
+        this.gameList = gameList;
+    }
+
+    /**
+     *
+     * Gets the name
+     *
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     *
+     * Add game
+     *
+     * @param game  the game.
+     */
     public void addGame(Game game){
-        // need to add way to make sure no data can be changed on primary game list
         gameList.add(game);
     }
+
+    /**
+     *
+     * Remove game
+     *
+     * @param game  the game.
+     */
     public void removeGame(Game game){
-        // need to add way to make sure no data can be changed on primary game list
         gameList.remove(game);
     }
-    public void editGame() {
-        // need to add way to make sure no data can be changed on primary game list
-    }
+
+    /**
+     *
+     * Search game list
+     *
+     * @param search  the search.
+     * @return ArrayList<Game>
+     */
     public ArrayList<Game> searchGameList(String search) {
-        // make case insensitive
         if(search == null) {
             return gameList;}
         if(search.equals("")) {
@@ -47,13 +94,23 @@ public class GameList {
         }
         return currentFilteredList;
     }
-    public void filterGameList() {}
-    public void sortGameList(Comparator<Game> comp) {
-        gameList.sort(comp);
-    }
+
+    /**
+     *
+     * Sort game list
+     *
+     * @param gameListToSort  the game list to sort.
+     * @param comp  the comp.
+     */
     public void sortGameList(ArrayList<Game> gameListToSort, Comparator<Game> comp) {
         gameListToSort.sort(comp);
     }
+
+    /**
+     *
+     * Print game list
+     *
+     */
     public void printGameList(){
         if(gameList.isEmpty()) {System.out.println("gamelibrary.Game list: " + name + " is empty!!");}
         else{
@@ -63,6 +120,14 @@ public class GameList {
         }
     }
 
+
+    /**
+     *
+     * Find game in list
+     *
+     * @param gameTitle  the game title.
+     * @return Game
+     */
     public Game findGameInList(String gameTitle){
         for (Game game:gameList) {
             if(gameTitle.equals(game.getName())){

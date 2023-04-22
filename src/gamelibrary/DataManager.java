@@ -14,11 +14,10 @@ public class DataManager {
 
     /**
      *
-     * It is a constructor.
+     * It is a constructor for DataManager
      *
      */
     public DataManager() {
-
         this.primaryGameList = new GameList("Primary");
     }
 
@@ -30,7 +29,6 @@ public class DataManager {
      * @param GAMEDATAXML  the  GAMED ATAXM L.
      */
     public void loadGameDataXml(String GAMEDATAXML) {
-
         try {
             /* This code segment sets up a new DOM parser, and makes sure the current
                 version of Java supports a DOM parser.
@@ -63,7 +61,6 @@ public class DataManager {
      * @return the primary game list
      */
     public GameList getPrimaryGameList() {
-
         return this.primaryGameList;
     }
 }

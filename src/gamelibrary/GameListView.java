@@ -6,12 +6,19 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import javax.swing.*;
 
+
+/**
+ * The class Game list view extends J panel implements mouse listener
+ */
 public class GameListView extends JPanel implements MouseListener{
     private final JPanel ListPanel = new JPanel();
     private final JTextField searchBar = new JTextField(20);
     private final JComboBox<GameListController.gameListSortEnum> sortComboBox;
     private final JComboBox<GameListController.sortDirectionEnum> sortDirectionComboBox;
 
+    /**
+     * Constructor for GameListView
+     */
     GameListView() {
         sortComboBox = new JComboBox<>(
                 new DefaultComboBoxModel<>(GameListController.gameListSortEnum.values()));
@@ -57,11 +64,19 @@ public class GameListView extends JPanel implements MouseListener{
         this.add(gameListViewPanel);
     }
 
+
+    /**
+     * The class Private static game tile extends J panel
+     */
     private static class GameTile extends JPanel {
         Game game;
         BufferedImage img;
         String title;
 
+        /**
+         * Constructor for GameTile
+         * @param game the game to display in the game tile
+         */
         GameTile(Game game) {
             this.game = game;
             this.title = game.getName();
@@ -89,6 +104,12 @@ public class GameListView extends JPanel implements MouseListener{
         }
     }
 
+    /**
+     *
+     * Show games
+     *
+     * @param games  the games.
+     */
     public void showGames(ArrayList<Game> games) {
         ListPanel.removeAll();
 
@@ -131,64 +152,100 @@ public class GameListView extends JPanel implements MouseListener{
         ListPanel.revalidate();
     }
 
-    public void addSortComboListener(ActionListener listenForSort) {sortComboBox.addActionListener(listenForSort);}
-    public void addSortDirectionComboListener(ActionListener listenForSort) {sortDirectionComboBox.addActionListener(listenForSort);}
-    public void addSearchBarListener(ActionListener listenForSearch) {searchBar.addActionListener(listenForSearch);}
 
+    /**
+     *
+     * Add sort combo listener
+     *
+     * @param listenForSort  the listen for sort.
+     */
+    public void addSortComboListener(ActionListener listenForSort) {
+        sortComboBox.addActionListener(listenForSort);
+    }
+
+    /**
+     *
+     * Add sort direction combo listener
+     *
+     * @param listenForSort  the listen for sort.
+     */
+    public void addSortDirectionComboListener(ActionListener listenForSort) {
+        sortDirectionComboBox.addActionListener(listenForSort);
+    }
+
+    /**
+     *
+     * Add search bar listener
+     *
+     * @param listenForSearch  the listen for search.
+     */
+    public void addSearchBarListener(ActionListener listenForSearch) {
+        searchBar.addActionListener(listenForSearch);
+    }
+
+
+    /**
+     *
+     * Gets the sort selection
+     *
+     * @return the sort selection
+     */
     public GameListController.gameListSortEnum getSortSelection() {
         return (GameListController.gameListSortEnum) sortComboBox.getSelectedItem();
     }
 
+
+    /**
+     *
+     * Gets the sort direction selection
+     *
+     * @return the sort direction selection
+     */
     public GameListController.sortDirectionEnum getSortDirectionSelection() {
         return (GameListController.sortDirectionEnum) sortDirectionComboBox.getSelectedItem();
     }
 
+
+    /**
+     *
+     * Gets the search bar text
+     *
+     * @return the search bar text
+     */
     public String getSearchBarText() {
         return searchBar.getText();
     }
 
-    /**
-     * @param e the event to be processed
-     */
     @Override
+
+
     public void mouseClicked(MouseEvent e) {}
 
-    /**
-     * @param e the event to be processed
-     */
     @Override
     public void mousePressed(MouseEvent e) {
         GameTile tile = (GameTile) e.getSource();
         tile.setBackground(Color.gray);
     }
 
-    /**
-     * @param e the event to be processed
-     */
     @Override
+
     public void mouseReleased(MouseEvent e) {
         GameTile tile = (GameTile) e.getSource();
         tile.setBackground(null);
         firePropertyChange("OPEN_GAME",null,tile.game);
     }
 
-    /**
-     * @param e the event to be processed
-     */
     @Override
+
     public void mouseEntered(MouseEvent e) {
         GameTile tile = (GameTile) e.getSource();
         tile.setBackground(Color.LIGHT_GRAY);
     }
 
-    /**
-     * @param e the event to be processed
-     */
     @Override
+
     public void mouseExited(MouseEvent e) {
         GameTile tile = (GameTile) e.getSource();
         tile.setBackground(null);
     }
-
-    public void UpdateView() {}
 }
